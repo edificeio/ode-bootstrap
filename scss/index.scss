@@ -1,6 +1,7 @@
 @import "fonts";
+$root-selector: '.bootstrap-theme' !default;
 
-.bootstrap-theme{
+#{$root-selector} {
     @import "node_modules/bootstrap/scss/functions";
     @import "node_modules/bootstrap/scss/variables";
     @import "node_modules/bootstrap/scss/mixins";
