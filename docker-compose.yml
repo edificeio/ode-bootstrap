@@ -1,0 +1,7 @@
+node:
+  image: opendigitaleducation/node
+  working_dir: /home/node/app
+  net: host
+  volumes:
+    - ./:/home/node/app
+    - ~/.npm:/.npm

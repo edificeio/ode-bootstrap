@@ -1,0 +1,35 @@
+{
+  "name": "ode-bootstrap",
+  "version": "1.0.0-dev.0",
+  "description": "Open Digital Education CSS framework based on bootstrap",
+  "scripts": {
+    "sass:watch": "node-sass --source-map true -w scss/index.scss doc/index.css",
+    "sass:build": "node-sass --output-style compressed scss/index.scss dist/index.css",
+    "dev:prepare": "copyfiles -f scss/index.html dist/",
+    "dev:watch": "concurrently  \" npm run sass:watch \" \" npm run dev:serve  \" ",
+    "dev:serve": "live-server --open=doc/ --ignore=**/node_modules/**,**/dist/**,**/package.json,**/.git/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opendigitaleducation/ode-bootstrap.git"
+  },
+  "keywords": [
+    "ODE",
+    "bootstrap",
+    "framework"
+  ],
+  "author": "OpenDigitalEducation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opendigitaleducation/ode-bootstrap/issues"
+  },
+  "homepage": "https://github.com/opendigitaleducation/ode-bootstrap#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "bootstrap": "^4.4.1",
+    "concurrently": "^5.0.2",
+    "copyfiles": "^2.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1"
+  }
+}
