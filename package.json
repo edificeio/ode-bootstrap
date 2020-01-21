@@ -4,10 +4,14 @@
   "description": "Open Digital Education CSS framework based on bootstrap",
   "scripts": {
     "sass:watch": "node-sass --source-map true -w scss/index.scss doc/index.css",
-    "sass:build": "node-sass --output-style compressed scss/index.scss dist/index.css",
-    "dev:prepare": "copyfiles -f scss/index.html dist/",
-    "dev:watch": "concurrently  \" npm run sass:watch \" \" npm run dev:serve  \" ",
-    "dev:serve": "live-server --open=doc/ --ignore=**/node_modules/**,**/dist/**,**/package.json,**/.git/**"
+    "sass:build:debug": "node-sass --source-map true scss/index.scss doc/index.css",
+    "sass:build:release": "node-sass --output-style compressed scss/index.scss dist/index.css",
+    "dev:prepare": "npm run sass:build:debug && cpr assets/ doc/ -o",
+    "dev:watch": "npm run dev:prepare && concurrently  \" npm run sass:watch \" \" npm run dev:serve  \" ",
+    "dev:serve": "live-server --open=doc/ --ignore=**/node_modules/**,**/dist/**,**/package.json,**/.git/**",
+    "release:clean": "rimraf dist",
+    "release:prepare": "npm run release:clean && cpr assets/ dist/",
+    "release:build": "npm run release:prepare && npm run sass:build:release"
   },
   "repository": {
     "type": "git",
@@ -27,8 +31,10 @@
   "devDependencies": {
     "concurrently": "^5.0.2",
     "copyfiles": "^2.2.0",
+    "cpr": "^3.0.1",
     "live-server": "^1.2.1",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "rimraf": "^3.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",

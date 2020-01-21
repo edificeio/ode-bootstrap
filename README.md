@@ -1,50 +1,58 @@
 # ODE Bootsrap Framework
 
-Ce framework CSS Open Digitale Education intègre l'ensemble des composants CSS utilisés par nos ENT.
+ODE Bootstrap is a CSS framework contains all UI components used by our ENT.
+This framework is based on bootstrap 4.
 
-## Installation
+## Install
 
-Installer Git et lancer la commande suivante dans un terminal
+Install it by cloning the repository:
 ```
 git clone https://github.com/opendigitaleducation/ode-bootstrap.git
 ```
 
-### Lancer le mode développeur
+### Start dev mode
 
-Lancer la commande suivante:
+Launch it using:
 ```
 ./build.sh install watch
 ```
 
-Un serveur web démarre et l'URL s'affiche en console (généralement http://localhost:8080/doc).
-Toutes les modifications sur le code source sont détectées et entrainent un rafraichissement de la page.
+A light web server starts and the URL is displayed on console (http://localhost:8080/doc most of the time).
+Livereload is enable, so each changes on source trigger a refresh in the browser.
 
-### Lancer un build
+### Build release
 
-Lancer la commande suivante:
+Build a release using:
 ```
 ./build.sh install build
 ```
 
-Le css minifié est généré dans le dossier "dist".
+Minified CSS and assets are generated into *dist* folder.
 
-## Importer le framework dans un projet
+## Create a theme
 
-Installer la dépendance NPM: 
+The framework is full customisable and lets you create themes.
+
+In your theme, install the dependency using:
+
 ```
 npm i --save-dev ode-bootstrap
 ```
 
-Importer le SASS dans le projet:
+Then import the sass file below:
 ```
 @import "node_modules/ode-bootstrap/scss/index";
 ```
 
+And then you can override all variables:
+- defined *node_modules/ode-bootstrap/scss/_variables-ode*
+- defined in bootstrap framework
+
 ## Documentation
 
-Une documentation contenant l'ensemble de nos composants est disponible dans [ici](doc/index.html).
+A documentation listing all available components is available [here](doc/index.html). You can preview all of them and copy source code.
 
-Voici la liste des variables personnalisables:
+Below all variables and their meaning:
 
 TODO
 

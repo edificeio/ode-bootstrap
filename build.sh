@@ -14,7 +14,7 @@ fi
 
 build () {
   local extras=$1
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm rebuild node-sass --no-bin-links && npm run sass:build"
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm rebuild node-sass --no-bin-links && npm run release:build"
 }
 
 install () {

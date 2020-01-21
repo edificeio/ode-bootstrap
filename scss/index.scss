@@ -1,5 +1,5 @@
 @import "fonts";
-$root-selector: '.bootstrap-theme' !default;
+@import "variables-ode";
 
 #{$root-selector} {
     @import "node_modules/bootstrap/scss/functions";
