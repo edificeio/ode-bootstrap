@@ -1,0 +1,7 @@
+@function getUrl($path) {
+    @return url(#{$base-url}#{$path});
+}
+
+@function getUrlStr($path) {
+    @return #{$base-url}#{$path};
+}

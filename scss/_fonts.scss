@@ -1,5 +1,4 @@
-
-$fa-font-path:        "fonts/fa";
+$fa-font-path:        getUrlStr("fonts/fa") !default;
 
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";

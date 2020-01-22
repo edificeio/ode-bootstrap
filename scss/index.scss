@@ -1,5 +1,6 @@
-@import "fonts";
 @import "variables-ode";
+@import "mixins";
+@import "fonts";
 
 #{$root-selector} {
     @import "node_modules/bootstrap/scss/functions";
