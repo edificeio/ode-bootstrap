@@ -1,6 +1,6 @@
 {
   "name": "ode-bootstrap",
-  "version": "1.0.0-dev.2",
+  "version": "1.0.0-dev.3",
   "description": "Open Digital Education CSS framework based on bootstrap",
   "scripts": {
     "sass:watch": "node-sass --source-map true -w scss/index.scss doc/index.css",
