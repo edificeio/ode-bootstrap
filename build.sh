@@ -12,17 +12,22 @@ then
 fi
 
 
-build () {
-  local extras=$1
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm rebuild node-sass --no-bin-links && npm run release:build"
+clean () {
+  rm -rf node_modules
 }
 
-install () {
+init () {
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" gradle sh -c "gradle generateTemplate"
   docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm rebuild node-sass --no-bin-links && npm install"
 }
 
+build () {
+  local extras=$1
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run release:build"
+}
+
 watch () {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm rebuild node-sass --no-bin-links && npm run dev:watch"
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run dev:watch"
 }
 
 publish () {
@@ -33,14 +38,14 @@ publish () {
 for param in "$@"
 do
   case $param in
-    deps)
-      install
+    clean)
+      clean
+      ;;
+    init)
+      init
       ;;
     build)
       build
-      ;;
-    install)
-      install && build
       ;;
     watch)
       watch
