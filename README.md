@@ -8,23 +8,24 @@ This framework is based on bootstrap 4.
 Install it by cloning the repository:
 ```
 git clone https://github.com/opendigitaleducation/ode-bootstrap.git
+./build.sh clean init
 ```
 
 ### Start dev mode
 
 Launch it using:
 ```
-./build.sh install watch
+./build.sh watch
 ```
 
-A light web server starts and the URL is displayed on console (http://localhost:8080/doc most of the time).
+A light web server starts and the URL is displayed on console (http://localhost:8080/docs most of the time).
 Livereload is enable, so each changes on source trigger a refresh in the browser.
 
 ### Build release
 
 Build a release using:
 ```
-./build.sh install build
+./build.sh build
 ```
 
 Minified CSS and assets are generated into *dist* folder.
@@ -50,7 +51,7 @@ And then you can override all variables:
 
 ## Documentation
 
-A documentation listing all available components is available [here](doc/index.html). You can preview all of them and copy source code.
+A documentation listing all available components is available [here](docs/index.html). You can preview all of them and copy source code.
 
 Below all variables and their meaning:
 

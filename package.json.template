@@ -3,12 +3,12 @@
   "version": "${npmVersion}",
   "description": "Open Digital Education CSS framework based on bootstrap",
   "scripts": {
-    "sass:watch": "node-sass --source-map true -w scss/index.scss doc/index.css",
-    "sass:build:debug": "node-sass --source-map true scss/index.scss doc/index.css",
+    "sass:watch": "node-sass --source-map true -w scss/index.scss docs/index.css",
+    "sass:build:debug": "node-sass --source-map true scss/index.scss docs/index.css",
     "sass:build:release": "node-sass --output-style compressed scss/index.scss dist/index.css",
-    "dev:prepare": "npm run sass:build:debug && cpr assets/ doc/ -o",
+    "dev:prepare": "npm run sass:build:debug && cpr assets/ docs/ -o",
     "dev:watch": "npm run dev:prepare && concurrently  \" npm run sass:watch \" \" npm run dev:serve  \" ",
-    "dev:serve": "live-server --open=doc/ --ignore=**/node_modules/**,**/dist/**,**/package.json,**/.git/**",
+    "dev:serve": "live-server --open=docs/ --ignore=**/node_modules/**,**/dist/**,**/package.json,**/.git/**",
     "release:clean": "rimraf dist",
     "release:prepare": "npm run release:clean && cpr assets/ dist/",
     "release:build": "npm run release:prepare && npm run sass:build:release"
