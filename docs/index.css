@@ -4435,7 +4435,9 @@ readers do not read off random characters that represent icons */
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */ }
+ */
+  /* popup-notification : formerly called humane */
+  /* For retrocompatibility : DELETE ASAP */ }
   .bootstrap-theme :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -10773,5 +10775,169 @@ readers do not read off random characters that represent icons */
     .bootstrap-theme .table .thead-dark th {
       color: inherit;
       border-color: #dee2e6; } }
+  .bootstrap-theme .popup-notification {
+    position: fixed;
+    z-index: 100000;
+    line-height: 40px;
+    font-size: 25px;
+    top: 25%;
+    left: 25%;
+    opacity: 0;
+    width: 50%;
+    min-height: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); }
+    .bootstrap-theme .popup-notification p,
+    .bootstrap-theme .popup-notification ul {
+      margin: 0;
+      padding: 0; }
+    .bootstrap-theme .popup-notification ul {
+      list-style: none; }
+    .bootstrap-theme .popup-notification--info {
+      background-color: #17a2b8; }
+    .bootstrap-theme .popup-notification--success {
+      background-color: #28a745; }
+    .bootstrap-theme .popup-notification--error {
+      background-color: #dc3545; }
+  .bootstrap-theme .humane,
+  .bootstrap-theme .humane-original {
+    position: fixed;
+    -moz-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    z-index: 100000;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); }
+  .bootstrap-theme .humane,
+  .bootstrap-theme .humane-original {
+    line-height: 40px;
+    font-size: 25px;
+    top: 25%;
+    left: 25%;
+    opacity: 0;
+    width: 50%;
+    min-height: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px; }
+  .bootstrap-theme .humane p,
+  .bootstrap-theme .humane-original p,
+  .bootstrap-theme .humane ul,
+  .bootstrap-theme .humane-original ul {
+    margin: 0;
+    padding: 0; }
+  .bootstrap-theme .humane ul,
+  .bootstrap-theme .humane-original ul {
+    list-style: none; }
+  .bootstrap-theme .humane.humane-original-info,
+  .bootstrap-theme .humane-original.humane-original-info {
+    background-color: #00D; }
+  .bootstrap-theme .humane.humane-original-success,
+  .bootstrap-theme .humane-original.humane-original-success {
+    background-color: #030; }
+  .bootstrap-theme .humane.humane-original-error,
+  .bootstrap-theme .humane-original.humane-original-error {
+    background-color: #D00; }
+  .bootstrap-theme .humane.humane-animate,
+  .bootstrap-theme .humane-original.humane-original-animate {
+    opacity: 0.8; }
+  .bootstrap-theme .humane.humane-animate:hover,
+  .bootstrap-theme .humane-original.humane-original-animate:hover {
+    opacity: 0.6; }
+  .bootstrap-theme .humane.humane-js-animate,
+  .bootstrap-theme .humane-original.humane-original-js-animate {
+    opacity: 0.8; }
+  .bootstrap-theme .humane.humane-js-animate:hover,
+  .bootstrap-theme .humane-original.humane-original-js-animate:hover {
+    opacity: 0.6;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); }
+  .bootstrap-theme .lightbox-opened .image-contextual-menu {
+    opacity: 0; }
+  .bootstrap-theme .lightbox-opened .image-contextual-menu {
+    display: none; }
+  .bootstrap-theme .image-contextual-menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+    animation: slideIn 1 250ms;
+    transform-origin: top;
+    z-index: 100001;
+    background: #f9f9f9;
+    color: #222;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    white-space: nowrap; }
+    .bootstrap-theme .image-contextual-menu button, .bootstrap-theme .image-contextual-menu i {
+      user-select: none;
+      margin-bottom: 0;
+      background: transparent;
+      color: #222;
+      cursor: pointer; }
+    .bootstrap-theme .image-contextual-menu button {
+      font-family: "KGJune";
+      text-transform: uppercase;
+      height: 40px;
+      display: inline-block;
+      box-sizing: border-box;
+      border-radius: 15px;
+      font-size: 22px;
+      border: none;
+      line-height: 40px;
+      padding-left: 12px !important;
+      padding-right: 12px !important;
+      padding-left: 13px;
+      background: transparent;
+      box-shadow: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.3); }
+      .bootstrap-theme .image-contextual-menu button:hover {
+        background: #ccc; }
+    .bootstrap-theme .image-contextual-menu i {
+      transition: 250ms ease;
+      line-height: 37px;
+      display: inline-block;
+      height: 38px;
+      box-sizing: border-box;
+      width: 35px;
+      text-align: center;
+      vertical-align: text-bottom;
+      border-radius: 3px; }
+      .bootstrap-theme .image-contextual-menu i.large {
+        font-size: 30px; }
+      .bootstrap-theme .image-contextual-menu i.medium {
+        font-size: 23px; }
+      .bootstrap-theme .image-contextual-menu i.ed {
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2) inset; }
+        .bootstrap-theme .image-contextual-menu i.ed:hover {
+          box-shadow: none; }
+    .bootstrap-theme .image-contextual-menu i.resize-image {
+      font-family: "generic-icons";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-image: none;
+      font-weight: normal !important; }
+      .bootstrap-theme .image-contextual-menu i.resize-image::before {
+        content: '\e929'; }
+  .bootstrap-theme .image-contextual-menu i:hover, .bootstrap-theme .image-contextual-menu i.selected {
+    background: #ddd; }
+  .bootstrap-theme .image-contextual-menu button:hover {
+    color: #222; }
+  @media screen and (max-width: 800px) {
+    .bootstrap-theme body .image-contextual-menu {
+      pointer-events: none; }
+      .bootstrap-theme body .image-contextual-menu button, .bootstrap-theme body .image-contextual-menu i {
+        pointer-events: all; } }
 
 /*# sourceMappingURL=index.css.map */
