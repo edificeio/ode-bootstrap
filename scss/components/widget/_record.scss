@@ -1,0 +1,37 @@
+.widget-record {
+    .widget-body {
+        display: flex;
+        align-items: center;
+
+        > * {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            //max-height: 120px;
+
+            .img-fluid {
+                width: 100px;
+            }
+        }
+    }
+}
+
+.record {
+    &-timer {
+        font-size: 2em;
+    }
+
+    &-controls {
+        display: flex;
+        justify-content: space-around;
+        margin-block: 1.5em;
+
+        .btn-circle {
+            font-size: 1.2em;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

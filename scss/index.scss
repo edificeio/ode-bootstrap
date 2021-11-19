@@ -1,13 +1,15 @@
-@import "variables-ode";
-@import "mixins";
-@import "fonts";
+@import "variables/";
 
-#{$root-selector} {
-    @import "node_modules/bootstrap/scss/functions";
-    @import "node_modules/bootstrap/scss/variables";
-    @import "node_modules/bootstrap/scss/mixins";
-    @import "node_modules/bootstrap/scss/bootstrap";
-    @import "emptyscreen";
-    @import "notifications";
-    @import "image-contextual-menu";
-}
+// --- IMPORT BOOTSTRAP NATIVE ---
+@import "bootstrap";
+
+// --- IMPORT MIXINS ---
+@import "mixins/";
+
+// --- IMPORT ATOMS ---
+// Contient tous nos éléments de style les plus petits et les plus insécables
+@import "atoms/";
+
+// --- IMPORT COMPONENTS ---
+// Contient tous nos composants visuels, simple ou complexe
+@import "components/";

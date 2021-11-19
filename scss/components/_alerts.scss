@@ -1,0 +1,30 @@
+.alert {
+    display: flex;
+    align-items: center;
+
+    i {
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        font-size: 2rem;
+    }
+
+    &.alert-dismissible .btn-close {
+        font-size: 1rem;
+        opacity: 0.25;
+    }
+}
+
+.feedback {
+    .alert {
+        position: fixed;
+        top: 75px;
+        right: 10px;
+        width: 350px;
+        font-size: 1.4rem;
+        border-width: 1px;
+        box-shadow: 3px 2px 5px rgba($gray-700, 0.15);
+    }
+}

@@ -1,0 +1,107 @@
+/*
+Personnalisation de certains paramètres de boostrap
+Ajouter l'option !default pour permettre la surcharge depuis les thèmes
+Ref : https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
+*/
+// Body
+$body-bg: $gray-100 !default;
+$body-color: $gray-700 !default;
+
+$text-light: $gray-300 !default;
+$text-lightest: $white !default;
+$text-color: $gray-800 !default;
+
+$link-decoration: none !default;
+
+// The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
+// See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
+$min-contrast-ratio: 1.75 !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+    xxs: 0,
+    xs: 360px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+) !default;
+
+// Components
+$border-radius-sm: 6px !default;
+$border-radius: 6px !default;
+$border-radius-lg: 10px !default;
+
+// Typography
+$font-family-sans-serif: "Roboto", sans-serif !default;
+$font-size-base: 1.4rem !default;
+$line-height-base: 1.6 !default;
+$small-font-size: 1.2rem !default;
+
+// Forms
+$input-border-color: $gray-300 !default;
+$input-focus-border-color: $secondary !default;
+$input-btn-padding-x: 1rem !default;
+$form-floating-padding-x: 1rem !default;
+$form-floating-padding-y: 1.25rem !default;
+$form-floating-height: 5rem !default;
+$form-floating-input-padding-t: 1.75rem !default;
+$form-floating-input-padding-b: 0.5rem !default;
+
+// Dropdowns
+$dropdown-link-color: $gray-700 !default;
+$dropdown-link-hover-color: darken($gray-900, 5%) !default;
+$dropdown-link-hover-bg: rgba($secondary, 0.1) !default;
+
+// Image thumbnails
+$thumbnail-bg: $white !default;
+
+// Cards
+$card-spacer-y: 25px !default;
+$card-spacer-x: 35px !default;
+$card-min-height: 110px !default;
+$card-width: 265px !default;
+
+// Modals
+$modal-backdrop-bg: $gray-800 !default;
+$modal-backdrop-opacity: 0.65 !default;
+$modal-footer-border-width: 0 !default;
+$modal-header-border-width: 0 !default;
+$modal-inner-padding: 1.5rem !default;
+$modal-content-border-width: 0 !default;
+
+// Offcanvas
+$offcanvas-padding-y: 1rem !default;
+$offcanvas-padding-x: 1rem !default;
+$offcanvas-vertical-height: auto !default;
+
+// Image thumbnails
+$thumbnail-bg: $white !default;
+$thumbnail-padding: .5rem!default;
+
+// Toast
+$toast-font-size: 1.4rem !default;
+$toast-padding-y: 15px !default;
+$toast-padding-x: 20px !default;
+$toast-background-color: #fff !default;
+$toast-header-background-color: #fff !default;
+$toast-max-width: 450px !default;
+
+// Table
+$table-color: $gray-700 !default;
+$table-striped-bg: rgba($gray-100, .25) !default;
+$table-border-color: $gray-100 !default;
+$table-cell-padding-y: 0.75rem !default;
+$table-cell-padding-x: 0.75rem !default;
+$table-cell-padding-y-sm: .5rem !default;
+$table-cell-padding-x-sm: .5rem !default;
+$table-hover-bg: $gray-100 !default;
+
+// Tabs
+$nav-link-color: $secondary !default;
+$nav-tabs-link-active-bg: $white !default;
+$nav-tabs-link-active-color: $gray-600 !default;
+
+// Z-index
+$zindex-offcanvas: 1050 !default;

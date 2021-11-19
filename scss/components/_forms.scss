@@ -1,0 +1,28 @@
+$input-placeholder-color: $gray-500;
+
+.input-group {
+    .btn {
+        box-shadow: none !important;
+    }
+}
+
+.form-control::placeholder {
+    font-style: italic;
+    color: $input-placeholder-color;
+}
+
+.input-searchbar {
+    position: relative;
+
+    .ic-search {
+        position: absolute;
+        top: 50%;
+        left: 1.5rem;
+        transform: translateY(-50%);
+        color: $gray-500;
+    }
+
+    .ic-search + input {
+        padding-left: 40px;
+    }
+}

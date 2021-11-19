@@ -1,0 +1,27 @@
+.link,
+.link a {
+
+    @include color-to($primary);
+
+    font-weight: 400;
+    color: $third;
+    text-decoration: none;
+}
+
+.link-discret,
+.link-discret a {
+
+    @include color-to($third);
+
+    font-weight: 400;
+    color: currentColor;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    // cursor: pointer;
+}

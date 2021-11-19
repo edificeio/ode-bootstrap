@@ -1,0 +1,19 @@
+.table {
+  & > :not(:last-child) > :last-child > * {
+    border-bottom-color: $gray-200;
+  }
+  &-light {
+    color: $gray-700;
+  }
+  .remove {
+    color: $medium;
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .btn-close {
+    margin-left: auto;
+    display: block;
+  }
+}
