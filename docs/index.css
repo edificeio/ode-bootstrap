@@ -15731,17 +15731,7 @@ popover {
     border: 1px solid #dee2e6;
     border-radius: 2px;
     box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.1);
-    transform: translate(-50%, 4%);
-    /* .more {
-            padding: 1rem;
-            text-align: center;
-            background-color: $gray-500;
-            transition: background-color 250ms ease;
-
-            &:hover {
-                background-color: $primary;
-            }
-        } */ }
+    transform: translate(-50%, 4%); }
     popover popover-content::before {
       content: "\25b2";
       position: absolute;
@@ -15762,21 +15752,28 @@ popover {
       color: #6c757d; }
     popover popover-content .bookmarked-app {
       padding: .5rem;
-      flex: 1 1 33%;
+      flex: 0 1 33.33%;
+      width: 70px;
+      height: 70px;
       text-align: center;
       border: 1px solid transparent;
       border-radius: 6px;
       transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transition-duration: 0.4s;
-      transition-property: border-color;
-      /* &:hover {
-                border-color: $gray-200;
-            } */ }
+      transition-property: border-color; }
       @media (hover: hover) {
         popover popover-content .bookmarked-app:hover {
           border-color: #e9ecef; } }
+      popover popover-content .bookmarked-app > a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
       popover popover-content .bookmarked-app .application {
         font-size: 3rem; }
+      popover popover-content .bookmarked-app img {
+        max-width: 80%; }
     popover popover-content .search-text {
       justify-content: center; }
       popover popover-content .search-text .searchInput {
@@ -15913,10 +15910,18 @@ popover {
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0; }
+        top: 50%;
+        transform: translateY(-50%); }
+      .widget-applications .icon-grid-item a > img {
+        width: 80%;
+        height: 80%; }
     @media (min-width: 576px) and (max-width: 767.98px) {
       .widget-applications .icon-grid-item {
         width: 16.66667%; } }
+
+.widget-applications > .widget-body {
+  max-height: 300px;
+  overflow: auto; }
 
 .widget-bookmarks .bookmark-item {
   transition: background-color 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
