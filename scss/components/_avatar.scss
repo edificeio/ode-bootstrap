@@ -54,6 +54,7 @@ $avatar-size: 65px !default;
 
         img {
             @include avatar-image($avatar-size);
+            background: #ffff;
         }
     }
 
