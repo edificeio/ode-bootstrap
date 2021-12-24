@@ -76,3 +76,15 @@
         }
     }
 }
+
+// Classes des icones pour les humeurs
+.ic-mood {
+    @each $mood, $data in $icons-mood {
+        &-#{$mood} {
+            &::before {
+                content: map-get($data, "glyph");
+                color: map-get($data, "color");
+            }
+        }
+    }
+}

@@ -14583,6 +14583,51 @@ html {
 .ic-widget-signets::before, .ic-widget-signets-large::before {
   content: ""; }
 
+.ic-actualites::before {
+  content: ""; }
+
+.ic-aide-devoirs::before {
+  content: ""; }
+
+.ic-agenda::before {
+  content: ""; }
+
+.ic-apps::before {
+  content: ""; }
+
+.ic-bookmark-empty::before {
+  content: ""; }
+
+.ic-calendar::before {
+  content: ""; }
+
+.ic-carnet-de-bord::before {
+  content: ""; }
+
+.ic-microphone::before {
+  content: ""; }
+
+.ic-maxicours::before {
+  content: ""; }
+
+.ic-mood::before {
+  content: ""; }
+
+.ic-notes::before {
+  content: ""; }
+
+.ic-rss::before {
+  content: ""; }
+
+.ic-qwant::before {
+  content: ""; }
+
+.ic-schoolbook::before {
+  content: ""; }
+
+.ic-signets::before {
+  content: ""; }
+
 .link, .feed-item .zone-text .report a,
 .link a,
 .feed-item .zone-text .report a a {
@@ -14756,7 +14801,8 @@ html {
       object-fit: cover;
       object-position: center center;
       border: 2px solid #dcdce6;
-      box-shadow: -2px -2px 5px 0 rgba(0, 0, 0, 0.1); }
+      box-shadow: -2px -2px 5px 0 rgba(0, 0, 0, 0.1);
+      background: #ffff; }
   .navbar.no-1d .avatar {
     margin-top: -0.3rem;
     width: 3rem;

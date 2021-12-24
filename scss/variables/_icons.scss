@@ -182,3 +182,18 @@ $icons-connectors: (
     "vie-scolaire"              : ( "color": $yellow, "glyph": "\e879"),
     "webclasseur"               : ( "color": $cyan,   "glyph": "\e88c"),
 ) !default;
+
+$icons-mood:(
+    "default":  ("color":#555, "glyph":"\e870"),
+    "none":     ("color":#aaa, "glyph":"\e83a"),
+    "angry":    ("color":#FF8500, "glyph":"\e845"),
+    "dreamy":   ("color":#b930a2, "glyph":"\e862"),
+    "happy":    ("color":#ecbe30, "glyph":"\e877"),
+    "joker":    ("color":#4bafd5, "glyph":"\e849"),
+    "love":     ("color":#FF8500, "glyph":"\e84b"),
+    "proud":    ("color":#46bfaf, "glyph":"\e87e"),
+    "sad":      ("color":#b930a2, "glyph":"\e869"),
+    "sick":     ("color":#e13a3a, "glyph":"\e87d"),
+    "tired":    ("color":#e13a3a, "glyph":"\e87c"),
+    "worried":  ("color":#763294, "glyph":"\e87f")
+)!default;

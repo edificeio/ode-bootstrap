@@ -177,6 +177,10 @@ $feed-spacing: 20px !default;
             }
         }
 
+        [class*="ic-mood"] {
+            font-size: 3rem;
+        }
+
         &:hover {
             .zone-tools {
                 transform: translateX(101%);
