@@ -31,7 +31,8 @@
                 }
 
                 > img {
-                    @include square(80%);
+                    width: 80%;
+                    height: auto;
                 }
             }
 
