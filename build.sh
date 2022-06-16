@@ -14,11 +14,12 @@ fi
 
 clean () {
   rm -rf node_modules
+  rm -f yarn.lock
 }
 
 init () {
   docker-compose run --rm -u "$USER_UID:$GROUP_GID" gradle sh -c "gradle generateTemplate"
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm rebuild node-sass --no-bin-links && npm install"
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm rebuild node-sass --no-bin-links && yarn install"
 }
 
 build () {
