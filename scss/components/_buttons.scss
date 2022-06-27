@@ -48,7 +48,7 @@
 
     &-circle {
         @include circle(2.5em);
-        @include have-child-in-middle ();
+        @include have-child-in-middle();
 
         @include add-transitions(color, background-color) {
             color: #fff;

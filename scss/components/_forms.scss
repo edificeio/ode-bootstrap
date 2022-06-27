@@ -1,4 +1,4 @@
-$input-placeholder-color: $gray-500;
+$input-placeholder-color: #B0B0B0;
 
 .input-group {
     .btn {
@@ -6,9 +6,17 @@ $input-placeholder-color: $gray-500;
     }
 }
 
-.form-control::placeholder {
-    font-style: italic;
-    color: $input-placeholder-color;
+.form-control {
+    padding: 1.2rem 1.6rem;
+
+    @include media-breakpoint-up(xl) {
+        font-size: 1.6rem;
+    }
+
+    &::placeholder {
+        font-style: italic;
+        color: $input-placeholder-color;
+    }
 }
 
 .input-searchbar {
