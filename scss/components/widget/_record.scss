@@ -52,7 +52,12 @@
 
             &:disabled {
                 opacity: 1;
-                background-color: #E4E4E4;
+                background-color: #E4E4E4 !important;
+                border-color: transparent;
+            }
+
+            &.btn-danger {
+                background-color: $red;
             }
         }
     }
