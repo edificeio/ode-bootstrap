@@ -1,6 +1,6 @@
 /* VARIABLES */
 $domino-width: 240px;
-$overlay-width: $domino-width / 1.5;
+$overlay-width: calc($domino-width / 1.5);
 
 /* COMPONENT */
 .dominos {

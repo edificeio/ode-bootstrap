@@ -37,12 +37,12 @@ $avatar-size: 65px !default;
 
         .circle {
             @include have-child-in-middle();
-            @include circle($avatar-size / 1.8);
+            @include circle(calc($avatar-size / 1.8));
 
             position: absolute;
             right: 0;
             bottom: 0;
-            font-size: $avatar-size / 3.5;
+            font-size: calc($avatar-size / 3.5);
             color: $white;
             transform: translate(20%, 20%);
         }
