@@ -37,7 +37,7 @@
             }
 
             @include media-breakpoint-between(sm, md) {
-                width: 100 / 6 * 1%;
+                width: calc(100 / 6 * 1%);
             }
         }
     }
