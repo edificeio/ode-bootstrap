@@ -1,6 +1,6 @@
 {
   "name": "ode-bootstrap",
-  "version": "1.1.0-dev.%generateVersion%",
+  "version": "1.0.0-feat-produit.%generateVersion%",
   "description": "Open Digital Education CSS framework based on bootstrap",
   "scripts": {
     "copy-fonts": "cpr node_modules/entcore-generic-icons/fonts/ assets/fonts/generic-icons/ -o && cpr node_modules/@fortawesome/fontawesome-free/webfonts assets/fonts/fa/ -o",
@@ -47,5 +47,9 @@
     "bootstrap": "5.1.3",
     "entcore-generic-icons": "opendigitaleducation/generic-icons"
   },
+<<<<<<< HEAD
   "files": ["assets", "scss", "dist/version.txt"]
+=======
+  "files": ["dist"]
+>>>>>>> e400d1e (chore: #WB-893, remove gradle from scripts)
 }
