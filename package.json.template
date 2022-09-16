@@ -47,9 +47,5 @@
     "bootstrap": "5.1.3",
     "entcore-generic-icons": "opendigitaleducation/generic-icons"
   },
-<<<<<<< HEAD
   "files": ["assets", "scss", "dist/version.txt"]
-=======
-  "files": ["dist"]
->>>>>>> e400d1e (chore: #WB-893, remove gradle from scripts)
 }
