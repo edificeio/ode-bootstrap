@@ -47,5 +47,5 @@
     "bootstrap": "^5.1.3",
     "entcore-generic-icons": "opendigitaleducation/generic-icons"
   },
-  "files": ["dist"]
+  "files": ["assets", "scss", "dist/version.txt"]
 }
