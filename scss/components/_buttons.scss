@@ -1,78 +1,77 @@
 %btn-alt-base {
-    position: relative;
-    z-index: 2;
-    padding: 0 15px;
-    font-size: 14px;
-    line-height: 2.4em;
-    color: #fff;
-    letter-spacing: 1.08px;
-    border: 1px solid currentColor;
-    border-radius: 30px;
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 2.4em;
+  color: #fff;
+  letter-spacing: 1.08px;
+  border: 1px solid currentColor;
+  border-radius: 30px;
 }
 
 .btn {
-    &.btn-alt {
-        @extend %btn-alt-base;
+  &.btn-alt {
+    @extend %btn-alt-base;
 
-        background-color: $third;
-        border-color: $third;
+    background-color: $third;
+    border-color: $third;
 
-        @include add-transitions(border-color, background-color) {
-            background-color: $orange;
-            border-color: $orange;
-        }
+    @include add-transitions(border-color, background-color) {
+      background-color: $orange;
+      border-color: $orange;
+    }
+  }
+
+  &.btn-alt-outline {
+    @extend %btn-alt-base;
+
+    @include add-transitions(border-color, color) {
+      color: $orange;
+      border-color: $orange;
     }
 
-    &.btn-alt-outline {
-        @extend %btn-alt-base;
+    color: $third;
+    background-color: transparent;
+    border: 1px solid $third;
+  }
 
-        @include add-transitions(border-color, color) {
-            color: $orange;
-            border-color: $orange;
-        }
+  &-light {
+    background-color: $gray-200;
 
-        color: $third;
-        background-color: transparent;
-        border: 1px solid $third;
+    @include add-transitions(color, background-color) {
+      color: $primary;
+      text-decoration: none;
+      background-color: $gray-200;
+    }
+  }
+
+  &-circle {
+    @include circle(2.5em);
+    @include have-child-in-middle();
+
+    @include add-transitions(color, background-color) {
+      color: #fff;
+      text-decoration: none;
+      background-color: $cyan;
     }
 
-    &-light {
-        background-color: $gray-200;
-        
-        @include add-transitions(color, background-color) {
-            color: $primary;
-            text-decoration: none;
-            background-color: $gray-200;
-        }
+    position: relative;
+    display: inline-flex;
+    // margin-bottom: 1.5em;
+    font-size: 2em;
+    color: #fff;
+    background-color: $third;
+
+    .label {
+      position: absolute;
+      bottom: -2em;
+      font-size: 0.8em;
+      color: $gray-700;
     }
-
-    &-circle {
-        @include circle(2.5em);
-        @include have-child-in-middle();
-
-        @include add-transitions(color, background-color) {
-            color: #fff;
-            text-decoration: none;
-            background-color: $cyan;
-        }
-
-        position: relative;
-        display: inline-flex;
-        // margin-bottom: 1.5em;
-        font-size: 2em;
-        color: #fff;
-        background-color: $third;
-
-        .label {
-            position: absolute;
-            bottom: -2em;
-            font-size: 0.8em;
-            color: $gray-700;
-        }
-    }
-    // A réécrire, mais le btn-circle de Julien ne colle pas à mon cas (les width en em, la font-size, la couleur, etc)
-
-    &-circular {
-        @include circle(32px);
-    }
+  }
+  // A réécrire, mais le btn-circle de Julien ne colle pas à mon cas (les width en em, la font-size, la couleur, etc)
+  &-circular {
+    @include circle(32px);
+  }
 }

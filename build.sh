@@ -24,8 +24,8 @@ init () {
   cp package.json.template package.json
   sed -i "s/%generateVersion%/${NPM_VERSION_SUFFIX}/" package.json
 
-  echo "[init] Rebuild node-sass and install yarn dependencies..."
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm rebuild node-sass --no-bin-links && yarn install"
+  echo "[init] Install yarn dependencies..."
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "yarn install"
 }
 
 build () {

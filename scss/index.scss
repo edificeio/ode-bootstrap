@@ -1,15 +1,5 @@
 @import "variables/";
-
-// --- IMPORT BOOTSTRAP NATIVE ---
-@import "bootstrap";
-
-// --- IMPORT MIXINS ---
+@import "vendors/";
 @import "mixins/";
-
-// --- IMPORT ATOMS ---
-// Contient tous nos éléments de style les plus petits et les plus insécables
-@import "atoms/";
-
-// --- IMPORT COMPONENTS ---
-// Contient tous nos composants visuels, simple ou complexe
+@import "tokens/";
 @import "components/";

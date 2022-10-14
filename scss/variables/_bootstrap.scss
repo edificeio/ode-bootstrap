@@ -3,6 +3,8 @@ Personnalisation de certains paramètres de boostrap
 Ajouter l'option !default pour permettre la surcharge depuis les thèmes
 Ref : https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
 */
+
+$prefix: 'ode-';
 // Body
 $body-bg: $gray-100 !default;
 $body-color: $gray-700 !default;
