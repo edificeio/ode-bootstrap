@@ -54,7 +54,11 @@ $avatar-size: 65px !default;
 
     img {
       @include avatar-image($avatar-size);
+<<<<<<< HEAD
       background: #ffff;
+=======
+      background: $white;
+>>>>>>> 3ccd7c0 (feat(design system): #WB-1058, colors)
     }
   }
 

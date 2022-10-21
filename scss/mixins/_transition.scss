@@ -2,27 +2,27 @@
 //Note Julien -> appliquer ce type de transition à l'ensemble des propriétés provoque des mouvements au chargement de la page
 
 .transition-hover-fast {
-    transition-timing-function: ease;
-    transition-duration: 0.25s;
-    transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 0.25s;
+  transition-property: all;
 }
 
 .transition-hover {
-    transition-timing-function: ease;
-    transition-duration: 0.5s;
-    transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 0.5s;
+  transition-property: all;
 }
 
 .transition-hover-slow {
-    transition-timing-function: ease;
-    transition-duration: 0.75s;
-    transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 0.75s;
+  transition-property: all;
 }
 
 .transition-hover-very-slow {
-    transition-timing-function: ease;
-    transition-duration: 0.75s;
-    transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 0.75s;
+  transition-property: all;
 }
 
 /**
@@ -70,36 +70,39 @@ $default-duration: 0.4s;
 //Mixins
 
 @mixin add-transitions($properties...) {
-    transition-timing-function: $default-easing;
-    transition-duration: $default-duration;
-    transition-property: $properties;
+  transition-timing-function: $default-easing;
+  transition-duration: $default-duration;
+  transition-property: $properties;
 
-    @media (hover: hover) {
-        &:hover {
-            @content;
-        }
+  @media (hover: hover) {
+    &:hover {
+      @content;
     }
+  }
 }
 
-@mixin background-color-to($color: $primary, $duration: $default-duration, $easing: $default-easing) {
-    transition: background-color $duration $easing;
+@mixin background-color-to(
+  $color: $secondary,
+  $duration: $default-duration,
+  $easing: $default-easing
+) {
+  transition: background-color $duration $easing;
 
-    &:hover {
-        background-color: $color;
-    }
+  &:hover {
+    background-color: $color;
+  }
 }
 
-@mixin color-to($color: $primary, $duration: 0.2s, $easing: $default-easing) {
-    transition: color $duration $easing;
+@mixin color-to($color: $secondary, $duration: 0.2s, $easing: $default-easing) {
+  transition: color $duration $easing;
 
-    &:hover {
-        color: $color;
-    }
+  &:hover {
+    color: $color;
+  }
 }
 
 @mixin decoration-to($state: "underline") {
-
-    &:hover {
-        text-decoration: $state;
-    }
+  &:hover {
+    text-decoration: $state;
+  }
 }

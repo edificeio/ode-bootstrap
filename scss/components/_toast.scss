@@ -3,43 +3,42 @@ $toast-end-color: #dceff7;
 $btn-border-radius: 0;
 
 .toast {
-    &-container {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        z-index: 999;
-        padding: 10px;
-        font-size: 2em;
+  &-container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    padding: 10px;
+    font-size: 2em;
+  }
+
+  ode-infotip & {
+    background: linear-gradient(to right, $toast-start-color, $toast-end-color);
+
+    &,
+    > *,
+    > * > * {
+      border: 0;
+      border-radius: 0;
     }
-    
-    ode-infotip & {
-        background: linear-gradient(to right, $toast-start-color, $toast-end-color);
 
-        &,
-        > *,
-        > * > * {
-            border: 0;
-            border-radius: 0;
-        }
-
-        .toast-header {
-            padding-bottom: 0;
-            margin-bottom: -1rem;
-            background-color: transparent;
-        }
-        .toast-body {
-            color: $deep-blue;
-        }
-
-        .btn {
-            border-radius: $btn-border-radius;
-
-            &-light {
-                &:hover {
-                    color: $primary;
-                }
-            }
-        }
-        
+    .toast-header {
+      padding-bottom: 0;
+      margin-bottom: -1rem;
+      background-color: transparent;
     }
+    .toast-body {
+      color: $blue;
+    }
+
+    .btn {
+      border-radius: $btn-border-radius;
+
+      &-light {
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
 }

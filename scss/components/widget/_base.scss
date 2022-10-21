@@ -1,133 +1,133 @@
 .widget {
-    margin-bottom: 2em;
-    font-size: 1.4rem;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 2px 2px 40px 0 rgba(0, 0, 0, 0.05);
-    //overflow: hidden;
+  margin-bottom: 2em;
+  font-size: 1.4rem;
+  background-color: $white;
+  border-radius: 6px;
+  box-shadow: 2px 2px 40px 0 rgba(0, 0, 0, 0.05);
+  //overflow: hidden;
 
-    a {
-        text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  .meta {
+    font-size: 0.8em;
+    color: $gray-700;
+  }
+
+  &-empty-message {
+    display: block;
+    padding: 10px $widget-padding-x;
+    font-style: italic;
+    color: $gray-700;
+    text-align: center;
+
+    &.link {
+      cursor: pointer;
+
+      @include media-breakpoint-down(lg) {
+        pointer-events: none;
+      }
     }
+  }
 
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-    }
+  &-header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.2rem $widget-padding-x;
+    border-bottom: 1px solid $ghost;
 
-    .meta {
-        font-size: 0.8em;
-        color: $gray-700;
-    }
+    .subtitle {
+      flex: 1;
 
-    &-empty-message {
-        display: block;
-        padding: 10px $widget-padding-x;
-        font-style: italic;
-        color: $gray-700;
-        text-align: center;
+      .seemore {
+        @include color-to($orange);
 
-        &.link {
-            cursor: pointer;
-
-            @include media-breakpoint-down(lg) {
-                pointer-events: none;
-            }
-        }
-    }
-
-    &-header {
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
-        padding: 1.2rem $widget-padding-x;
-        border-bottom: 1px solid $ghost;
-
-        .subtitle {
-            flex: 1;
-
-            .seemore {
-                @include color-to($orange);
-
-                color: inherit;
-
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-
-            .seemore-text {
-                padding-left: 0.5em;
-                font-size: 0.8em;
-                font-weight: 400;
-                text-transform: initial;
-            }
-        }
+        color: inherit;
 
         &:hover {
-            .widget-options {
-                opacity: 1;
-            }
+          text-decoration: none;
         }
+      }
+
+      .seemore-text {
+        padding-left: 0.5em;
+        font-size: 0.8em;
+        font-weight: 400;
+        text-transform: initial;
+      }
     }
 
-    &-options {
-        @include add-transitions(opacity);
-        opacity: 0;
-        
-        & > * {
-            display: inline-block;
+    &:hover {
+      .widget-options {
+        opacity: 1;
+      }
+    }
+  }
 
-            &:not(:first-child) {
-                margin-left: 0.8rem;
-            }
-        }
+  &-options {
+    @include add-transitions(opacity);
+    opacity: 0;
 
-        .tool,
-        .widget-handle {
-            @include color-to($gray-700);
-            color: $gray-400;
-        }
+    & > * {
+      display: inline-block;
 
-        @include media-breakpoint-down(lg) {
-            display: none;
-        }
+      &:not(:first-child) {
+        margin-left: 0.8rem;
+      }
     }
 
-    &-footer {
-        &-action {
-            text-align: center;
-
-            .link {
-                display: block;
-                padding: 0.4em 0;
-                font-size: $small-font-size;
-                color: $gray-600;
-
-                @include add-transitions(background-color, color) {
-                    color: $primary;
-                    background-color: $ghost;
-                }
-            }
-        }
+    .tool,
+    .widget-handle {
+      @include color-to($gray-700);
+      color: $gray-400;
     }
 
-    &:not(.widget-locked) {
-        .widget-header {
-            cursor: grab;
-        }
+    @include media-breakpoint-down(lg) {
+      display: none;
     }
+  }
 
-    &:is(.widget-locked) {
-        .widget-handle {
-            display: none;
-        }
-    }
+  &-footer {
+    &-action {
+      text-align: center;
 
-    &-qwant {
-        .widget-header {
-            margin-bottom: -2em;
+      .link {
+        display: block;
+        padding: 0.4em 0;
+        font-size: $small-font-size;
+        color: $gray-600;
+
+        @include add-transitions(background-color, color) {
+          color: $primary;
+          background-color: $ghost;
         }
+      }
     }
+  }
+
+  &:not(.widget-locked) {
+    .widget-header {
+      cursor: grab;
+    }
+  }
+
+  &:is(.widget-locked) {
+    .widget-handle {
+      display: none;
+    }
+  }
+
+  &-qwant {
+    .widget-header {
+      margin-bottom: -2em;
+    }
+  }
 }

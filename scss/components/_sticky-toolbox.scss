@@ -1,166 +1,162 @@
 .sticky-toolbox {
-    position: fixed;
-    top: 100px;
-    bottom: 0;
-    right: 0;
-    z-index: 22;
+  position: fixed;
+  top: 100px;
+  bottom: 0;
+  right: 0;
+  z-index: 22;
+  color: $white;
+  transform: translateX(100%);
+
+  @include add-transitions(transform);
+
+  .link-tool {
+    position: absolute;
+    width: 50px;
+    // padding: 5px 10px;
+    padding: 0.5rem 1.3rem;
+    font-size: 1.5em;
     color: $white;
-    transform: translateX(100%);
+    cursor: pointer;
+    background: $primary;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: translate(-100%, 0);
+  }
 
-    @include add-transitions(transform);
+  .sticky-toolbox-content {
+    display: none;
+    overflow: auto;
+    width: 400px;
+    height: 100%;
+    padding: 20px 30px;
+    background: $primary;
+  }
 
-    .link-tool {
-        position: absolute;
-        width: 50px;
-        // padding: 5px 10px;
-        padding: 0.5rem 1.3rem;
-        font-size: 1.5em;
-        color: $white;
-        cursor: pointer;
-        background: $primary;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-        transform: translate(-100%, 0);
+  .sticky-toolbox-title {
+    margin: 0 0 10px;
+    font-weight: 700;
+
+    &:not(:first-child) {
+      margin-top: 10px;
     }
+  }
 
-    .sticky-toolbox-content {
-        display: none;
-        overflow: auto;
-        width: 400px;
-        height: 100%;
-        padding: 20px 30px;
-        background: $secondary;
-    }
+  .sticky-toolbox-item {
+    display: block;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    background: rgba($white, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 
-    .sticky-toolbox-title {
-        margin: 0 0 10px;
-        font-weight: 700;
+    // @include background-color-to($primary);
 
-        &:not(:first-child) {
-            margin-top: 10px;
-        }
-    }
+    &.selected {
+      background: $secondary;
 
-    .sticky-toolbox-item {
-        display: block;
-        color: $white;
-        text-align: center;
-        text-decoration: none;
-        background: rgba($white, .10);
-        border-radius: 10px;
-        overflow: hidden;
-
-        // @include background-color-to($primary);
-
-        &.selected {
-            background: $primary;
-
-            /* &:hover {
+      /* &:hover {
                 background: rgba($white, .10);
             } */
-        }
-
-        small {
-            display: inline-block;
-            line-height: 1.6rem;
-            margin-top: 0.5rem;
-        }
     }
 
-    [class*="buttons-"] {
-        margin-right: -5px;
-        margin-left: -5px;
-
-        > .col,
-        > [class*="col-"] {
-            padding-right: 5px;
-            padding-left: 5px;
-            margin-bottom: 10px;
-        }
+    small {
+      display: inline-block;
+      line-height: 1.6rem;
+      margin-top: 0.5rem;
     }
+  }
 
-    .buttons-theme {
-        .sticky-toolbox-item {
-            padding: 20px 10px;
-        }
+  [class*="buttons-"] {
+    margin-right: -5px;
+    margin-left: -5px;
+
+    > .col,
+    > [class*="col-"] {
+      padding-right: 5px;
+      padding-left: 5px;
+      margin-bottom: 10px;
     }
+  }
 
-    .buttons-widget {
-        .sticky-toolbox-item {
-            .inner {
-                position: relative;
-                display: block;
-                padding-top: 100%;
-            }
-
-            i {
-                position: absolute;
-                top: 0;
-                font-size: 2em;
-                border-radius: 18px;
-
-                &.big {
-                    font-size: 3em;
-                }
-
-                @include have-child-in-middle();
-                @include square(100%);
-            }
-        }
+  .buttons-theme {
+    .sticky-toolbox-item {
+      padding: 20px 10px;
     }
+  }
 
-    .buttons-countries {
-        padding: 0 0.8rem;
-        gap: 2rem;
-        margin: 0 -1rem;
-        justify-content: center;
-
-        > div {
-            padding: 0 !important;
-            margin-bottom: 0 !important;
-            width: 20%;
-        }
-    }
-
-    .sticky-toolbox-country {
+  .buttons-widget {
+    .sticky-toolbox-item {
+      .inner {
+        position: relative;
         display: block;
-        color: $white;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
+        padding-top: 100%;
+      }
 
-        .flag {
-            max-width: 70%;
-            height: auto;
-            margin: 0 auto;
-            filter: saturate(0);
+      i {
+        position: absolute;
+        top: 0;
+        font-size: 2em;
+        border-radius: 18px;
 
-            @include add-transitions(filter);
+        @include have-child-in-middle();
+        @include square(100%);
+      }
+    }
+  }
 
-            + div {
-                margin-top: .5rem;
-                font-size: 1.2rem;
-            }
-        }
+  .buttons-countries {
+    padding: 0 0.8rem;
+    gap: 2rem;
+    margin: 0 -1rem;
+    justify-content: center;
 
-        &.selected {
-            .flag {
-                filter: saturate(1);
-            }
-        }
+    > div {
+      padding: 0 !important;
+      margin-bottom: 0 !important;
+      width: 20%;
+    }
+  }
 
-        &:hover:not(.selected) {
-            .flag {
-                filter: saturate(0.3);
-            }
-        }
+  .sticky-toolbox-country {
+    display: block;
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    .flag {
+      max-width: 70%;
+      height: auto;
+      margin: 0 auto;
+      filter: saturate(0);
+
+      @include add-transitions(filter);
+
+      + div {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+      }
     }
 
-    &.open {
-        transform: translateX(0);
-
-        .sticky-toolbox-content {
-            display: block;
-        }
+    &.selected {
+      .flag {
+        filter: saturate(1);
+      }
     }
+
+    &:hover:not(.selected) {
+      .flag {
+        filter: saturate(0.3);
+      }
+    }
+  }
+
+  &.open {
+    transform: translateX(0);
+
+    .sticky-toolbox-content {
+      display: block;
+    }
+  }
 }

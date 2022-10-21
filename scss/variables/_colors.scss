@@ -1,51 +1,74 @@
-//Override Bootstrap default colors
-
+// Color System
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
 $black: #000 !default;
 
-$blue: #0d6efd !default;
-$indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
-$pink: #d63384 !default;
-$red: #dc3545 !default;
-$orange: #fd7e14 !default;
-$yellow: #ffc107 !default;
-$green: #7dbf85 !default;
+// Grey Palette
+$gray-100: $white !default;
+$gray-200: #fafafa !default;
+$gray-300: #f2f2f2 !default;
+$gray-400: #e4e4e4 !default;
+$gray-500: #c7c7c7 !default;
+$gray-600: #b0b0b0 !default;
+$gray-700: #909090 !default;
+$gray-800: #4a4a4a !default;
+$gray-900: $black !default;
+
+// Complementary Colors
+$blue: #2a9cc8 !default;
+$indigo: #1a22a2 !default;
+$purple: #763294 !default;
+$pink: #b930a2 !default;
+$red: #e13a3a !default;
+$orange: #ff8d2e !default;
+$yellow: #ecbe30 !default;
+$green: #46bfaf !default;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
-$deep-blue: #2A9CC8 !default;
 
+// Main actions Colors
 $primary: $blue !default;
 $secondary: $gray-600 !default;
-$third: $deep-blue !default;
-$success: $green !default;
-$info: $cyan !default;
-$warning: $yellow !default;
-$danger: $red !default;
+$tertiary: $gray-300 !default;
+$success: #7dbf85 !default;
+$info: #4bafd5 !default;
+$warning: #f59700 !default;
+$danger: #e13a3a !default;
 $light: $gray-200 !default;
 $medium: $gray-500 !default;
-$dark: $gray-700 !default;
-$ghost: #f5f5fb !default;
+$dark: $gray-800 !default;
+$ghost: $gray-300 !default;
+
+// Support Palette
+$success: #7dbf85 !default;
+$info: #4bafd5 !default;
+$warning: #f59700 !default;
+$danger: #e13a3a !default;
+
+$error-900: #d12a2a !default;
+$error-200: #f3a6a6 !default;
+$error-100: #ffe9e9 !default;
+
+$warning-900: #e68d00 !default;
+$warning-200: #f2c987 !default;
+$warning-100: #fdecd2 !default;
+
+$success-900: #70a977 !default;
+$success-200: #bbe1bf !default;
+$success-100: #daf1dd !default;
+
+$info-900: #3499bf !default;
+$info-200: #acd6e6 !default;
+$info-100: #d7e8ee !default;
 
 $theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "third": $third,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-    "light": $light,
-    "medium": $medium,
-    "dark": $dark,
-    "ghost": $ghost
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "medium": $medium,
+  "dark": $dark,
 ) !default;

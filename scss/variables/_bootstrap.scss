@@ -4,10 +4,10 @@ Ajouter l'option !default pour permettre la surcharge depuis les thèmes
 Ref : https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
 */
 
-$prefix: 'ode-';
+$prefix: "ode-";
 // Body
-$body-bg: $gray-100 !default;
-$body-color: $gray-700 !default;
+$body-bg: $gray-200 !default;
+$body-color: $gray-800 !default;
 
 $text-light: $gray-300 !default;
 $text-lightest: $white !default;
@@ -21,13 +21,13 @@ $min-contrast-ratio: 1.75 !default;
 
 // Grid breakpoints
 $grid-breakpoints: (
-    xxs: 0,
-    xs: 360px,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px,
+  xxs: 0,
+  xs: 360px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
 ) !default;
 
 // Components
@@ -37,7 +37,8 @@ $border-radius-lg: 10px !default;
 
 // Typography
 $font-family-sans-serif: "Roboto", sans-serif !default;
-$font-size-base: 1.4rem !default;
+$font-size-root: 62.5%;
+$font-size-base: 1.6rem !default;
 $line-height-base: 1.6 !default;
 $small-font-size: 1.2rem !default;
 
@@ -80,25 +81,25 @@ $offcanvas-vertical-height: auto !default;
 
 // Image thumbnails
 $thumbnail-bg: $white !default;
-$thumbnail-padding: .5rem!default;
+$thumbnail-padding: 0.5rem !default;
 
 // Toast
 $toast-font-size: 1.4rem !default;
 $toast-padding-y: 15px !default;
 $toast-padding-x: 20px !default;
-$toast-background-color: #fff !default;
-$toast-header-background-color: #fff !default;
+$toast-background-color: $white !default;
+$toast-header-background-color: $white !default;
 $toast-max-width: 450px !default;
 
 // Table
 $table-color: $gray-700 !default;
-$table-striped-bg: rgba($gray-100, .25) !default;
-$table-border-color: $gray-100 !default;
+$table-striped-bg: rgba($gray-300, 0.25) !default;
+$table-border-color: $gray-300 !default;
 $table-cell-padding-y: 0.75rem !default;
 $table-cell-padding-x: 0.75rem !default;
-$table-cell-padding-y-sm: .5rem !default;
-$table-cell-padding-x-sm: .5rem !default;
-$table-hover-bg: $gray-100 !default;
+$table-cell-padding-y-sm: 0.5rem !default;
+$table-cell-padding-x-sm: 0.5rem !default;
+$table-hover-bg: $gray-300 !default;
 
 // Tabs
 $nav-link-color: $secondary !default;

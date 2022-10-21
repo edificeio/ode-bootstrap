@@ -1,102 +1,102 @@
 popover {
-    position: relative;
-    z-index: 100;
-    display: inline-block;
+  position: relative;
+  z-index: 100;
+  display: inline-block;
 
-    popover-content.hidden {
-        pointer-events: none;
-        opacity: 0;
+  popover-content.hidden {
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  popover-content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 250px;
+    text-align: center;
+    background: $white;
+    border: 1px solid $gray-300;
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 2rem rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, 4%);
+
+    &::before {
+      content: "\25b2";
+      position: absolute;
+      top: -2rem;
+      left: 50%;
+      z-index: 0;
+      display: block;
+      width: 40px;
+      font-family: none;
+      font-size: 2rem;
+      color: $white;
+      transform: translateX(-50%);
     }
 
-    popover-content {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        width: 250px;
+    .widget-applications {
+      .widget-body {
+        padding: 1.5rem;
+        max-height: 22rem;
+        overflow: auto;
+      }
+
+      .widget-footer-action & {
+        color: $gray-600;
+      }
+    }
+
+    .bookmarked-app {
+      padding: 0.5rem;
+      flex: 0 1 33.33%;
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      border: 1px solid transparent;
+      border-radius: $border-radius;
+
+      @include add-transitions(border-color) {
+        border-color: $gray-300;
+      }
+
+      > a {
+        @include square(100%);
+        @include have-child-in-middle();
+      }
+
+      .application {
+        font-size: 3rem;
+      }
+
+      img {
+        max-width: 80%;
+      }
+    }
+
+    .search-text {
+      justify-content: center;
+
+      .searchInput {
+        height: 30px;
+        margin: 1rem -0.2rem 1rem 0;
+        width: 70%;
+        border: 1px solid $gray-200;
+      }
+      .searchButton {
+        @extend .btn-primary;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        margin-top: 1rem;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
         text-align: center;
-        background: $white;
-        border: 1px solid $gray-300;
-        border-radius: 2px;
-        box-shadow: 0 .1rem 2rem rgba(0, 0, 0, .1);
-        transform: translate(-50%, 4%);
-
-        &::before {
-            content: "\25b2";
-            position: absolute;
-            top: -2rem;
-            left: 50%;
-            z-index: 0;
-            display: block;
-            width: 40px;
-            font-family: none;
-            font-size: 2rem;
-            color: $white;
-            transform: translateX(-50%);
-        }
-
-        .widget-applications {
-            .widget-body {
-                padding: 1.5rem;
-                max-height: 22rem;
-                overflow: auto;
-            }
-
-            .widget-footer-action & {
-                color: $gray-600;
-            }
-        }
-
-        .bookmarked-app {
-            padding: .5rem;
-            flex: 0 1 33.33%;
-            width: 70px;
-            height: 70px;
-            text-align: center;
-            border: 1px solid transparent;
-            border-radius: $border-radius;
-
-            @include add-transitions(border-color) {
-                border-color: $gray-200;
-            };
-
-            > a {
-                @include square(100%);
-                @include have-child-in-middle();
-            }
-
-            .application {
-                font-size: 3rem;
-            }
-
-            img {
-                max-width: 80%;
-            }
-        }
-
-        .search-text {
-            justify-content: center;
-            
-            .searchInput {
-                height: 30px;
-                margin: 1rem -0.2rem 1rem 0;
-                width: 70%;
-                border: 1px solid $gray-200;
-            }
-            .searchButton {
-                @extend .btn-primary;
-                width: 30px;
-                height: 30px;
-                padding: 0;
-                margin-top: 1rem;
-                line-height: 30px;
-                font-weight: 700;
-                text-transform: uppercase;
-                text-align: center;
-                border: none;
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-                box-shadow: none;
-            }
-        }
+        border: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        box-shadow: none;
+      }
     }
+  }
 }

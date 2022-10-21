@@ -8,13 +8,9 @@
 /* Generic Icons */
 
 @font-face {
-    font-family: "generic-icons";
-    font-display: swap;
-    font-style: normal;
-    font-weight: normal;
-    src: url(#{$fonts-path}/generic-icons/generic-icons.woff);
-}
-
-html {
-    font-size: 62.5%;
+  font-family: "generic-icons";
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url(#{$fonts-path}/generic-icons/generic-icons.woff);
 }

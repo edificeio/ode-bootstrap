@@ -1,21 +1,24 @@
 .drag-n-drop {
-    &-item {
-        .draggable {} // élement déplacable
-        .no-draggable {} // élément non déplacable
-    }
-    &-area {
-        .draggable {} // Reçoit le drag
-        .no-draggable {} // Ne peux pas recevoir le drag
-    }
+  &-item {
+    .draggable {
+    } // élement déplacable
+    .no-draggable {
+    } // élément non déplacable
+  }
+  &-area {
+    .draggable {
+    } // Reçoit le drag
+    .no-draggable {
+    } // Ne peux pas recevoir le drag
+  }
 }
 
 .drop-zone {
-    padding: 50px;
-    border: 2px dashed $gray-300;
-    background-color: rgba($gray-100, 0.25);
-    border-radius: $border-radius-lg;
-    @include media-breakpoint-down(md) {
-        padding: 25px;
-    }
+  padding: 50px;
+  border: 2px dashed $gray-300;
+  background-color: rgba($gray-300, 0.25);
+  border-radius: $border-radius-lg;
+  @include media-breakpoint-down(md) {
+    padding: 25px;
+  }
 }
-
