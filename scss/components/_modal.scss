@@ -1,25 +1,15 @@
 .modal {
-    .modal-title {
-        color: $cyan;
-        font-size: 2rem;
-    }
+  .modal-title {
+    color: $secondary;
+    font-size: 2rem;
+  }
 }
 
 // HELP MODAL
 .modal {
-    &-help {
-        .modal-footer {
-            display: none;
-        }
+  &-help {
+    .modal-footer {
+      display: none;
     }
+  }
 }
-// @include media-breakpoint-down(lg) {
-//   .modal-dialog {
-//     max-width: calc(100% - 3.5rem);
-//   }
-// }
-// @include media-breakpoint-down(lg) {
-//   .modal-dialog {
-//     max-width: calc(100% - 1rem);
-//   }
-// }

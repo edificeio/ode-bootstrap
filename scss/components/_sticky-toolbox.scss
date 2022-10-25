@@ -29,7 +29,7 @@
     width: 400px;
     height: 100%;
     padding: 20px 30px;
-    background: $primary;
+    background: $secondary;
   }
 
   .sticky-toolbox-title {
@@ -50,14 +50,8 @@
     border-radius: 10px;
     overflow: hidden;
 
-    // @include background-color-to($primary);
-
     &.selected {
-      background: $secondary;
-
-      /* &:hover {
-                background: rgba($white, .10);
-            } */
+      background: $primary;
     }
 
     small {

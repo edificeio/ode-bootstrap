@@ -1,36 +1,37 @@
-$input-placeholder-color: #B0B0B0;
+$input-placeholder-color: $gray-600 !default;
 
 .input-group {
-    .btn {
-        box-shadow: none !important;
-    }
+  .btn {
+    box-shadow: none !important;
+  }
 }
 
 .form-control {
-    padding: 1.2rem 1.6rem;
+  padding: 0.7rem 1.6rem;
+  height: 40px;
 
-    @include media-breakpoint-up(xl) {
-        font-size: 1.6rem;
-    }
+  @include media-breakpoint-up(xl) {
+    font-size: 1.6rem;
+  }
 
-    &::placeholder {
-        font-style: italic;
-        color: $input-placeholder-color;
-    }
+  &::placeholder {
+    font-style: italic;
+    color: $input-placeholder-color;
+  }
 }
 
 .input-searchbar {
-    position: relative;
+  position: relative;
 
-    .ic-search {
-        position: absolute;
-        top: 50%;
-        left: 1.5rem;
-        transform: translateY(-50%);
-        color: $gray-500;
-    }
+  .ic-search {
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    transform: translateY(-50%);
+    color: $gray-500;
+  }
 
-    .ic-search + input {
-        padding-left: 40px;
-    }
+  .ic-search + input {
+    padding-left: 40px;
+  }
 }
