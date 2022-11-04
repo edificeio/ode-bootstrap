@@ -79,7 +79,7 @@ $btn-padding-y: 0.8rem !default;
     box-shadow: none;
   }
 
-  @if $enable-ONE {
+  @if $enable-one {
     text-transform: uppercase;
 
     &:not(.btn-icon, .btn-ghost-primary, .btn-ghost-secondary, .btn-ghost-tertiary, .btn-ghost-danger) {

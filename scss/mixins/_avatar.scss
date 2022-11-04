@@ -1,8 +1,8 @@
 @mixin avatar-image($size: 50px) {
-    @include circle($size);
+  @include circle($size);
 
-    object-fit: cover;
-    object-position: center center;
-    border: 2px solid #dcdce6;
-    box-shadow: -2px -2px 5px 0 rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  object-position: center center;
+  border: 2px solid #dcdce6;
+  box-shadow: -2px -2px 5px 0 rgba(0, 0, 0, 0.1);
 }

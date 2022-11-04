@@ -1,57 +1,37 @@
 {
-    "extends": [
-        "stylelint-config-twbs-bootstrap/scss"
+  "extends": ["stylelint-config-twbs-bootstrap"],
+  "rules": {
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-blockless", "first-nested"],
+        "ignore": ["after-comment"]
+      }
     ],
-    "rules": {
-        "at-rule-empty-line-before": [
-            "always",
-            {
-                "except": [
-                    "blockless-after-blockless",
-                    "first-nested"
-                ],
-                "ignore": [
-                    "after-comment"
-                ]
-            }
-        ],
-        "block-closing-brace-empty-line-before": "never",
-        "block-opening-brace-space-before": [
-            "always"
-        ],
-        "custom-property-empty-line-before": [
-            "always",
-            {
-                "except": [
-                    "after-custom-property",
-                    "first-nested"
-                ]
-            }
-        ],
-        "declaration-empty-line-before": [
-            "always",
-            {
-                "except": [
-                    "after-declaration",
-                    "first-nested"
-                ]
-            }
-        ],
-        "declaration-no-important": null,
-        "indentation": 4,
-        "max-empty-lines": 1,
-        "number-leading-zero": "always",
-        "rule-empty-line-before": [
-            "always-multi-line",
-            {
-                "except": [
-                    "after-single-line-comment",
-                    "first-nested"
-                ],
-                "ignore": [
-                    "after-comment"
-                ]
-            }
-        ]
-    }
+    "block-closing-brace-empty-line-before": "never",
+    "block-opening-brace-space-before": ["always"],
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": ["after-custom-property", "first-nested"]
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration", "first-nested"]
+      }
+    ],
+    "declaration-no-important": null,
+    "indentation": 4,
+    "max-empty-lines": 1,
+    "number-leading-zero": "always",
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["after-single-line-comment", "first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ]
+  }
 }

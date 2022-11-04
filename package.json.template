@@ -1,29 +1,28 @@
 {
   "name": "ode-bootstrap",
-  "version": "1.1.4-feat-produit.%generateVersion%",
+  "version": "1.1.4-feat-explorer.%generateVersion%",
   "description": "Open Digital Education CSS framework based on bootstrap",
   "scripts": {
     "copy-fonts": "cpr node_modules/entcore-generic-icons/fonts/ assets/fonts/generic-icons/ -o",
-    "sass:watch": "sass --load-path=node_modules/ --source-map -w scss/index.scss docs/index.css",
-    "sass:build:debug": "sass --load-path=node_modules/ --source-map scss/index.scss docs/index.css",
-    "sass:build:release": "sass --load-path=node_modules/ --style=compressed scss/index.scss dist/index.css",
-    "dev:prepare": "npm run sass:build:debug && npm run copy-fonts && cpr assets/ docs/ -o",
-    "dev:watch": "npm run dev:prepare && concurrently  \" npm run sass:watch \" \" npm run dev:serve  \" ",
-    "dev:serve": "live-server --open=docs/ --ignore=**/node_modules/**,**/dist/**,**/package.json,**/.git/**",
-    "dev:lint": "stylelint scss/**/*.scss || echo \"lint faild for some file(s).\"",
     "dev:lint-fix": "stylelint scss/**/*.scss --fix || echo \"lint faild for some file(s).\"",
+    "dev:lint": "stylelint scss/**/*.scss || echo \"lint faild for some file(s).\"",
+    "format:check": "npx prettier --check .",
+    "format:write": "npx prettier --write .",
+    "format": "yarn format:write && yarn format:check",
+    "release:build": "yarn release:prepare && yarn sass:build:release",
     "release:clean": "rimraf dist",
-    "release:prepare": "npm run release:clean && npm run copy-fonts && cpr assets/ dist/",
-    "release:build": "npm run release:prepare && npm run sass:build:release"
+    "release:prepare": "yarn release:clean && yarn copy-fonts && cpr assets/ dist/",
+    "sass:build:release": "sass --load-path=node_modules/ --style=compressed scss/index.scss dist/index.css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/opendigitaleducation/ode-bootstrap.git"
   },
   "keywords": [
+    "Bootstrap",
+    "Framework CSS"
     "ODE",
-    "bootstrap",
-    "framework"
+    "Theme",
   ],
   "author": "OpenDigitalEducation",
   "license": "AGPL-3.0",
@@ -35,16 +34,17 @@
     "concurrently": "7.4.0",
     "copyfiles": "2.4.1",
     "cpr": "3.0.1",
-    "live-server": "1.2.2",
-    "sass": "1.55.0",
+    "postcss": "8.4.18"
+    "prettier": "2.6.0",
     "rimraf": "3.0.2",
-    "stylelint": "14.13.0",
-    "prettier-stylelint": "0.4.2",
-    "stylelint-config-twbs-bootstrap": "6.0.0"
+    "sass": "1.55.0",
+    "stylelint-config-twbs-bootstrap": "6.0.0",
+    "stylelint": "14.13.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.2.0",
     "bootstrap": "5.2.2",
+    "@popperjs/core":"2.11.6",
     "entcore-generic-icons": "opendigitaleducation/generic-icons"
   },
   "files": ["assets", "scss", "dist/version.txt"]

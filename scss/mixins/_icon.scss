@@ -1,73 +1,73 @@
 @mixin fonticon {
-    font-family: generic-icons;
-    font-weight: 400 !important;
-    background-image: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: generic-icons;
+  font-weight: 400 !important;
+  background-image: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @mixin fontawesome {
-    display: inline-block;
-    font-family: "Font Awesome 6 Free";
-    font-style: normal;
-    font-weight: 900;
-    font-variant: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: auto;
-    font-feature-settings: "liga";
+  display: inline-block;
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-variant: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: auto;
+  font-feature-settings: "liga";
 }
 
 @mixin insert-icon($icon: "star", $size: 28px, $top: 0, $color: inherit) {
-    position: relative;
+  position: relative;
 
-    &::before {
-        @include fontawesome();
+  &::before {
+    @include fontawesome();
 
-        position: absolute;
-        top: $top;
-        left: 0;
-        display: block;
-        font-size: $size;
-        line-height: 1em;
-        color: $color;
-        text-transform: initial;
-        content: $icon !important;
-        font-feature-settings: "liga";
-    }
+    position: absolute;
+    top: $top;
+    left: 0;
+    display: block;
+    font-size: $size;
+    line-height: 1em;
+    color: $color;
+    text-transform: initial;
+    content: $icon !important;
+    font-feature-settings: "liga";
+  }
 }
 
 @mixin prepend-icon($icon: "star", $size: 28px, $left: 0, $color: inherit) {
-    @include insert-icon($icon, $size, 50%, $color);
+  @include insert-icon($icon, $size, 50%, $color);
 
-    &::before {
-        position: absolute;
-        top: 50%;
-        left: $left;
-        z-index: 10;
-        transform: translateY(-50%);
-        @content;
-    }
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: $left;
+    z-index: 10;
+    transform: translateY(-50%);
+    @content;
+  }
 }
 
 @mixin append-icon($icon: "star", $size: 28px, $right: 0, $color: inherit) {
-    padding-right: $size * 1.5;
+  padding-right: $size * 1.5;
 
-    @include insert-icon($icon, $size, 50%, $color);
+  @include insert-icon($icon, $size, 50%, $color);
 
-    &::before {
-        position: absolute;
-        top: 50%;
-        right: $right;
-        left: unset;
-        z-index: 10;
-        transform: translateY(-50%);
-        @content;
-    }
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: $right;
+    left: unset;
+    z-index: 10;
+    transform: translateY(-50%);
+    @content;
+  }
 }
 
-@mixin set-icon-top($top:50%) {
-    &::before {
-        top: $top;
-    }
+@mixin set-icon-top($top: 50%) {
+  &::before {
+    top: $top;
+  }
 }

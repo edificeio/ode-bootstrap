@@ -1,23 +1,23 @@
 .media-library {
-    width: calc(100% - 250px);
+  width: calc(100% - 250px);
+  padding: 10px;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  .item {
+    border-radius: $border-radius;
+    width: calc(20% - 10px);
+    text-align: center;
     padding: 10px;
+    margin: 1px;
     @include media-breakpoint-down(md) {
-        width: 100%;
+      width: calc(50% - 10px);
     }
-    .item {
-        border-radius: $border-radius;
-        width: calc(20% - 10px);
-        text-align: center;
-        padding: 10px;
-        margin: 1px;
-        @include media-breakpoint-down(md) {
-            width: calc(50% - 10px);
-        }
-        &:hover {
-            background-color: rgba($secondary, .1);
-            .figure-caption {
-                color: $secondary;
-            }
-        }
+    &:hover {
+      background-color: rgba($secondary, 0.1);
+      .figure-caption {
+        color: $secondary;
+      }
     }
+  }
 }

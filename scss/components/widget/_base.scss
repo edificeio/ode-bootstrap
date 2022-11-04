@@ -42,7 +42,7 @@
     display: flex;
     justify-content: flex-end;
     padding: 1.2rem $widget-padding-x;
-    border-bottom: 1px solid $ghost;
+    border-bottom: 1px solid $tertiary;
 
     .subtitle {
       flex: 1;
@@ -107,7 +107,7 @@
 
         @include add-transitions(background-color, color) {
           color: $primary;
-          background-color: $ghost;
+          background-color: $tertiary;
         }
       }
     }

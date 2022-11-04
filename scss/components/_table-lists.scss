@@ -1,140 +1,137 @@
 .table-list {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $gray-600;
 
-    &-header {
-        display: flex;
-        justify-content: space-between;
-        padding: 5px 15px;
-        font-size: 1.4rem;
-        font-weight: bold;
-        color: $gray-600;
-        
-        @include media-breakpoint-down(sm) {
-            display: none;
-        }
-
-        .table-list-item-preview {
-            width: 40px;
-        }
+    @include media-breakpoint-down(sm) {
+      display: none;
     }
 
-    &-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px 15px;
-        margin: 5px 0;
-        font-size: 1.4rem;
-        color: $gray-600;
-        cursor: pointer;
-        border: 1px solid $gray-200;
-        border-radius: $border-radius-lg;
+    .table-list-item-preview {
+      width: 40px;
+    }
+  }
 
-        @extend .transition-hover;
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    margin: 5px 0;
+    font-size: 1.4rem;
+    color: $gray-600;
+    cursor: pointer;
+    border: 1px solid $gray-200;
+    border-radius: $border-radius-lg;
 
-        &:hover {
-            border-color: $secondary;
+    @extend .transition-hover;
 
-            @extend .transition-hover-fast;
-        }
-        
-        &:active,
-        &.active {
-            background-color: rgba($secondary, 0.1);
-            border-color: $secondary;
-        }
+    &:hover {
+      border-color: $secondary;
 
-        @include media-breakpoint-down(sm) {
-            flex-wrap: wrap;
-            padding: 10px;
-            margin: 10px 0;
-            border-color: $gray-300;
-        }
-
-        .table-list-item-preview {
-            width: 40px;
-            font-size: 1.6rem;
-            text-align: center;
-            vertical-align: middle;
-            @include media-breakpoint-down(sm) {
-                width: 30px;
-            }
-        }
-
-        .table-list-title {
-            margin: 0;
-            overflow: hidden;
-            font-size: 1.6rem;
-            font-weight: bold;
-            color: $gray-700;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .table-list-image {
-            width: 30px;
-            height: 30px;
-            margin-right: 5px;
-            border-radius: $border-radius;
-        }
-
-        .table-list-status {
-            padding-right: 10px;
-            font-size: 1.6rem;
-            text-align: right;
-
-            > * {
-                margin: 0 5px;
-            }
-        }
-
-        .table-list-modifiedBy {
-            font-size: 1.2rem;
-            @include media-breakpoint-down(sm) {
-                display: none;
-            }
-        }
+      @extend .transition-hover-fast;
     }
 
-    &-title {
-        width: calc(100% - 450px);
-        @include media-breakpoint-down(sm) {
-            width: calc(100% - 40px); // 100% - .list-item-preview
-        }
+    &:active,
+    &.active {
+      background-color: rgba($secondary, 0.1);
+      border-color: $secondary;
     }
 
-    &-status {
-        width: 75px;
-        @include media-breakpoint-down(sm) {
-            display: none;
-        }
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+      padding: 10px;
+      margin: 10px 0;
+      border-color: $gray-300;
     }
 
-    &-owner {
-        width: 200px;
-        @include media-breakpoint-down(sm) {
-            width: 55%;
-            .avatar {
-                display: none;
-            }
-        }
+    .table-list-item-preview {
+      width: 40px;
+      font-size: 1.6rem;
+      text-align: center;
+      vertical-align: middle;
+      @include media-breakpoint-down(sm) {
+        width: 30px;
+      }
     }
 
-    &-modification {
-        width: 175px;
-        @include media-breakpoint-down(sm) {
-            width: 45%;
-            text-align: right;
-        }
+    .table-list-title {
+      margin: 0;
+      overflow: hidden;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $gray-700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
+
+    .table-list-image {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      border-radius: $border-radius;
+    }
+
+    .table-list-status {
+      padding-right: 10px;
+      font-size: 1.6rem;
+      text-align: right;
+
+      > * {
+        margin: 0 5px;
+      }
+    }
+
+    .table-list-modifiedBy {
+      font-size: 1.2rem;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &-title {
+    width: calc(100% - 450px);
+    @include media-breakpoint-down(sm) {
+      width: calc(100% - 40px); // 100% - .list-item-preview
+    }
+  }
+
+  &-status {
+    width: 75px;
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  &-owner {
+    width: 200px;
+    @include media-breakpoint-down(sm) {
+      width: 55%;
+      .avatar {
+        display: none;
+      }
+    }
+  }
+
+  &-modification {
+    width: 175px;
+    @include media-breakpoint-down(sm) {
+      width: 45%;
+      text-align: right;
+    }
+  }
 }
 
 @include media-breakpoint-down(sm) {
-
-    .explorer-view.table-list {
-        padding: 5px;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-    }
+  .explorer-view.table-list {
+    padding: 5px;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
 }
-

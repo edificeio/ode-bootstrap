@@ -15,6 +15,7 @@ fi
 clean () {
   rm -rf node_modules
   rm -rf dist
+  rm -f package.json
   rm -f yarn.lock
 }
 
@@ -30,21 +31,21 @@ init () {
 
 build () {
   local extras=$1
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run release:build"
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "yarn release:build"
   VERSION=`grep "version="  gradle.properties| sed 's/version=//g'`
   echo "ode-bootstrap=$VERSION `date +'%d/%m/%Y %H:%M:%S'`" >> dist/version.txt
 }
 
 watch () {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run dev:watch"
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "yarn dev:watch"
 }
 
 lint () {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run dev:lint"
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "yarn dev:lint"
 }
 
 lint-fix () {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "npm run dev:lint-fix"
+  docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "yarn dev:lint-fix"
 }
 
 publish () {

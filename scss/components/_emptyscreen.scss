@@ -1,48 +1,48 @@
 .emptyscreen {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+
+  @include media-breakpoint-down(md) {
+    padding: 25px;
+  }
+
+  &-header {
+    color: $gray-800;
+    font-size: 3rem;
 
     @include media-breakpoint-down(md) {
-        padding: 25px;
+      font-size: 2rem;
+    }
+  }
+
+  &-body {
+    color: $gray-700;
+    margin: 15px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &-image {
+    max-height: 300px;
+    margin-top: 25px;
+
+    @include media-breakpoint-down(md) {
+      max-height: 200px;
     }
 
-    &-header {
-        color: $gray-800;
-        font-size: 3rem;
+    &.mini {
+      max-height: 200px;
 
-        @include media-breakpoint-down(md) {
-            font-size: 2rem;
-        }
+      @include media-breakpoint-down(md) {
+        max-height: 150px;
+      }
     }
-
-    &-body {
-        color: $gray-700;
-        margin: 15px;
-
-        @include media-breakpoint-down(md) {
-            font-size: 1.4rem;
-        }
-    }
-
-    &-image {
-        max-height: 300px;
-        margin-top: 25px;
-
-        @include media-breakpoint-down(md) {
-            max-height: 200px;
-        }
-
-        &.mini {
-            max-height: 200px;
-
-            @include media-breakpoint-down(md) {
-                max-height: 150px;
-            }
-        }
-    }
+  }
 }

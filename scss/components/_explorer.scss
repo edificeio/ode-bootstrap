@@ -1,38 +1,36 @@
 .explorer {
-
-    &-header {
-        padding: 15px 15px 0;
-        @include media-breakpoint-down(lg) {
-            padding: 10px 10px 0;
-        }
-
-        h2 {
-            position: relative;
-            margin-bottom: 0;
-            font-size: 2rem;
-            color: $gray-700;
-            color: $gray-700;
-            @include media-breakpoint-down(lg) {
-                font-size: 1.4rem;
-            }
-
-            small {
-                font-size: 80%;
-                color: $gray-600;
-            }
-        }
+  &-header {
+    padding: 15px 15px 0;
+    @include media-breakpoint-down(lg) {
+      padding: 10px 10px 0;
     }
 
-    &-view {
-        height: calc(100vh - 210px);
-        padding: 10px;
-        overflow-x: auto;
-        border-top: 1px solid $gray-200;
-        scrollbar-width: thin;
-        scrollbar-color: $gray-500 $gray-200;
-        @include media-breakpoint-down(lg) {
-            height: calc(100vh - 112px);
-        }
+    h2 {
+      position: relative;
+      margin-bottom: 0;
+      font-size: 2rem;
+      color: $gray-700;
+      color: $gray-700;
+      @include media-breakpoint-down(lg) {
+        font-size: 1.4rem;
+      }
+
+      small {
+        font-size: 80%;
+        color: $gray-600;
+      }
     }
+  }
+
+  &-view {
+    height: calc(100vh - 210px);
+    padding: 10px;
+    overflow-x: auto;
+    border-top: 1px solid $gray-200;
+    scrollbar-width: thin;
+    scrollbar-color: $gray-500 $gray-200;
+    @include media-breakpoint-down(lg) {
+      height: calc(100vh - 112px);
+    }
+  }
 }
-

@@ -3,135 +3,136 @@ $tree-structure-width: 250px;
 
 /* COMPONENT */
 
-/* aside */.tree-structure {
-    width: $tree-structure-width;
-    padding: 15px;
-    font-size: 1.4rem;
+/* aside */
+.tree-structure {
+  width: $tree-structure-width;
+  padding: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: $gray-600;
+  background-color: rgba($white, 0.7);
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.05);
+
+  &-title {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
     font-weight: bold;
-    color: $gray-600;
-    background-color: rgba($white, 0.7);
-    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.05);
+    color: $secondary;
+  }
 
-    &-title {
-        margin-bottom: 20px;
-        font-size: 2.4rem;
-        font-weight: bold;
-        color: $secondary;
+  &-tree {
+    max-height: calc(100vh - 220px);
+    padding-right: 5px;
+    padding-left: 0;
+    margin-left: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: $gray-500 $gray-200;
+
+    ul {
+      padding-left: 10px;
+      margin-left: 0;
     }
 
-    &-tree {
-        max-height: calc(100vh - 220px);
-        padding-right: 5px;
-        padding-left: 0;
-        margin-left: 0;
-        overflow-y: auto;
-        scrollbar-width: thin;
-        scrollbar-color: $gray-500 $gray-200;
+    li {
+      list-style-type: none;
 
-        ul {
-            padding-left: 10px;
-            margin-left: 0;
+      input[type="checkbox"] {
+        position: absolute;
+        margin: 6px 10px;
+        cursor: pointer;
+        opacity: 0;
+      }
+
+      label {
+        display: block;
+
+        a::before {
+          margin-right: 5px;
+          font-family: "FontAwesome";
+          content: "\f105";
+        }
+      }
+
+      input ~ ul {
+        display: none;
+      }
+
+      input:checked {
+        & ~ ul {
+          display: block;
         }
 
-        li {
-            list-style-type: none;
-
-            input[type="checkbox"] {
-                position: absolute;
-                margin: 6px 10px;
-                cursor: pointer;
-                opacity: 0;
-            }
-
-            label {
-                display: block;
-
-                a::before {
-                    margin-right: 5px;
-                    font-family: "FontAwesome";
-                    content: "\f105";
-                }
-            }
-
-            input ~ ul {
-                display: none;
-            }
-
-            input:checked {
-                & ~ ul {
-                    display: block;
-                }
-
-                & ~ label a::before {
-                    content: "\f107";
-                }
-            }
-
-            a {
-                display: block;
-                padding: 7px 15px;
-                margin: 5px 0;
-                line-height: 1.2;
-                color: $gray-600;
-                border-radius: $border-radius;
-
-                @extend .transition-hover-slow;
-
-                &:hover {
-                    color: $secondary;
-                    text-decoration: none;
-                    background-color: rgba($secondary, 0.075);
-
-                    @extend .transition-hover-fast;
-                }
-
-                &.active,
-                &:active {
-                    color: $secondary;
-                    background-color: rgba($secondary, 0.2);
-                }
-            }
+        & ~ label a::before {
+          content: "\f107";
         }
+      }
+
+      a {
+        display: block;
+        padding: 7px 15px;
+        margin: 5px 0;
+        line-height: 1.2;
+        color: $gray-600;
+        border-radius: $border-radius;
+
+        @extend .transition-hover-slow;
+
+        &:hover {
+          color: $secondary;
+          text-decoration: none;
+          background-color: rgba($secondary, 0.075);
+
+          @extend .transition-hover-fast;
+        }
+
+        &.active,
+        &:active {
+          color: $secondary;
+          background-color: rgba($secondary, 0.2);
+        }
+      }
     }
+  }
 }
 
 .tree-structure-left {
-    border-radius: $border-radius 0 0 $border-radius;
+  border-radius: $border-radius 0 0 $border-radius;
 }
 
 .tree-structure-right {
-    border-radius: 0 $border-radius $border-radius 0;
+  border-radius: 0 $border-radius $border-radius 0;
 }
 
 .tree-structure + .main-content {
-    width: calc(100% - #{$tree-structure-width});
-    border-radius: 0 $border-radius $border-radius 0;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  width: calc(100% - #{$tree-structure-width});
+  border-radius: 0 $border-radius $border-radius 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
 }
 
 .tree-structure.offcanvas {
-    background-color: rgba($white, 0.95);
+  background-color: rgba($white, 0.95);
 
-    .tree-structure-tree {
-        max-height: calc(100vh - 130px);
-    }
+  .tree-structure-tree {
+    max-height: calc(100vh - 130px);
+  }
 }
 
 @include media-breakpoint-down(lg) {
-    .tree-structure {
-        display: none;
-        width: 400px;
-        background-color: $white;
-    }
+  .tree-structure {
+    display: none;
+    width: 400px;
+    background-color: $white;
+  }
 
-    .tree-structure.tree-structure-mobile {
-        display: block;
-    }
+  .tree-structure.tree-structure-mobile {
+    display: block;
+  }
 
-    .tree-structure + .main-content {
-        width: 100%;
-        border-radius: $border-radius;
-    }
+  .tree-structure + .main-content {
+    width: 100%;
+    border-radius: $border-radius;
+  }
 }
 
 // tree-structure in modal

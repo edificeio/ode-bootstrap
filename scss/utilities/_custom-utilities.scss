@@ -1,10 +1,10 @@
 $utilities: map-merge(
-    $utilities,
-    (
-        "cursor": (
-            property: cursor,
-            class: c,
-            values: auto pointer grab,
-        )
-    )
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: c,
+      values: auto pointer grab,
+    ),
+  )
 );
