@@ -30,6 +30,32 @@ $grid-breakpoints: (
   xxl: 1400px,
 ) !default;
 
+$spacer-0: 0 !default;
+$spacer-2: 0.2rem !default;
+$spacer-4: 0.4rem !default;
+$spacer-8: 0.8rem !default;
+$spacer-12: 1.2rem !default;
+$spacer-16: 1.6rem !default;
+$spacer-24: 2.4rem !default;
+$spacer-32: 3.2rem !default;
+$spacer-48: 4.8rem !default;
+$spacer-64: 6.4rem !default;
+
+$spacers: (
+  0: $spacer-0,
+  2: $spacer-2,
+  4: $spacer-4,
+  8: $spacer-8,
+  12: $spacer-12,
+  16: $spacer-16,
+  24: $spacer-24,
+  32: $spacer-32,
+  48: $spacer-48,
+  64: $spacer-64,
+) !default;
+
+$enable-negative-margins: true;
+
 // Components
 $border-radius-sm: 6px !default;
 $border-radius: 6px !default;
