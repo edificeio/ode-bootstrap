@@ -1,0 +1,70 @@
+/* Font Awesome */
+@import "./@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "./@fortawesome/fontawesome-free/scss/solid.scss";
+@import "./@fortawesome/fontawesome-free/scss/regular.scss";
+@import "./@fortawesome/fontawesome-free/scss/brands.scss";
+
+/* Generic Icons */
+
+@font-face {
+  font-family: "generic-icons";
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url(#{$fonts-path}/generic-icons/generic-icons.woff);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.link,
+.link a {
+  @include color-to($primary);
+
+  font-weight: 400;
+  color: $secondary;
+  text-decoration: none;
+}
+
+.link-discret,
+.link-discret a {
+  @include color-to($primary);
+
+  font-weight: 400;
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.caption {
+  font-size: $caption-font-size;
+}
+
+h1,
+.h1 {
+  line-height: 3.8rem;
+}
+
+h2,
+.h2 {
+  line-height: 3.2rem;
+}
+
+h3,
+.h3 {
+  line-height: 2.8rem;
+}
+
+h4,
+.h4 {
+  line-height: 2.6rem;
+}
