@@ -21,12 +21,14 @@
   //applications
   @each $app, $data in $icons-applications {
     &-#{$app} {
+      --#{$prefix}appbar-icon-color: #{map-get($data, "color")};
       color: map-get($data, "color");
     }
   }
   //connectors
   @each $app, $data in $icons-connectors {
     &-#{$app} {
+      --#{$prefix}appbar-icon-color: #{map-get($data, "color")};
       color: map-get($data, "color");
     }
   }

@@ -26,68 +26,68 @@ $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
 
 // Pale, Light and Dark Palette
-$blue-100: #e4f4ff;
-$blue-200: #aadaed;
-$blue-500: $blue;
-$blue-900: #1b84ac;
+$blue-100: #e4f4ff !default;
+$blue-200: #aadaed !default;
+$blue-500: $blue !default;
+$blue-900: #1b84ac !default;
 
 // Pale, Light and Dark Palette
-$indigo-100: #dde8fd;
-$indigo-200: #9297e5;
-$indigo-500: $indigo;
-$indigo-900: #121982;
+$indigo-100: #dde8fd !default;
+$indigo-200: #9297e5 !default;
+$indigo-500: $indigo !default;
+$indigo-900: #121982 !default;
 
 // Pale, Light and Dark Palette
-$purple-100: #f4eaf9;
-$purple-200: #e4f4ff;
-$purple-500: $purple;
-$purple-900: #e7f5f4;
+$purple-100: #f4eaf9 !default;
+$purple-200: #e4f4ff !default;
+$purple-500: $purple !default;
+$purple-900: #e7f5f4 !default;
 
 // Pale, Light and Dark Palette
-$pink-100: #ffe5fb;
-$pink-200: #e39cd7;
-$pink-500: $pink;
-$pink-900: #9c2288;
+$pink-100: #ffe5fb !default;
+$pink-200: #e39cd7 !default;
+$pink-500: $pink !default;
+$pink-900: #9c2288 !default;
 
 // Pale, Light and Dark Palette
-$red-100: #ffd9d9;
-$red-200: #f48a8a;
-$red-500: $red;
-$red-900: #c82222;
+$red-100: #ffd9d9 !default;
+$red-200: #f48a8a !default;
+$red-500: $red !default;
+$red-900: #c82222 !default;
 
 // Pale, Light and Dark Palette
-$orange-100: #ffefe3;
-$orange-200: #ffc696;
-$orange-500: $orange;
-$orange-900: #f17a17;
+$orange-100: #ffefe3 !default;
+$orange-200: #ffc696 !default;
+$orange-500: $orange !default;
+$orange-900: #f17a17 !default;
 
 // Pale, Light and Dark Palette
-$yellow-100: #fff4d1;
-$yellow-200: #f6de94;
-$yellow-500: $yellow;
-$yellow-900: #daa910;
+$yellow-100: #fff4d1 !default;
+$yellow-200: #f6de94 !default;
+$yellow-500: $yellow !default;
+$yellow-900: #daa910 !default;
 
 // Pale, Light and Dark Palette
-$green-100: #e7f5f4;
-$green-200: #a2e0d8;
-$green-500: $green;
-$green-900: #33a797;
+$green-100: #e7f5f4 !default;
+$green-200: #a2e0d8 !default;
+$green-500: $green !default;
+$green-900: #33a797 !default;
 
 // Main actions Colors
-$primary: $orange;
-$secondary: $blue;
+$primary: $orange !default;
+$secondary: $blue !default;
 $tertiary: $gray-300 !default;
 $light: $gray-200 !default;
 $medium: $gray-500 !default;
 $dark: $gray-800 !default;
 
 // Main colors variants
-$primary-100: $orange-100;
-$primary-200: $orange-200;
-$primary-900: $orange-900;
-$secondary-100: $blue-100;
-$secondary-200: $blue-200;
-$secondary-900: $blue-900;
+$primary-100: $orange-100 !default;
+$primary-200: $orange-200 !default;
+$primary-900: $orange-900 !default;
+$secondary-100: $blue-100 !default;
+$secondary-200: $blue-200 !default;
+$secondary-900: $blue-900 !default;
 
 // Support Palette
 $success: #7dbf85 !default;

@@ -90,7 +90,7 @@ $icons-applications: (
     "glyph": "\e905",
   ),
   "actualites": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e85b",
   ),
   "admin-portal": (
@@ -114,11 +114,11 @@ $icons-applications: (
     "glyph": "\e809",
   ),
   "cahier-de-texte": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e910",
   ),
   "cahier-textes": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e86f",
   ),
   "calendar": (
@@ -126,15 +126,15 @@ $icons-applications: (
     "glyph": "\e834",
   ),
   "canal-numerique": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e80a",
   ),
   "cns": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e88a",
   ),
   "collaborative-wall": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e800",
   ),
   "collaborativeeditor": (
@@ -158,7 +158,7 @@ $icons-applications: (
     "glyph": "\e95f",
   ),
   "directory": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e811",
   ),
   "exercizer": (
@@ -178,7 +178,7 @@ $icons-applications: (
     "glyph": "\e95c",
   ),
   "forum": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e81e",
   ),
   "library": (
@@ -190,7 +190,7 @@ $icons-applications: (
     "glyph": "\e961",
   ),
   "mindmap": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e859",
   ),
   "minibadge": (
@@ -198,7 +198,7 @@ $icons-applications: (
     "glyph": "\e960",
   ),
   "notebook": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e8d4",
   ),
   "notes": (
@@ -206,7 +206,7 @@ $icons-applications: (
     "glyph": "\e806",
   ),
   "pad": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e829",
   ),
   "pages": (
@@ -226,11 +226,11 @@ $icons-applications: (
     "glyph": "\e94d",
   ),
   "poll": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e832",
   ),
   "polls": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e832",
   ),
   "presences": (
@@ -250,19 +250,19 @@ $icons-applications: (
     "glyph": "\e80e",
   ),
   "schoolbook": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e91e",
   ),
   "scrap-book": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e8d4",
   ),
   "scrapbook": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e8d4",
   ),
   "searchengine": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e8d0",
   ),
   "settings-class": (
@@ -282,7 +282,7 @@ $icons-applications: (
     "glyph": "\e909",
   ),
   "support": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e835",
   ),
   "timeline": (
@@ -294,23 +294,23 @@ $icons-applications: (
     "glyph": "\e819",
   ),
   "userbook": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e811",
   ),
   "userbook-mood": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e811",
   ),
   "userbook-moto": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e811",
   ),
   "video": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e872",
   ),
   "visioconf": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e957",
   ),
   "web-conference": (
@@ -318,7 +318,7 @@ $icons-applications: (
     "glyph": "\e957",
   ),
   "website": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e90a",
   ),
   "wiki": (
@@ -328,6 +328,10 @@ $icons-applications: (
   "workspace": (
     "color": $red,
     "glyph": "\e81b",
+  ),
+  "default": (
+    "color": $secondary,
+    "glyph": "",
   ),
 ) !default;
 
@@ -341,7 +345,7 @@ $icons-connectors: (
     "glyph": "\e816",
   ),
   "aide-devoirs": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e818",
   ),
   "agenda": (
@@ -349,7 +353,7 @@ $icons-connectors: (
     "glyph": "\e83c",
   ),
   "assistance": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e93c",
   ),
   "assr": (
@@ -357,11 +361,11 @@ $icons-connectors: (
     "glyph": "\e891",
   ),
   "award": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e818",
   ),
   "banquesavoir": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e88d",
   ),
   "bcdi": (
@@ -369,11 +373,11 @@ $icons-connectors: (
     "glyph": "\e88f",
   ),
   "biblionisep": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e8a4",
   ),
   "bookmark-empty": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e888",
   ),
   "canal-numerique": (
@@ -381,7 +385,7 @@ $icons-connectors: (
     "glyph": "\e80a",
   ),
   "ccn": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e90f",
   ),
   "cerise": (
@@ -389,7 +393,7 @@ $icons-connectors: (
     "glyph": "\e81c",
   ),
   "cervoprint": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e896",
   ),
   "charlemagne": (
@@ -405,7 +409,7 @@ $icons-connectors: (
     "glyph": "\e817",
   ),
   "cidj": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e893",
   ),
   "connecteur-generique1": (
@@ -421,7 +425,7 @@ $icons-connectors: (
     "glyph": "\e89e",
   ),
   "edumedia": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e887",
   ),
   "edumoov": (
@@ -445,11 +449,11 @@ $icons-connectors: (
     "glyph": "\e826",
   ),
   "europress": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e8a7",
   ),
   "gepi": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e89c",
   ),
   "glpi": (
@@ -457,11 +461,11 @@ $icons-connectors: (
     "glyph": "\e897",
   ),
   "hiboutheque": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e90e",
   ),
   "itopstore": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e895",
   ),
   "kne": (
@@ -481,7 +485,7 @@ $icons-connectors: (
     "glyph": "\e8a5",
   ),
   "lsu": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e93a",
   ),
   "madmagz": (
@@ -505,7 +509,7 @@ $icons-connectors: (
     "glyph": "\e89f",
   ),
   "monstageenligne": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e8a2",
   ),
   "moodle": (
@@ -521,7 +525,7 @@ $icons-connectors: (
     "glyph": "\e82e",
   ),
   "netvibes": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e8a1",
   ),
   "note": (
@@ -529,11 +533,11 @@ $icons-connectors: (
     "glyph": "\e806",
   ),
   "onisep": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e88c",
   ),
   "onisep2": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e894",
   ),
   "parametrage": (
@@ -541,11 +545,11 @@ $icons-connectors: (
     "glyph": "\e92f",
   ),
   "paraschool": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e82d",
   ),
   "pearltress": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e933",
   ),
   "picardie-cursus": (
@@ -553,7 +557,7 @@ $icons-connectors: (
     "glyph": "\e921",
   ),
   "pro-eps": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e884",
   ),
   "pronote": (
@@ -569,7 +573,7 @@ $icons-connectors: (
     "glyph": "\e93d",
   ),
   "residence-artiste": (
-    "color": $teal,
+    "color": $green,
     "glyph": "\e90f",
   ),
   "ressourcesdepartementale91": (
@@ -605,7 +609,7 @@ $icons-connectors: (
     "glyph": "\e879",
   ),
   "webclasseur": (
-    "color": $cyan,
+    "color": $blue,
     "glyph": "\e88c",
   ),
 ) !default;

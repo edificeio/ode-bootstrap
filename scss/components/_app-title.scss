@@ -1,0 +1,15 @@
+$appbar-icon-color: $primary;
+$appbar-icon-width: 4rem;
+$appbar-icon-height: 4rem;
+
+.app-title {
+  --#{$prefix}appbar-icon-width: #{$appbar-icon-width};
+  --#{$prefix}appbar-icon-height: #{$appbar-icon-height};
+  svg {
+    width: var(--#{$prefix}appbar-icon-width);
+    height: var(--#{$prefix}appbar-icon-height);
+    path {
+      fill: var(--#{$prefix}appbar-icon-color);
+    }
+  }
+}
