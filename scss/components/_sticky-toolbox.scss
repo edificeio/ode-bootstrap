@@ -99,6 +99,10 @@
                 font-size: 2em;
                 border-radius: 18px;
 
+                &.big {
+                    font-size: 3em;
+                }
+
                 @include have-child-in-middle();
                 @include square(100%);
             }
