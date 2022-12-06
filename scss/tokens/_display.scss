@@ -1,17 +1,9 @@
-@include media-breakpoint-down(md) {
-  .d-mobile-none {
-    display: none !important;
-  }
-  .pe-mobile {
-    pointer-events: none;
-  }
+.pe-xs {
+  pointer-events: none;
 }
 
 @include media-breakpoint-up(md) {
-  .d-desktop-none {
-    display: none !important;
-  }
-  .pe-desktop {
+  .pe-md {
     pointer-events: none;
   }
 }

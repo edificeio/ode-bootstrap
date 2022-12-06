@@ -1,0 +1,21 @@
+$appbar-icon-color: $primary;
+$appbar-icon-width: 4rem;
+$appbar-icon-height: 4rem;
+
+.app-card:is(.app-card-react) {
+  &.app-card-title {
+    img {
+      object-fit: contain;
+    }
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      gap: $spacer-12;
+      align-items: center;
+    }
+  }
+  &.app-card-square {
+    background: radial-gradient(farthest-side at 10% 10%, $gray-100, $gray-300);
+    border-radius: $border-radius;
+  }
+}

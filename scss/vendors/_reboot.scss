@@ -1,0 +1,17 @@
+svg,
+img {
+  display: block;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin-bottom: 0;
+}

@@ -57,9 +57,12 @@ $spacers: (
 $enable-negative-margins: true;
 
 // Components
-$border-radius-sm: 6px !default;
-$border-radius: 6px !default;
-$border-radius-lg: 10px !default;
+$border-radius: 0.8rem;
+$border-radius-sm: 0.4rem;
+$border-radius-lg: 1.2rem;
+$border-radius-xl: 1.6rem;
+$border-radius-2xl: 2.4rem;
+$border-radius-pill: 50rem;
 
 // Forms
 $input-border-color: $gray-300 !default;

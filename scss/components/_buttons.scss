@@ -68,11 +68,13 @@ $btn-padding-y: 0.8rem !default;
   &.active {
     box-shadow: none;
 
+    &:focus,
     &:focus-visible {
       box-shadow: none;
     }
   }
 
+  &:focus,
   &:focus-visible,
   &.focus-visible {
     background-color: var(--#{$prefix}btn-focus-bg);
@@ -102,6 +104,7 @@ $btn-padding-y: 0.8rem !default;
       box-shadow: none;
     }
 
+    &:focus,
     &:focus-visible,
     &.focus-visible {
       --#{$prefix}btn-border-width: 0.1rem;
@@ -110,6 +113,7 @@ $btn-padding-y: 0.8rem !default;
   } @else {
     &:hover,
     &.hover,
+    &:focus,
     &:focus-visible {
       > span {
         transform: translateY(-0.2rem);
@@ -156,6 +160,17 @@ $btn-padding-y: 0.8rem !default;
       bottom: -2em;
       font-size: 0.8em;
       color: $gray-700;
+    }
+  }
+
+  &-naked {
+    padding: 0;
+    border: 0;
+    background: transparent;
+
+    &:focus,
+    &:focus-visible {
+      background-color: transparent;
     }
   }
 }
