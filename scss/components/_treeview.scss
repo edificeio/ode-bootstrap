@@ -1,0 +1,77 @@
+$selected-background-color: $blue-100 !default;
+$div-button-border-radius: 8px;
+
+.treeview {
+  --#{$prefix}selected-background-color: #{$selected-background-color};
+
+  ul[role="tree"] {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 400px;
+    overflow-y: auto;
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    & > [role="treeitem"][aria-selected="true"] > div[role="button"] > div {
+      background-color: var(--#{$prefix}selected-background-color);
+      font-weight: 700;
+      border-radius: $div-button-border-radius;
+    }
+  }
+
+  ul[role="group"] {
+    margin-left: 15px;
+    padding-left: 0px;
+    border-left: 1px solid $gray-400;
+    font-size: 14px;
+
+    & > [role="treeitem"][aria-selected="true"] > div[role="button"] > div {
+      background-color: initial;
+      color: $secondary;
+      font-weight: 700;
+    }
+  }
+
+  div[role="button"][aria-expanded="false"] > ul[role="group"] {
+    display: none;
+  }
+
+  div[role="button"][aria-expanded="true"] > ul[role="group"] {
+    display: block;
+  }
+
+  [role="treeitem"],
+  [role="treeitem"] span {
+    margin: 0;
+    padding: 0.125em;
+  }
+
+  div[role="button"] {
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px;
+
+      &:hover {
+        background-color: $gray-300;
+        border-radius: $div-button-border-radius;
+      }
+
+      &:active {
+        background-color: $gray-400;
+        border-radius: $div-button-border-radius;
+      }
+
+      svg {
+        width: 18px;
+      }
+    }
+  }
+}
