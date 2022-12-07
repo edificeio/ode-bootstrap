@@ -1,5 +1,4 @@
 $selected-background-color: $blue-100 !default;
-$div-button-border-radius: 8px;
 
 .treeview {
   --#{$prefix}selected-background-color: #{$selected-background-color};
@@ -21,15 +20,15 @@ $div-button-border-radius: 8px;
     & > [role="treeitem"][aria-selected="true"] > div[role="button"] > div {
       background-color: var(--#{$prefix}selected-background-color);
       font-weight: 700;
-      border-radius: $div-button-border-radius;
+      border-radius: $border-radius;
     }
   }
 
   ul[role="group"] {
-    margin-left: 15px;
-    padding-left: 0px;
+    margin-left: 1.5rem;
+    padding-left: 0;
     border-left: 1px solid $gray-400;
-    font-size: 14px;
+    font-size: 1.4rem;
 
     & > [role="treeitem"][aria-selected="true"] > div[role="button"] > div {
       background-color: initial;
@@ -49,28 +48,28 @@ $div-button-border-radius: 8px;
   [role="treeitem"],
   [role="treeitem"] span {
     margin: 0;
-    padding: 0.125em;
+    padding: 0.125rem;
   }
 
   div[role="button"] {
     & > div {
       display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 8px;
+      gap: $spacer-8;
+      padding: 0.8rem;
 
       &:hover {
         background-color: $gray-300;
-        border-radius: $div-button-border-radius;
+        border-radius: $border-radius;
       }
 
       &:active {
         background-color: $gray-400;
-        border-radius: $div-button-border-radius;
+        border-radius: $border-radius;
       }
 
       svg {
-        width: 18px;
+        width: 1.8rem;
       }
     }
   }
