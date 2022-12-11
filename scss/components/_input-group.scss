@@ -1,0 +1,17 @@
+.input-group {
+  .form-control {
+    & + .btn-search {
+      padding: 0.7rem 1.1rem;
+    }
+
+    &.form-control-lg {
+      & + .btn-search {
+        padding: 1.1rem;
+      }
+    }
+  }
+
+  .btn-search {
+    border-left-color: transparent;
+  }
+}

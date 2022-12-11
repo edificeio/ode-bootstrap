@@ -21,8 +21,7 @@ $min-contrast-ratio: 1.75 !default;
 
 // Grid breakpoints
 $grid-breakpoints: (
-  xxs: 0,
-  xs: 360px,
+  xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -30,6 +29,16 @@ $grid-breakpoints: (
   xxl: 1400px,
 ) !default;
 
+// Container Max Widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+) !default;
+
+// Spacers for margins, paddings and gaps
 $spacer-0: 0 !default;
 $spacer-2: 0.2rem !default;
 $spacer-4: 0.4rem !default;
@@ -56,23 +65,70 @@ $spacers: (
 
 $enable-negative-margins: true;
 
-// Components
-$border-radius: 0.8rem;
-$border-radius-sm: 0.4rem;
-$border-radius-lg: 1.2rem;
-$border-radius-xl: 1.6rem;
-$border-radius-2xl: 2.4rem;
-$border-radius-pill: 50rem;
+// Radius
+$border-radius: 0.8rem !default;
+$border-radius-sm: 0.4rem !default;
+$border-radius-lg: 1.2rem !default;
+$border-radius-xl: 1.6rem !default;
+$border-radius-2xl: 2.4rem !default;
+$border-radius-pill: 50rem !default;
 
-// Forms
-$input-border-color: $gray-300 !default;
-$input-focus-border-color: $secondary !default;
-$input-btn-padding-x: 1rem !default;
-$form-floating-padding-x: 1rem !default;
-$form-floating-padding-y: 1.25rem !default;
-$form-floating-height: 5rem !default;
-$form-floating-input-padding-t: 1.75rem !default;
-$form-floating-input-padding-b: 0.5rem !default;
+// Buttons
+$btn-align-items: center !default;
+$btn-border-radius: 0.8rem !default;
+$btn-border-width: 0.2rem !default;
+$btn-box-shadow: transparent !default;
+$btn-disabled-opacity: 1 !default;
+$btn-display-mode: flex !default;
+$btn-font-size: 1.6rem !default;
+$btn-font-weight: 600 !default;
+$btn-gap: 0.8rem !default;
+$btn-height: 4rem !default;
+// $btn-icon-size: 3.6rem !default;
+$btn-search-icon-size: 2.4rem !default;
+$btn-svg-size: 2rem !default;
+$btn-justify-content: center !default;
+$btn-line-height: 2.2rem !default;
+$btn-padding-x: 1rem !default;
+$btn-padding-y: 0.8rem !default;
+$btn-search-bg: $blue-100 !default;
+$btn-search-focus-border-color: $blue-200 !default;
+
+// Forms Feedback
+$form-feedback-valid-color: $success !default;
+$form-feedback-invalid-color: $danger !default;
+
+// Forms Text
+$form-text-margin-top: 0.4rem !default;
+$form-text-color: $gray-700 !default;
+$form-text-font-size: 1.2rem !default;
+
+// Forms Label
+$form-label-margin-bottom: 0.8rem !default;
+$form-label-font-size: 1.4rem !default;
+$form-label-color: $gray-800 !default;
+$form-label-icon-size: 1.6rem !default;
+
+// Forms Input
+$input-padding-y: 0.6rem !default;
+$input-padding-x: 1.2rem !default;
+$input-font-size: 1.6rem !default;
+$input-padding-y-lg: 1rem !default;
+$input-padding-x-lg: 1.6rem !default;
+$input-font-size-lg: 1.6rem !default;
+$input-padding-y-sm: 0.3rem !default;
+$input-padding-x-sm: 1.2rem !default;
+$input-font-size-sm: 1.4rem !default;
+$input-border-color: $gray-400 !default;
+$input-disabled-bg: $gray-300 !default;
+$input-disabled-color: $gray-700 !default;
+$input-disabled-border-color: $gray-500 !default;
+$input-placeholder-color: $gray-600 !default;
+$input-focus-border-color: $blue-200 !default;
+$input-filled-border-color: $gray-600 !default;
+$input-border-radius: $border-radius-lg !default;
+$input-border-radius-sm: $border-radius !default;
+$input-border-radius-lg: $border-radius-lg !default;
 
 // Dropdowns
 $dropdown-link-color: $gray-700 !default;
