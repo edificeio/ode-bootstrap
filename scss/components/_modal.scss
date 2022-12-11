@@ -1,15 +1,51 @@
-.modal {
-  .modal-title {
-    color: $secondary;
-    font-size: 2rem;
-  }
-}
+$modal-inner-padding: $spacer-32;
+$modal-header-padding: $spacer-32;
+$modal-subtitle-padding: 0 $spacer-32;
+$modal-footer-padding: $spacer-32;
+$modal-dialog-margin: $spacer-120;
 
-// HELP MODAL
 .modal {
-  &-help {
-    .modal-footer {
-      display: none;
+  // scss-docs-start modal-css-vars
+  --#{$prefix}modal-zindex: #{$zindex-modal};
+  --#{$prefix}modal-width: #{$modal-md};
+  --#{$prefix}modal-padding: #{$modal-inner-padding};
+  --#{$prefix}modal-margin: #{$modal-dialog-margin};
+  --#{$prefix}modal-color: #{$modal-content-color};
+  --#{$prefix}modal-bg: #{$modal-content-bg};
+  --#{$prefix}modal-border-color: #{$modal-content-border-color};
+  --#{$prefix}modal-border-width: #{$modal-content-border-width};
+  --#{$prefix}modal-border-radius: #{$modal-content-border-radius};
+  --#{$prefix}modal-box-shadow: #{$modal-content-box-shadow-xs};
+  --#{$prefix}modal-inner-border-radius: #{$modal-content-inner-border-radius};
+  --#{$prefix}modal-header-padding-x: #{$modal-header-padding-x};
+  --#{$prefix}modal-header-padding-y: #{$modal-header-padding-y};
+  --#{$prefix}modal-header-padding: #{$modal-header-padding}; // Todo in v6: Split this padding into x and y
+  --#{$prefix}modal-header-border-color: #{$modal-header-border-color};
+  --#{$prefix}modal-header-border-width: #{$modal-header-border-width};
+  --#{$prefix}modal-subtitle-padding: #{$modal-subtitle-padding};
+  --#{$prefix}modal-title-line-height: #{$modal-title-line-height};
+  --#{$prefix}modal-footer-gap: #{$modal-footer-margin-between};
+  --#{$prefix}modal-footer-bg: #{$modal-footer-bg};
+  --#{$prefix}modal-footer-border-color: #{$modal-footer-border-color};
+  --#{$prefix}modal-footer-border-width: #{$modal-footer-border-width};
+  --#{$prefix}modal-footer-padding: #{$modal-footer-padding};
+  // scss-docs-end modal-css-vars
+
+  .modal-header {
+    padding-bottom: 0;
+
+    .close {
+      position: absolute;
+      top: 1.9rem;
+      right: 1.9rem;
     }
+  }
+
+  .modal-subtitle {
+    padding: var(--#{$prefix}modal-subtitle-padding);
+  }
+
+  .modal-footer {
+    padding: var(--#{$prefix}modal-footer-padding);
   }
 }
