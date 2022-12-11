@@ -1,31 +1,3 @@
-# ODE Bootstrap Framework
-
-ODE Bootstrap is a CSS framework containing all the UI components used by our ENT.
-This framework is based on bootstrap 5.2.
-
-## Install
-
-Install it by cloning the repository:
-```
-git clone https://github.com/opendigitaleducation/ode-bootstrap.git
-./build.sh clean initDev
-```
-
-## Dev
-
-To use these generic styles, see documentation on `ode-bootstrap-one` or `ode-bootstrap-neo` 
-
-## Bootstrap 5.x
-
-If a component already exists in Bootstrap 5.x, we use it and override it if necessary. The same goes for utility classes.
-
-## Components
-
-Based on Bootstrap 5.2, many components used CSS Variables (CSS Custom Properties). We adhere to this guideline to create our own components or to override Bootstrap components.
-
-```scss
-// _form-control.scss
-
 .form-control {
   --#{$prefix}input-padding-y: #{$input-padding-y};
   --#{$prefix}input-padding-x: #{$input-padding-x};
@@ -50,18 +22,39 @@ Based on Bootstrap 5.2, many components used CSS Variables (CSS Custom Propertie
   font-size: var(--#{$prefix}input-font-size-lg);
   min-height: inherit;
 
-...
+  &::placeholder {
+    font-style: italic;
+    color: var(--#{$prefix}input-placeholder-color);
+  }
+
+  &:focus,
+  &:focus-visible {
+    border-color: var(--#{$prefix}input-focus-border-color);
+    box-shadow: none;
+  }
+
+  &:disabled {
+    color: var(--#{$prefix}input-disabled-color);
+    border-color: var(--#{$prefix}input-disabled-border-color);
+    background-color: var(--#{$prefix}input-disabled-bg);
+  }
+
+  &:not(:placeholder-shown) {
+    border-color: var(--#{$prefix}input-filled-border-color);
+  }
+
+  &.form-control-sm {
+    padding: var(--#{$prefix}input-padding-y-sm)
+      var(--#{$prefix}input-padding-x-sm);
+    font-size: var(--#{$prefix}input-font-size-sm);
+  }
+
+  &.form-control-lg {
+    padding: var(--#{$prefix}input-padding-y-lg)
+      var(--#{$prefix}input-padding-x-lg);
+  }
+
+  &.no-validation-icon {
+    background-image: none;
+  }
 }
-```
-
-Structure and generic styling should be done in `ode-bootstrap` when overring style should be done inside `ode-bootstrap-one` or `ode-bootstrap-neo`
-
-```scss
-// ode-bootstrap-one > _form-control.scss
-
-$input-focus-border-color: $orange-200;
-
-.form-control {
-  --#{$prefix}input-focus-border-color: #{$input-focus-border-color};
-}
-```

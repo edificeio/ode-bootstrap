@@ -9,8 +9,11 @@
 // @import "explorer";
 @import "feed";
 @import "filters";
-@import "forms";
+@import "form-control";
+@import "form-label";
+@import "form-text";
 @import "media-library";
+@import "input-group";
 @import "modal";
 @import "header";
 @import "popover";
@@ -19,7 +22,6 @@
 @import "tables";
 @import "table-lists";
 @import "toast";
-@import "tree-structure";
 @import "treeview";
 
 @import "widget/";

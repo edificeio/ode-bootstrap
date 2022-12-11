@@ -1,0 +1,30 @@
+.form-label {
+  --#{$prefix}form-label-margin-bottom: #{$form-label-margin-bottom};
+  --#{$prefix}form-label-font-size: #{$form-label-font-size};
+  --#{$prefix}form-label-color: #{$form-label-color};
+  --#{$prefix}form-label-icon-size: #{$form-label-icon-size};
+
+  margin-bottom: var(--#{$prefix}form-label-margin-bottom);
+  font-size: var(--#{$prefix}form-label-font-size);
+  color: var(--#{$prefix}form-label-color);
+  display: inline-flex;
+  align-items: center;
+  gap: $spacer-4;
+
+  &.has-icon {
+    > svg {
+      width: var(--#{$prefix}form-label-icon-size);
+      height: var(--#{$prefix}form-label-icon-size);
+      margin-right: $spacer-4;
+    }
+  }
+
+  > .optional {
+    font-style: italic;
+    color: $gray-700;
+  }
+
+  > .required {
+    color: $danger;
+  }
+}
