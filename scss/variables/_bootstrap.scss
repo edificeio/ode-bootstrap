@@ -49,6 +49,7 @@ $spacer-24: 2.4rem !default;
 $spacer-32: 3.2rem !default;
 $spacer-48: 4.8rem !default;
 $spacer-64: 6.4rem !default;
+$spacer-120: 12rem !default;
 
 $spacers: (
   0: $spacer-0,
@@ -61,6 +62,7 @@ $spacers: (
   32: $spacer-32,
   48: $spacer-48,
   64: $spacer-64,
+  120: $spacer-120,
 ) !default;
 
 $enable-negative-margins: true;
