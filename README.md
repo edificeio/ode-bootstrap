@@ -8,7 +8,7 @@ This framework is based on bootstrap 5.2.
 Install it by cloning the repository:
 ```
 git clone https://github.com/opendigitaleducation/ode-bootstrap.git
-./build.sh clean initDev
+./build.sh clean init
 ```
 
 ## Dev
