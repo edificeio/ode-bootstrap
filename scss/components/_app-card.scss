@@ -4,6 +4,8 @@ $appbar-icon-height: 4rem;
 
 .app-card:is(.app-card-react) {
   &.app-card-title {
+    display: none;
+
     img {
       object-fit: contain;
     }
