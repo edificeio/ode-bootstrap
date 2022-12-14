@@ -1,0 +1,23 @@
+$container-spacings: (
+  "xs": 1.6rem,
+  "sm": 1.6rem,
+  "md": 2.4rem,
+  "lg": 2.4rem,
+  "xl": 2.4rem,
+) !default;
+
+.container-fluid {
+  --#{$prefix}container-width: 100%;
+  max-width: map-get($container-max-widths, "xxl");
+  width: var(--#{$prefix}container-width);
+
+  @each $key, $breakpoint in $grid-breakpoints {
+    @media (min-width: $breakpoint) {
+      @each $value, $spacing in $container-spacings {
+        @if $key == $value {
+          --#{$prefix}container-width: calc(100% - #{$spacing} * 2);
+        }
+      }
+    }
+  }
+}

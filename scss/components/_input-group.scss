@@ -1,12 +1,12 @@
 .input-group {
   .form-control {
     & + .btn-search {
-      padding: 0.7rem 1.1rem;
+      padding: $spacer-8 $spacer-12;
     }
 
     &.form-control-lg {
       & + .btn-search {
-        padding: 1.1rem;
+        padding: $spacer-12;
       }
     }
   }

@@ -20,12 +20,20 @@ $link-decoration: none !default;
 $min-contrast-ratio: 1.75 !default;
 
 // Grid breakpoints
-$grid-breakpoints: (
+/* $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px,
+  xxl: 1400px,
+) !default; */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 375px,
+  md: 768px,
+  lg: 992px,
+  xl: 1024px,
   xxl: 1400px,
 ) !default;
 
@@ -35,8 +43,10 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px,
+  xxl: 1352px,
 ) !default;
+
+$container-padding-x: 3.2rem;
 
 // Spacers for margins, paddings and gaps
 $spacer-0: 0 !default;
@@ -86,12 +96,11 @@ $btn-font-size: 1.6rem !default;
 $btn-font-weight: 600 !default;
 $btn-gap: 0.8rem !default;
 $btn-height: 4rem !default;
-// $btn-icon-size: 3.6rem !default;
 $btn-search-icon-size: 2.4rem !default;
 $btn-svg-size: 2rem !default;
 $btn-justify-content: center !default;
 $btn-line-height: 2.2rem !default;
-$btn-padding-x: 1rem !default;
+$btn-padding-x: 1.6rem !default;
 $btn-padding-y: 0.8rem !default;
 $btn-search-bg: $blue-100 !default;
 $btn-search-focus-border-color: $blue-200 !default;
@@ -112,13 +121,13 @@ $form-label-color: $gray-800 !default;
 $form-label-icon-size: 1.6rem !default;
 
 // Forms Input
-$input-padding-y: 0.6rem !default;
+$input-padding-y: 0.8rem !default;
 $input-padding-x: 1.2rem !default;
 $input-font-size: 1.6rem !default;
-$input-padding-y-lg: 1rem !default;
+$input-padding-y-lg: 1.2rem !default;
 $input-padding-x-lg: 1.6rem !default;
 $input-font-size-lg: 1.6rem !default;
-$input-padding-y-sm: 0.3rem !default;
+$input-padding-y-sm: 0.4rem !default;
 $input-padding-x-sm: 1.2rem !default;
 $input-font-size-sm: 1.4rem !default;
 $input-border-color: $gray-400 !default;
