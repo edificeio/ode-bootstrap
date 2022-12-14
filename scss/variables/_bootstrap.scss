@@ -48,6 +48,9 @@ $container-max-widths: (
 
 $container-padding-x: 3.2rem;
 
+// Gutter Grid CSS
+$grid-gutter-width: 2.4rem;
+
 // Spacers for margins, paddings and gaps
 $spacer-0: 0 !default;
 $spacer-2: 0.2rem !default;
@@ -88,7 +91,7 @@ $border-radius-pill: 50rem !default;
 // Buttons
 $btn-align-items: center !default;
 $btn-border-radius: 0.8rem !default;
-$btn-border-width: 0.2rem !default;
+$btn-border-width: 0.1rem !default;
 $btn-box-shadow: transparent !default;
 $btn-disabled-opacity: 1 !default;
 $btn-display-mode: flex !default;
