@@ -34,10 +34,12 @@ $modal-dialog-margin: $spacer-120;
   .modal-header {
     padding-bottom: 0;
 
-    .close {
+    .btn-close {
       position: absolute;
       top: 1.9rem;
       right: 1.9rem;
+      opacity: 1;
+      color: $gray-800;
     }
   }
 

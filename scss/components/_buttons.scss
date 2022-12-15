@@ -203,4 +203,13 @@
       background-color: transparent;
     }
   }
+
+  &.btn-close {
+    background-position: center;
+    background-size: 1.35rem;
+
+    &:focus-visible {
+      background-color: transparent;
+    }
+  }
 }
