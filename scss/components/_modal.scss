@@ -4,6 +4,7 @@ $modal-subtitle-padding: 0 $spacer-32;
 $modal-footer-padding: $spacer-32;
 $modal-dialog-margin: $spacer-120;
 $modal-title-line-height: 3.2rem;
+$modal-footer-margin-between: 0.8rem;
 
 .modal {
   // scss-docs-start modal-css-vars
@@ -50,5 +51,10 @@ $modal-title-line-height: 3.2rem;
 
   .modal-footer {
     padding: var(--#{$prefix}modal-footer-padding);
+    gap: var(--#{$prefix}modal-footer-gap);
+
+    & > * {
+      margin: 0;
+    }
   }
 }
