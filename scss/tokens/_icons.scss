@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Initialize good style and good font on all icons
 [class*="ic-"] {
   font-family: "generic-icons";
@@ -45,6 +47,29 @@
   @each $app, $data in $icons-connectors {
     &-#{$app} {
       background-color: map-get($data, "color");
+    }
+  }
+}
+
+.bg-light {
+  //applications
+  @each $app, $data in $icons-applications {
+    &-#{$app} {
+      background-color: color.scale(
+        map-get($data, "color"),
+        $lightness: 90%,
+        $saturation: 5%
+      );
+    }
+  }
+  //connectors
+  @each $app, $data in $icons-connectors {
+    &-#{$app} {
+      background-color: color.scale(
+        map-get($data, "color"),
+        $lightness: 90%,
+        $saturation: 5%
+      );
     }
   }
 }

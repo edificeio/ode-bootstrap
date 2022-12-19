@@ -2,8 +2,9 @@ $appbar-icon-color: $primary;
 $appbar-icon-width: 4rem;
 $appbar-icon-height: 4rem;
 
-.app-card:is(.app-card-react) {
-  &.app-card-title {
+.application:is(.application-react) {
+  // variant title, square
+  &.application-title {
     display: none;
 
     img {
@@ -16,8 +17,22 @@ $appbar-icon-height: 4rem;
       align-items: center;
     }
   }
-  &.app-card-square {
-    background: radial-gradient(farthest-side at 10% 10%, $gray-100, $gray-300);
+  &.application-square {
+    align-items: center;
     border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-8;
+    // width: 8rem;
+
+    > div {
+      align-items: center;
+      aspect-ratio: 1;
+      border-radius: $border-radius;
+      display: flex;
+      height: 8rem;
+      justify-content: center;
+      width: 8rem;
+    }
   }
 }
