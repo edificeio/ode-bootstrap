@@ -33,7 +33,7 @@ $icons-interface: (
     "users"         : ( "glyph": "\e822"),
     "share"         : ( "glyph": "\e815"),
     "view"          : ( "glyph": "\e873"),
-    "warning"       : ( "glyph": "\e903")      
+    "warning"       : ( "glyph": "\e903")
 ) !default;
 
 $icons-widgets: (
@@ -165,6 +165,10 @@ $icons-applications: (
     "color": $pink,
     "glyph": "\e93d",
   ),
+  "forms": (
+    "color": $purple,
+    "glyph": "\e95c",
+  ),
   "forum": (
     "color": $blue,
     "glyph": "\e81e",
@@ -212,6 +216,10 @@ $icons-applications: (
   "polls": (
     "color": $blue,
     "glyph": "\e832",
+  ),
+  "presences": (
+    "color": $yellow,
+    "glyph": "\e95d",
   ),
   "rack": (
     "color": $red,

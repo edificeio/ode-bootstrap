@@ -64,7 +64,7 @@ popover {
         @include have-child-in-middle();
       }
 
-      .application {
+      .application:not(.application-react) {
         font-size: 3rem;
       }
 

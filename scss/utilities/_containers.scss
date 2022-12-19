@@ -16,6 +16,12 @@ $container-spacings: (
   }
 }
 
+main {
+  &.container-fluid {
+    min-height: calc(100vh - 65px);
+  }
+}
+
 .grid {
   --#{$prefix}columns: 4;
   --#{$prefix}gap: 1.6rem;
