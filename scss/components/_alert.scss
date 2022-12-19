@@ -1,0 +1,32 @@
+.alert {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-left: 8px solid var(--ode-alert-color);
+  color: $dark;
+
+  svg {
+    color: var(--ode-alert-color);
+  }
+
+  &.alert-dismissible {
+    padding-right: 5rem;
+    .btn-close {
+      top: 50%;
+      right: var(--ode-alert-padding-x);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.feedback {
+  .alert {
+    position: fixed;
+    top: 75px;
+    right: 10px;
+    width: 350px;
+    font-size: 1.4rem;
+    border-width: 1px;
+    box-shadow: 3px 2px 5px rgba($gray-700, 0.15);
+  }
+}
