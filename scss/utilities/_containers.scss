@@ -1,0 +1,31 @@
+$container-spacings: (
+  "xs": 0,
+  "sm": 0,
+  "md": 2.4rem,
+  "lg": 2.4rem,
+  "xl": 2.4rem,
+) !default;
+
+.container-fluid {
+  --#{$prefix}container-width: 100%;
+  max-width: map-get($container-max-widths, "xxl");
+  width: var(--#{$prefix}container-width);
+
+  @include media-breakpoint-up(md) {
+    --#{$prefix}container-width: calc(100% - #{$spacer-24} * 2);
+  }
+}
+
+.grid {
+  --#{$prefix}columns: 4;
+  --#{$prefix}gap: 1.6rem;
+
+  @include media-breakpoint-up(md) {
+    --#{$prefix}columns: 8;
+    --#{$prefix}gap: 2.4rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    --#{$prefix}columns: 12;
+  }
+}

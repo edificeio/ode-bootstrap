@@ -3,11 +3,17 @@ $modal-header-padding: $spacer-32;
 $modal-subtitle-padding: 0 $spacer-32;
 $modal-footer-padding: $spacer-32;
 $modal-dialog-margin: $spacer-120;
+$modal-title-line-height: 3.2rem;
+$modal-footer-margin-between: 0.8rem;
+$modal-max-width-md: 648px;
+$modal-max-width-lg: 872px;
 
 .modal {
   // scss-docs-start modal-css-vars
   --#{$prefix}modal-zindex: #{$zindex-modal};
   --#{$prefix}modal-width: #{$modal-md};
+  --#{$prefix}modal-max-width-md: #{$modal-max-width-md};
+  --#{$prefix}modal-max-width-lg: #{$modal-max-width-lg};
   --#{$prefix}modal-padding: #{$modal-inner-padding};
   --#{$prefix}modal-margin: #{$modal-dialog-margin};
   --#{$prefix}modal-color: #{$modal-content-color};
@@ -31,13 +37,53 @@ $modal-dialog-margin: $spacer-120;
   --#{$prefix}modal-footer-padding: #{$modal-footer-padding};
   // scss-docs-end modal-css-vars
 
+  .modal-dialog {
+    &.modal-md {
+      @include media-breakpoint-up(sm) {
+        max-width: fit-content;
+        margin-left: $spacer-16;
+        margin-right: $spacer-16;
+      }
+      @include media-breakpoint-up(md) {
+        max-width: var(--#{$prefix}modal-max-width-md);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include media-breakpoint-up(lg) {
+        max-width: var(--#{$prefix}modal-max-width-md);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &.modal-lg {
+      @include media-breakpoint-up(sm) {
+        max-width: fit-content;
+        margin-left: $spacer-16;
+        margin-right: $spacer-16;
+      }
+      @include media-breakpoint-up(md) {
+        max-width: fit-content;
+        margin-left: $spacer-32;
+        margin-right: $spacer-32;
+      }
+      @include media-breakpoint-up(lg) {
+        max-width: var(--#{$prefix}modal-max-width-lg);
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
   .modal-header {
     padding-bottom: 0;
 
-    .close {
+    .btn-close {
       position: absolute;
       top: 1.9rem;
       right: 1.9rem;
+      opacity: 1;
+      color: $gray-800;
     }
   }
 
@@ -47,5 +93,10 @@ $modal-dialog-margin: $spacer-120;
 
   .modal-footer {
     padding: var(--#{$prefix}modal-footer-padding);
+    gap: var(--#{$prefix}modal-footer-gap);
+
+    & > * {
+      margin: 0;
+    }
   }
 }

@@ -14,13 +14,15 @@
   --#{$prefix}input-placeholder-color: #{$input-placeholder-color};
   --#{$prefix}input-focus-border-color: #{$input-focus-border-color};
   --#{$prefix}input-filled-border-color: #{$input-filled-border-color};
-  --#{$prefix}input-border-radius: #{$input-border-radius-lg};
-  --#{$prefix}input-border-radius-sm: #{$input-border-radius};
+  --#{$prefix}input-border-radius: #{$input-border-radius};
+  --#{$prefix}input-border-radius-sm: #{$input-border-radius-sm};
   --#{$prefix}input-border-radius-lg: #{$input-border-radius-lg};
+  line-height: 1.5;
   padding: var(--#{$prefix}input-padding-y) var(--#{$prefix}input-padding-x);
   border-color: var(--#{$prefix}input-border-color);
   font-size: var(--#{$prefix}input-font-size-lg);
   min-height: inherit;
+  border-radius: var(--#{$prefix}input-border-radius);
 
   &::placeholder {
     font-style: italic;
@@ -39,7 +41,7 @@
     background-color: var(--#{$prefix}input-disabled-bg);
   }
 
-  &:not(:placeholder-shown) {
+  &:not(:placeholder-shown):not(:focus) {
     border-color: var(--#{$prefix}input-filled-border-color);
   }
 
@@ -47,11 +49,13 @@
     padding: var(--#{$prefix}input-padding-y-sm)
       var(--#{$prefix}input-padding-x-sm);
     font-size: var(--#{$prefix}input-font-size-sm);
+    border-radius: var(--#{$prefix}input-border-radius-sm);
   }
 
   &.form-control-lg {
     padding: var(--#{$prefix}input-padding-y-lg)
       var(--#{$prefix}input-padding-x-lg);
+    border-radius: var(--#{$prefix}input-border-radius-lg);
   }
 
   &.no-validation-icon {
