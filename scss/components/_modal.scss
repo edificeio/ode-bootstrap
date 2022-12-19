@@ -38,12 +38,16 @@ $modal-max-width-lg: 872px;
   // scss-docs-end modal-css-vars
 
   .modal-dialog {
-    &.modal-md {
+    &.modal-md,
+    &.modal-lg {
       @include media-breakpoint-up(sm) {
         max-width: fit-content;
         margin-left: $spacer-16;
         margin-right: $spacer-16;
       }
+    }
+
+    &.modal-md {
       @include media-breakpoint-up(md) {
         max-width: var(--#{$prefix}modal-max-width-md);
         margin-left: auto;
@@ -51,17 +55,10 @@ $modal-max-width-lg: 872px;
       }
       @include media-breakpoint-up(lg) {
         max-width: var(--#{$prefix}modal-max-width-md);
-        margin-left: auto;
-        margin-right: auto;
       }
     }
 
     &.modal-lg {
-      @include media-breakpoint-up(sm) {
-        max-width: fit-content;
-        margin-left: $spacer-16;
-        margin-right: $spacer-16;
-      }
       @include media-breakpoint-up(md) {
         max-width: fit-content;
         margin-left: $spacer-32;
