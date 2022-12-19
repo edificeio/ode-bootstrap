@@ -1,10 +1,10 @@
-$modal-inner-padding: $spacer-32;
-$modal-header-padding: $spacer-32;
-$modal-subtitle-padding: 0 $spacer-32;
-$modal-footer-padding: $spacer-32;
+$modal-inner-padding: $spacer-0;
+$modal-content-padding: $spacer-32;
+$modal-header-padding: $spacer-0;
+$modal-footer-padding: $spacer-0;
 $modal-dialog-margin: $spacer-120;
 $modal-title-line-height: 3.2rem;
-$modal-footer-margin-between: 0.8rem;
+$modal-footer-gap: $spacer-8;
 $modal-max-width-md: 648px;
 $modal-max-width-lg: 872px;
 
@@ -23,14 +23,14 @@ $modal-max-width-lg: 872px;
   --#{$prefix}modal-border-radius: #{$modal-content-border-radius};
   --#{$prefix}modal-box-shadow: #{$modal-content-box-shadow-xs};
   --#{$prefix}modal-inner-border-radius: #{$modal-content-inner-border-radius};
+  --#{$prefix}modal-content-padding: #{$modal-content-padding};
   --#{$prefix}modal-header-padding-x: #{$modal-header-padding-x};
   --#{$prefix}modal-header-padding-y: #{$modal-header-padding-y};
   --#{$prefix}modal-header-padding: #{$modal-header-padding}; // Todo in v6: Split this padding into x and y
   --#{$prefix}modal-header-border-color: #{$modal-header-border-color};
   --#{$prefix}modal-header-border-width: #{$modal-header-border-width};
-  --#{$prefix}modal-subtitle-padding: #{$modal-subtitle-padding};
   --#{$prefix}modal-title-line-height: #{$modal-title-line-height};
-  --#{$prefix}modal-footer-gap: #{$modal-footer-margin-between};
+  --#{$prefix}modal-footer-gap: #{$modal-footer-gap};
   --#{$prefix}modal-footer-bg: #{$modal-footer-bg};
   --#{$prefix}modal-footer-border-color: #{$modal-footer-border-color};
   --#{$prefix}modal-footer-border-width: #{$modal-footer-border-width};
@@ -40,10 +40,18 @@ $modal-max-width-lg: 872px;
   .modal-dialog {
     &.modal-md,
     &.modal-lg {
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(xs) {
         max-width: fit-content;
         margin-left: $spacer-16;
         margin-right: $spacer-16;
+      }
+      & > .modal-content {
+        @include media-breakpoint-up(xs) {
+          padding: $spacer-24;
+        }
+        @include media-breakpoint-up(md) {
+          padding: var(--#{$prefix}modal-content-padding);
+        }
       }
     }
 
@@ -53,14 +61,10 @@ $modal-max-width-lg: 872px;
         margin-left: auto;
         margin-right: auto;
       }
-      @include media-breakpoint-up(lg) {
-        max-width: var(--#{$prefix}modal-max-width-md);
-      }
     }
 
     &.modal-lg {
       @include media-breakpoint-up(md) {
-        max-width: fit-content;
         margin-left: $spacer-32;
         margin-right: $spacer-32;
       }
@@ -70,30 +74,31 @@ $modal-max-width-lg: 872px;
         margin-right: auto;
       }
     }
-  }
 
-  .modal-header {
-    padding-bottom: 0;
+    & > .modal-content {
+      padding: var(--#{$prefix}modal-content-padding);
 
-    .btn-close {
-      position: absolute;
-      top: 1.9rem;
-      right: 1.9rem;
-      opacity: 1;
-      color: $gray-800;
-    }
-  }
+      & > .modal-header {
+        .btn-close {
+          position: absolute;
+          top: 1.9rem;
+          right: 1.9rem;
+          opacity: 1;
+          color: $gray-800;
+        }
+      }
 
-  .modal-subtitle {
-    padding: var(--#{$prefix}modal-subtitle-padding);
-  }
+      & > .modal-body {
+        margin: $spacer-32 $spacer-0;
+      }
 
-  .modal-footer {
-    padding: var(--#{$prefix}modal-footer-padding);
-    gap: var(--#{$prefix}modal-footer-gap);
+      & > .modal-footer {
+        gap: var(--#{$prefix}modal-footer-gap);
 
-    & > * {
-      margin: 0;
+        & > * {
+          margin: 0;
+        }
+      }
     }
   }
 }
