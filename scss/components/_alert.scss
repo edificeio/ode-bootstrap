@@ -9,13 +9,20 @@
     color: var(--ode-alert-color);
   }
 
-  &.alert-dismissible {
+  &.is-dismissible {
     padding-right: 5rem;
     .btn-close {
+      position: absolute;
       top: 50%;
       right: var(--ode-alert-padding-x);
       transform: translateY(-50%);
     }
+  }
+
+  &.is-toast {
+    box-shadow: $box-shadow;
+    max-width: 450px;
+    z-index: 20;
   }
 }
 
