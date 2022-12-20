@@ -10,6 +10,10 @@
     color: var(--ode-alert-color);
   }
 
+  .alert-content {
+    font-size: $small-font-size;
+  }
+
   &.is-dismissible {
     padding-right: 5rem;
     .btn-close {
