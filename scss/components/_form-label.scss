@@ -4,12 +4,14 @@
   --#{$prefix}form-label-color: #{$form-label-color};
   --#{$prefix}form-label-icon-size: #{$form-label-icon-size};
 
+  cursor: pointer;
   margin-bottom: var(--#{$prefix}form-label-margin-bottom);
   font-size: var(--#{$prefix}form-label-font-size);
   color: var(--#{$prefix}form-label-color);
   display: inline-flex;
   align-items: center;
   gap: $spacer-4;
+  line-height: $spacer-16;
 
   &.has-icon {
     > svg {
