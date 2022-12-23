@@ -1,7 +1,3 @@
-$appbar-icon-color: $primary;
-$appbar-icon-width: 4rem;
-$appbar-icon-height: 4rem;
-
 .application:is(.application-react) {
   // variant title, square
   &.application-title {
@@ -23,16 +19,34 @@ $appbar-icon-height: 4rem;
     display: flex;
     flex-direction: column;
     gap: $spacer-8;
-    // width: 8rem;
+    width: 8rem;
 
     > div {
       align-items: center;
       aspect-ratio: 1;
       border-radius: $border-radius;
       display: flex;
-      height: 8rem;
+      // height: 8rem;
       justify-content: center;
-      width: 8rem;
+      // width: 8rem;
+
+      /* > svg {
+        width: 5rem;
+        height: 5rem;
+      } */
     }
   }
+  /* &.application-lg {
+    width: 16rem;
+
+    > div {
+      height: 16rem;
+      width: 16rem;
+
+      > svg {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  } */
 }

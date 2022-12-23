@@ -1,0 +1,40 @@
+.image-input {
+  position: relative;
+  --#{$prefix}image-input-size: 16rem;
+
+  height: var(--#{$prefix}image-input-size);
+  width: var(--#{$prefix}image-input-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // aspect-ratio: 1 / 1;
+
+  label {
+    margin-bottom: 0;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  &-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $spacer-4;
+    background-color: $white;
+    border: 0.1rem solid $gray-300;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-icon {
+    padding: 0;
+  }
+
+  &.image-input-lg {
+    --#{$prefix}avatar-size: 16rem;
+    --#{$prefix}avatar-svg-size: 10rem;
+  }
+}

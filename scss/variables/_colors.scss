@@ -111,6 +111,33 @@ $info-900: #3499bf !default;
 $info-200: #acd6e6 !default;
 $info-100: #d7e8ee !default;
 
+$support-colors: (
+  "success": (
+    base: $success,
+    pale: $success-100,
+    light: $success-200,
+    dark: $success-900,
+  ),
+  "info": (
+    base: $info,
+    pale: $info-100,
+    light: $info-200,
+    dark: $info-900,
+  ),
+  "warning": (
+    base: $warning,
+    pale: $warning-100,
+    light: $warning-200,
+    dark: $warning-900,
+  ),
+  "danger": (
+    base: $danger,
+    pale: $danger-100,
+    light: $danger-200,
+    dark: $danger-900,
+  ),
+);
+
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
