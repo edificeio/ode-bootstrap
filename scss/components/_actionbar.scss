@@ -1,0 +1,17 @@
+.actionbar {
+  --#{$prefix}actionbar-background-color: #{$actionbar-background-color};
+  --#{$prefix}actionbar-gap: #{$spacer-8};
+  --#{$prefix}actionbar-padding-y: #{$spacer-8};
+  --#{$prefix}actionbar-padding-x: #{$spacer-8};
+
+  background-color: var(--#{$prefix}actionbar-background-color);
+  display: flex;
+  gap: var(--#{$prefix}actionbar-gap);
+  padding: var(--#{$prefix}actionbar-padding-y)
+    var(--#{$prefix}actionbar-padding-x);
+
+  @include media-breakpoint-up(md) {
+    --#{$prefix}actionbar-padding-y: #{$spacer-16};
+    --#{$prefix}actionbar-padding-x: #{$spacer-16};
+  }
+}
