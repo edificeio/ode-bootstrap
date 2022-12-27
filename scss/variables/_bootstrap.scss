@@ -167,8 +167,15 @@ $modal-inner-padding: 1.5rem !default;
 $modal-content-border-width: 0 !default;
 
 //Alerts
-$alert-color-scale: 0;
-$alert-border-radius: 8px;
+$alert-color-scale: 0 !default;
+$alert-border-width: 1px !default;
+$alert-left-border-width: 8px !default;
+$alert-border-scale: -70% !default;
+$alert-border-radius: 8px !default;
+$alert-padding-x: $spacer-12 !default;
+$alert-padding-y: $spacer-8 !default;
+$alert-dismissible-padding-r: $alert-padding-x * 4 !default;
+$alert-margin-bottom: 0 !default;
 
 // Offcanvas
 $offcanvas-padding-y: 1rem !default;
