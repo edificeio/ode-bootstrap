@@ -6,5 +6,51 @@ $utilities: map-merge(
       class: c,
       values: auto pointer grab,
     ),
+    "width": (
+      property: width,
+      class: w,
+      values:
+        map-merge(
+          $spacers,
+          (1\/4: 25%, 1\/2: 50%, 3\/4: 75%, full: 100%, auto: auto)
+        ),
+    ),
+    "max-width": (
+      property: max-width,
+      class: max-w,
+      values: (
+        full: 100%,
+        64: 64px,
+        96: 96px,
+        128: 128px,
+        256: 256px,
+        384: 384px,
+        512: 512px,
+        auto: auto,
+      ),
+    ),
+    "height": (
+      property: height,
+      class: h,
+      values:
+        map-merge(
+          $spacers,
+          (1\/4: 25%, 1\/2: 50%, 3\/4: 75%, full: 100%, auto: auto)
+        ),
+    ),
+    //To remove with Bootstrap 5.3
+    //https://getbootstrap.com/docs/5.3/utilities/object-fit/
+    "object-fit":
+      (
+        responsive: true,
+        property: object-fit,
+        values: (
+          contain: contain,
+          cover: cover,
+          fill: fill,
+          scale: scale-down,
+          none: none,
+        ),
+      ),
   )
 );
