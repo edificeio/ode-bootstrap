@@ -37,7 +37,7 @@ $support-colors: (
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: var(--ode-alert-border-color);
+    background-color: var(--#{$prefix}alert-border-color);
     transform-origin: left;
     transform: scaleX(0);
     transition-property: transform;
@@ -48,7 +48,7 @@ $support-colors: (
     .btn-close-container {
       position: absolute;
       top: 50%;
-      right: var(--ode-alert-padding-x);
+      right: var(--#{$prefix}alert-padding-x);
       transform: translateY(-50%);
     }
   }
