@@ -31,6 +31,16 @@ $avatar-size: 65px !default;
     max-width: 5rem;
   }
 
+  &.avatar-xs {
+    --#{$prefix}avatar-size: 2.4rem;
+    --#{$prefix}avatar-svg-size: 1.25rem;
+  }
+
+  &.avatar-sm {
+    --#{$prefix}avatar-size: 4.2rem;
+    --#{$prefix}avatar-svg-size: 2.5rem;
+  }
+
   &.avatar-md {
     --#{$prefix}avatar-size: 8rem;
     --#{$prefix}avatar-svg-size: 5rem;
