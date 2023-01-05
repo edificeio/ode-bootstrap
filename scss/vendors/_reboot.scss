@@ -15,3 +15,10 @@ img {
 p {
   margin-bottom: 0;
 }
+
+hr {
+    margin: $hr-default-spacing 0;
+    color: $hr-color;
+    border-color: currentColor;
+    opacity: $hr-opacity;
+}
