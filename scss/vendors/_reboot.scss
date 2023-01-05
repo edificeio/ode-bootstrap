@@ -12,6 +12,10 @@ img {
   height: auto;
 }
 
+ul > li:not(:last-child) {
+    margin-bottom: 1.2rem;
+}
+
 p {
   margin-bottom: 0;
 }
