@@ -210,12 +210,14 @@ $nav-tabs-link-active-bg: $white !default;
 $nav-tabs-link-active-color: $gray-600 !default;
 
 // Action Bar
-$actionbar-background-color: $primary;
+$actionbar-background-color: $primary !default;
+$actionbar-font-size: $btn-font-size !default;
+$actionbar-font-size-mobile: $btn-font-size !default;
 
 // Z-index
 $zindex-offcanvas: 1050 !default;
 
 // Horizontal rule
-$hr-color: $gray-400;
-$hr-opacity: 1;
-$hr-default-spacing: 2.4rem;
+$hr-color: $gray-400 !default;
+$hr-opacity: 1 !default;
+$hr-default-spacing: 2.4rem !default;

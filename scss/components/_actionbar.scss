@@ -6,6 +6,7 @@
 
   background-color: var(--#{$prefix}actionbar-background-color);
   display: flex;
+  flex-wrap: wrap;
   gap: var(--#{$prefix}actionbar-gap);
   padding: var(--#{$prefix}actionbar-padding-y)
     var(--#{$prefix}actionbar-padding-x);
@@ -13,5 +14,12 @@
   @include media-breakpoint-up(md) {
     --#{$prefix}actionbar-padding-y: #{$spacer-16};
     --#{$prefix}actionbar-padding-x: #{$spacer-16};
+  }
+
+  .btn {
+    font-size: $actionbar-font-size;
+    @include media-breakpoint-down(md) {
+      font-size: $actionbar-font-size-mobile;
+    }
   }
 }
