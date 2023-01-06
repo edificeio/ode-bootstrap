@@ -1,8 +1,4 @@
 .header:is(.header-react) {
-  .container-fluid {
-    padding-inline: 0;
-  }
-
   .navbar {
     &-title {
       max-width: 40%;
