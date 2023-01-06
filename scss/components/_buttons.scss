@@ -167,13 +167,14 @@
     --#{$prefix}btn-border-color: #{$gray-400};
     --#{$prefix}btn-border-width: 0.1rem;
     background-color: var(--#{$prefix}btn-search-bg);
-    color: $gray-900;
+    color: $gray-800;
 
     svg {
       height: $btn-search-icon-size;
       width: $btn-search-icon-size;
       min-width: $btn-search-icon-size;
     }
+
     &:hover {
       --#{$prefix}btn-hover-border-color: #{$gray-400};
     }
