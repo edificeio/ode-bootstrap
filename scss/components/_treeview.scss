@@ -9,8 +9,8 @@ $selected-background-color: $blue-100 !default;
     overflow-y: auto;
 
     li {
-      margin: 0;
-      padding: 0;
+      margin: $spacer-0;
+      padding: $spacer-0;
       list-style: none;
       cursor: pointer;
     }
@@ -23,13 +23,13 @@ $selected-background-color: $blue-100 !default;
   }
 
   [role="group"] {
-    margin-left: 0.8rem;
-    padding-left: 0;
+    margin-left: $spacer-8;
+    padding-left: $spacer-0;
     border-left: 1px solid $gray-400;
     font-size: 1.4rem;
 
     & > [role="treeitem"] {
-      margin-left: 0.8em;
+      margin-left: $spacer-8;
 
       &[aria-selected="true"] > div > .action-container {
         background-color: initial;
