@@ -23,15 +23,19 @@ $selected-background-color: $blue-100 !default;
   }
 
   [role="group"] {
-    margin-left: 1.6rem;
+    margin-left: 0.8rem;
     padding-left: 0;
     border-left: 1px solid $gray-400;
     font-size: 1.4rem;
 
-    & > [role="treeitem"][aria-selected="true"] > div > .action-container {
-      background-color: initial;
-      color: $secondary;
-      font-weight: 700;
+    & > [role="treeitem"] {
+      margin-left: 0.8em;
+
+      &[aria-selected="true"] > div > .action-container {
+        background-color: initial;
+        color: $secondary;
+        font-weight: 700;
+      }
     }
   }
 
