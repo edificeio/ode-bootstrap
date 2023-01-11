@@ -47,5 +47,5 @@
     "@popperjs/core":"2.11.6",
     "entcore-generic-icons": "opendigitaleducation/generic-icons"
   },
-  "files": ["assets", "scss", "dist/version.txt", "dist/icons"]
+  "files": ["assets", "scss", "dist/version.txt", "dist/icons", "dist/images"]
 }
