@@ -1,115 +1,60 @@
 $avatar-size: 65px !default;
 
-.avatar:is(.react) {
-  --#{$prefix}avatar-size: 8rem;
-  --#{$prefix}avatar-svg-size: 5rem;
-
-  height: var(--#{$prefix}avatar-size);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:not(.avatar-title) {
-    aspect-ratio: 1 / 1;
-  }
-
-  > svg {
-    width: var(--#{$prefix}avatar-svg-size);
-    height: var(--#{$prefix}avatar-svg-size);
-  }
-
-  &.avatar-square {
-    border-radius: $border-radius;
-  }
-
-  &.avatar-rounded {
-    border-radius: 50%;
-  }
-
-  &.avatar-title {
-    height: auto;
-    max-width: 5rem;
-  }
-
-  &.avatar-xs {
-    --#{$prefix}avatar-size: 2.4rem;
-    --#{$prefix}avatar-svg-size: 1.25rem;
-  }
-
-  &.avatar-sm {
-    --#{$prefix}avatar-size: 4.2rem;
-    --#{$prefix}avatar-svg-size: 2.5rem;
-  }
-
-  &.avatar-md {
+body:is(.app-react) {
+  .avatar {
     --#{$prefix}avatar-size: 8rem;
     --#{$prefix}avatar-svg-size: 5rem;
-  }
 
-  &.avatar-lg {
-    --#{$prefix}avatar-size: 16rem;
-    --#{$prefix}avatar-svg-size: 10rem;
+    height: var(--#{$prefix}avatar-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(.avatar-title) {
+      aspect-ratio: 1 / 1;
+    }
+
+    > svg {
+      width: var(--#{$prefix}avatar-svg-size);
+      height: var(--#{$prefix}avatar-svg-size);
+    }
+
+    &.avatar-square {
+      border-radius: $border-radius;
+    }
+
+    &.avatar-rounded {
+      border-radius: 50%;
+    }
+
+    &.avatar-title {
+      height: auto;
+      max-width: 5rem;
+    }
+
+    &.avatar-xs {
+      --#{$prefix}avatar-size: 2.4rem;
+      --#{$prefix}avatar-svg-size: 1.25rem;
+    }
+
+    &.avatar-sm {
+      --#{$prefix}avatar-size: 4.2rem;
+      --#{$prefix}avatar-svg-size: 2.5rem;
+    }
+
+    &.avatar-md {
+      --#{$prefix}avatar-size: 8rem;
+      --#{$prefix}avatar-svg-size: 5rem;
+    }
+
+    &.avatar-lg {
+      --#{$prefix}avatar-size: 16rem;
+      --#{$prefix}avatar-svg-size: 10rem;
+    }
   }
 }
 
-:not(.react) {
-  .avatar--20 {
-    width: 20px;
-    height: 20px;
-  }
-
-  .avatar--25 {
-    width: 25px;
-    height: 25px;
-  }
-  .avatar--50 {
-    width: 50px;
-    height: 50px;
-  }
-
-  .avatar--100 {
-    width: 100px;
-    height: 100px;
-  }
-
-  .avatar-social {
-    position: relative;
-
-    @include circle($avatar-size);
-
-    .photo {
-      img {
-        @include avatar-image($avatar-size);
-      }
-    }
-
-    .circle {
-      @include have-child-in-middle();
-      @include circle(calc(#{$avatar-size} / 1.8));
-
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      font-size: calc(#{$avatar-size} / 3.5);
-      color: $white;
-      transform: translate(20%, 20%);
-    }
-  }
-
-  .avatar-link {
-    display: inline-block;
-    cursor: pointer;
-
-    img {
-      @include avatar-image($avatar-size);
-<<<<<<< HEAD
-      background: #ffff;
-=======
-      background: $white;
->>>>>>> 3ccd7c0 (feat(design system): #WB-1058, colors)
-    }
-  }
-
+body:not(.app-react) {
   .avatar {
     display: inline-block;
     vertical-align: middle;
@@ -126,6 +71,59 @@ $avatar-size: 65px !default;
         width: 2rem;
         max-width: 2rem;
         height: 2rem;
+      }
+    }
+
+    .avatar--20 {
+      width: 20px;
+      height: 20px;
+    }
+
+    .avatar--25 {
+      width: 25px;
+      height: 25px;
+    }
+    .avatar--50 {
+      width: 50px;
+      height: 50px;
+    }
+
+    .avatar--100 {
+      width: 100px;
+      height: 100px;
+    }
+
+    .avatar-social {
+      position: relative;
+
+      @include circle($avatar-size);
+
+      .photo {
+        img {
+          @include avatar-image($avatar-size);
+        }
+      }
+
+      .circle {
+        @include have-child-in-middle();
+        @include circle(calc(#{$avatar-size} / 1.8));
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: calc(#{$avatar-size} / 3.5);
+        color: $white;
+        transform: translate(20%, 20%);
+      }
+    }
+
+    .avatar-link {
+      display: inline-block;
+      cursor: pointer;
+
+      img {
+        @include avatar-image($avatar-size);
+        background: $white;
       }
     }
   }

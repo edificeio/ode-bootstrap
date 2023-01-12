@@ -1,8 +1,10 @@
-.header:is(.header-react) {
-  .navbar {
-    &-title {
-      max-width: 40%;
-      @include text-truncate();
+body:is(.app-react) {
+  .header {
+    .navbar {
+      &-title {
+        max-width: 40%;
+        @include text-truncate();
+      }
     }
   }
 }
