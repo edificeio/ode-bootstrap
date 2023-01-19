@@ -1,0 +1,76 @@
+.card {
+  --#{$prefix}card-selected: #{$secondary-200};
+  overflow: hidden;
+  border-color: transparent;
+
+  @if $enable-one {
+    border: 1px solid $gray-400;
+  } @else {
+    box-shadow: $box-shadow;
+  }
+
+  .btn {
+    --#{$prefix}btn-border-radius: 0.8rem;
+
+    opacity: 0;
+    padding-block: $spacer-12;
+    padding-inline: $spacer-12;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: 0;
+
+    &:focus-visible {
+      opacity: 1;
+    }
+  }
+
+  &-body {
+    padding: $spacer-16;
+    display: flex;
+    align-items: center;
+    gap: $spacer-12;
+  }
+
+  &-text {
+    em {
+      color: $gray-700;
+    }
+  }
+
+  &-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: $spacer-8;
+    padding-inline: $spacer-16;
+    border-radius: $border-radius;
+    border: 0;
+  }
+
+  &.is-selected {
+    border-color: var(--#{$prefix}card-selected);
+
+    .btn {
+      opacity: 1;
+      background-color: $secondary-100;
+    }
+  }
+
+  &:focus-within {
+    border-color: var(--#{$prefix}card-selected);
+    outline: 0;
+
+    .btn {
+      opacity: 1;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      .btn {
+        opacity: 1;
+      }
+    }
+  }
+}
