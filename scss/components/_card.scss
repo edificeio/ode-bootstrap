@@ -1,5 +1,12 @@
 .card {
+  --#{$prefix}card-cap-bg: #{$gray-200};
+  --#{$prefix}card-inner-border-radius: #{$border-radius};
   --#{$prefix}card-selected: #{$secondary-200};
+  --#{$prefix}card-spacer-x: #{$spacer-16};
+  --#{$prefix}card-spacer-y: #{$spacer-16};
+  --#{$prefix}card-title-spacer-y: #{$spacer-4};
+  --#{$prefix}enter-delay: 1s;
+
   overflow: hidden;
   border-color: transparent;
 
@@ -26,7 +33,6 @@
   }
 
   &-body {
-    padding: $spacer-16;
     display: flex;
     align-items: center;
     gap: $spacer-12;
@@ -46,6 +52,10 @@
     padding-inline: $spacer-16;
     border-radius: $border-radius;
     border: 0;
+
+    &:last-child {
+      border-radius: var(--#{$prefix}card-inner-border-radius);
+    }
   }
 
   &.is-selected {
@@ -55,6 +65,13 @@
       opacity: 1;
       background-color: $secondary-100;
     }
+  }
+
+  &.is-animated {
+    opacity: 0;
+    transition: all 850ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: enter 850ms forwards;
+    animation-delay: var(--#{$prefix}enter-delay);
   }
 
   &:focus-within {
@@ -72,5 +89,15 @@
         opacity: 1;
       }
     }
+  }
+}
+
+@keyframes enter {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
