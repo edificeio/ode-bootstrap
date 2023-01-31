@@ -14,6 +14,10 @@ body:is(.app-react) {
       aspect-ratio: 1 / 1;
     }
 
+    &:is(img) {
+      object-fit: cover;
+    }
+
     > svg {
       width: var(--#{$prefix}avatar-svg-size);
       height: var(--#{$prefix}avatar-svg-size);
