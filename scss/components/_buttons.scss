@@ -134,8 +134,8 @@
   }
 
   &.btn-icon {
-    --#{$prefix}btn-padding-x: 0.7rem;
-    --#{$prefix}btn-padding-y: 0.7rem;
+    --#{$prefix}btn-padding-x: #{$spacer-8};
+    --#{$prefix}btn-padding-y: #{$spacer-8};
   }
 
   &.btn-circle {
