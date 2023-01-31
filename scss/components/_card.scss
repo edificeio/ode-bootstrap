@@ -12,6 +12,10 @@
 
   @if $enable-one {
     border: 1px solid $gray-400;
+
+    &:hover {
+      border-color: $orange-200;
+    }
   } @else {
     box-shadow: $box-shadow;
   }
@@ -61,6 +65,10 @@
   &.is-selected {
     border-color: var(--#{$prefix}card-selected);
 
+    @if $enable-one {
+      --#{$prefix}card-selected: #{orange};
+    }
+
     .btn {
       opacity: 1;
       background-color: $secondary-100;
@@ -75,8 +83,11 @@
   }
 
   &:focus-within {
-    border-color: var(--#{$prefix}card-selected);
     outline: 0;
+
+    @if $enable-one == false {
+      border-color: var(--#{$prefix}card-selected);
+    }
 
     .btn {
       opacity: 1;
