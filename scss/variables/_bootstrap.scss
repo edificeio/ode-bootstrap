@@ -201,6 +201,15 @@ $nav-link-color: $secondary !default;
 $nav-tabs-link-active-bg: $white !default;
 $nav-tabs-link-active-color: $gray-600 !default;
 
+// Tooltip
+
+$tooltip-padding-y: 1.2rem;
+$tooltip-padding-x: 1.2rem;
+$tooltip-arrow-width: 1.6rem;
+$tooltip-arrow-height: 0.8rem;
+$tooltip-opacity: 0.8;
+$tooltip-border-radius: 8px;
+
 // Action Bar
 $actionbar-background-color: $primary !default;
 $actionbar-font-size: $btn-font-size !default;
