@@ -12,9 +12,11 @@
   border: 1px solid $gray-400;
   padding: 12px 16px;
   cursor: pointer;
+  background: transparent;
   @include background-color-to($gray-200);
 
-  &.focus {
+  &.focus,
+  &:focus {
     border-color: $gray-600;
   }
 
@@ -28,7 +30,7 @@
     border-color: $blue-200;
 
     .dropdown-trigger-carret-icon {
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
     }
   }
 
@@ -42,6 +44,10 @@
     &.selected {
       background-color: $blue-100;
     }
+  }
+
+  .dropdown-trigger-carret-icon {
+    transition: transform 0.2s $default-easing;
   }
 
   .dropdown-trigger-icon {
