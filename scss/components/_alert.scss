@@ -4,13 +4,6 @@ $alert-color-warning: $warning !default;
 $alert-color-danger: $danger !default;
 $alert-border-width: $spacer-8 !default;
 
-$support-colors: (
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-) !default;
-
 .alert {
   --#{$prefix}alert-border-left-color: #{$gray-800};
   --#{$prefix}alert-bg: #{$white};
@@ -19,7 +12,8 @@ $support-colors: (
   align-items: center;
   background-color: var(--#{$prefix}alert-bg);
   border-color: var(--#{$prefix}alert-border-color);
-  border-left: $alert-left-border-width solid var(--#{$prefix}alert-border-left-color);
+  border-left: $alert-left-border-width solid
+    var(--#{$prefix}alert-border-left-color);
   color: var(--#{$prefix}body-color);
   overflow: hidden;
 
@@ -43,7 +37,7 @@ $support-colors: (
     transition-property: transform;
   }
 
-  &.is-dismissible {
+  /* &.is-dismissible {
     padding-right: $alert-dismissible-padding-r;
     .btn-close-container {
       position: absolute;
@@ -51,20 +45,20 @@ $support-colors: (
       right: var(--#{$prefix}alert-padding-x);
       transform: translateY(-50%);
     }
-  }
+  } */
 
-  &.is-toast {
+  /* &.is-toast {
     box-shadow: $box-shadow;
     max-width: 450px;
     z-index: 20;
-  }
+  } */
 
-  .stack & {
+  /* .stack & {
     margin-bottom: 0;
-  }
+  } */
 }
 
-.stack {
+/* .stack {
   display: flex;
   flex-direction: column;
   gap: $spacer-8;
@@ -72,7 +66,7 @@ $support-colors: (
   top: 1rem;
   right: 1rem;
   width: 350px;
-}
+} */
 
 @each $state, $key in $support-colors {
   .alert-#{$state} {

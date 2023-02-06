@@ -1,44 +1,45 @@
 $toast-start-color: #f0f9fc;
 $toast-end-color: #dceff7;
 $btn-border-radius: 0;
+$toast-left-border-width: $spacer-8;
 
 .toast {
-  &-container {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 999;
-    padding: 10px;
-    font-size: 2em;
+  --#{$prefix}toast-border-left-color: #{$gray-800};
+
+  --#{$prefix}toast-zindex: 1090;
+  --#{$prefix}toast-padding-x: 1.2rem;
+  --#{$prefix}toast-padding-y: 0.8rem;
+  --#{$prefix}toast-spacing: 1.5rem;
+  --#{$prefix}toast-max-width: 350px;
+  --#{$prefix}toast-font-size: #{$small-font-size};
+  --#{$prefix}toast-color: #{$gray-800};
+  --#{$prefix}toast-bg: #{$white};
+  --#{$prefix}toast-border-width: 1px;
+  --#{$prefix}toast-border-color: var(#{$prefix}border-color-translucent);
+  --#{$prefix}toast-border-radius: #{$spacer-8};
+  --#{$prefix}toast-box-shadow: none;
+
+  padding: var(--#{$prefix}toast-padding-y) var(--#{$prefix}toast-padding-x);
+  display: flex;
+  align-items: center;
+  max-width: 450px;
+  z-index: 20;
+  background-color: white;
+  background-color: var(--#{$prefix}toast-bg);
+  border-color: var(--#{$prefix}toast-border-color);
+  border-left: $toast-left-border-width solid
+    var(--#{$prefix}toast-border-left-color);
+
+  &-body {
+    padding: 0;
+    line-height: 2.2rem;
   }
+}
 
-  ode-infotip & {
-    background: linear-gradient(to right, $toast-start-color, $toast-end-color);
-
-    &,
-    > *,
-    > * > * {
-      border: 0;
-      border-radius: 0;
-    }
-
-    .toast-header {
-      padding-bottom: 0;
-      margin-bottom: -1rem;
-      background-color: transparent;
-    }
-    .toast-body {
-      color: $blue;
-    }
-
-    .btn {
-      border-radius: $btn-border-radius;
-
-      &-light {
-        &:hover {
-          color: $secondary;
-        }
-      }
-    }
+@each $state, $key in $support-colors {
+  .toast-#{$state} {
+    --#{$prefix}toast-color: #{map-get($key, "base")};
+    --#{$prefix}toast-border-color: #{map-get($key, "pale")};
+    --#{$prefix}toast-border-left-color: #{map-get($key, "base")};
   }
 }
