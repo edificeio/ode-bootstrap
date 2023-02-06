@@ -1,0 +1,41 @@
+.select-list {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+}
+
+.select-list-option {
+  width: 100%;
+  cursor: pointer;
+  padding: 4px 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+
+  &:hover {
+    background-color: $gray-200;
+  }
+  &:active {
+    background-color: $gray-300;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  &:not(:last-child):after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $gray-300;
+  }
+}
+
+.select-list-option-label {
+    width: 100%;
+}

@@ -30,7 +30,8 @@
     border-color: $blue-200;
 
     .dropdown-trigger-carret-icon {
-      transform: rotate(-180deg);
+      transform: rotate(0);
+      
     }
   }
 
@@ -48,6 +49,7 @@
 
   .dropdown-trigger-carret-icon {
     transition: transform 0.2s $default-easing;
+    transform: rotate(-180deg);
   }
 
   .dropdown-trigger-icon {
