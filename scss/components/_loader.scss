@@ -7,3 +7,11 @@
     }
   }
 }
+
+.is-loading {
+  pointer-events: none;
+
+  svg {
+    animation: loading 1s infinite;
+  }
+}
