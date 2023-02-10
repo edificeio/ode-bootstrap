@@ -1,0 +1,10 @@
+.swiper {
+    --swiper-theme-color:var(--#{$prefix}primary);
+}
+
+.swiper.swiper-horizontal {
+    padding-bottom:42px;
+    --swiper-pagination-bottom:0;
+    --swiper-pagination-bullet-horizontal-gap: 8px;
+    --swiper-pagination-bullet-size: 16px;
+}
