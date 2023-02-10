@@ -15,8 +15,6 @@
   --#{$prefix}btn-font-weight: #{$btn-font-weight};
   --#{$prefix}btn-gap: #{$btn-gap};
   --#{$prefix}btn-justify-content: #{$btn-justify-content};
-  --#{$prefix}btn-padding-x: #{$btn-padding-x};
-  --#{$prefix}btn-padding-y: #{$btn-padding-y};
   --#{$prefix}btn-search-bg: #{$btn-search-bg};
   --#{$prefix}btn-search-focus-border-color: #{$btn-search-focus-border-color};
   --#{$prefix}btn-active-box-shadow-width: 0.1rem;
@@ -129,13 +127,18 @@
     }
   }
 
-  &.btn-loading {
-    pointer-events: none;
-  }
-
-  &.btn-icon {
+  &.btn-sm {
     --#{$prefix}btn-padding-x: #{$spacer-8};
     --#{$prefix}btn-padding-y: #{$spacer-8};
+  }
+
+  &.btn-md {
+    --#{$prefix}btn-padding-x: #{$btn-padding-x};
+    --#{$prefix}btn-padding-y: #{$btn-padding-y};
+  }
+
+  &.btn-loading {
+    pointer-events: none;
   }
 
   &.btn-circle {
@@ -195,9 +198,7 @@
   }
 
   &.btn-naked {
-    padding: 0;
-    border: 0;
-    background: transparent;
+    all: unset;
 
     &:focus-visible {
       background-color: transparent;

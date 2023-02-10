@@ -5,6 +5,9 @@ body:is(.app-react) {
     --#{$prefix}avatar-size: 8rem;
     --#{$prefix}avatar-svg-size: 5rem;
 
+    border-radius: 0.8rem;
+    overflow: clip;
+    min-width: var(--ode-avatar-size);
     height: var(--#{$prefix}avatar-size);
     display: flex;
     align-items: center;
@@ -14,8 +17,9 @@ body:is(.app-react) {
       aspect-ratio: 1 / 1;
     }
 
-    &:is(img) {
+    > img {
       object-fit: cover;
+      margin: 0 auto;
     }
 
     > svg {
@@ -32,8 +36,7 @@ body:is(.app-react) {
     }
 
     &.avatar-title {
-      height: auto;
-      max-width: 5rem;
+      height: 100%;
     }
 
     &.avatar-xs {
@@ -42,18 +45,28 @@ body:is(.app-react) {
     }
 
     &.avatar-sm {
-      --#{$prefix}avatar-size: 4.2rem;
+      --#{$prefix}avatar-size: 3.2rem;
       --#{$prefix}avatar-svg-size: 2.5rem;
     }
 
     &.avatar-md {
+      --#{$prefix}avatar-size: 4rem;
+      --#{$prefix}avatar-svg-size: 2.5rem;
+    }
+
+    &.avatar-lg {
       --#{$prefix}avatar-size: 8rem;
       --#{$prefix}avatar-svg-size: 5rem;
     }
 
-    &.avatar-lg {
+    &.avatar-xl {
       --#{$prefix}avatar-size: 16rem;
       --#{$prefix}avatar-svg-size: 10rem;
+    }
+
+    &.avatar-auto {
+      --#{$prefix}avatar-size: auto;
+      --#{$prefix}avatar-svg-size: 100%;
     }
   }
 }
