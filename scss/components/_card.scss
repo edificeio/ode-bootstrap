@@ -20,26 +20,18 @@
     box-shadow: $box-shadow;
   }
 
-  .btn {
-    --#{$prefix}btn-border-radius: 0.8rem;
-
-    opacity: 0;
-    padding-block: $spacer-12;
-    padding-inline: $spacer-12;
-    position: absolute;
-    right: 0;
-    background-color: transparent;
-    border: 0;
-
-    &:focus-visible {
-      opacity: 1;
-    }
-  }
-
   &-body {
     display: flex;
     align-items: center;
     gap: $spacer-12;
+  }
+
+  &-image {
+    width: 8rem;
+    height: 8rem;
+    flex-shrink: 0;
+    overflow: clip;
+    border-radius: $border-radius;
   }
 
   &-text {
@@ -59,6 +51,22 @@
 
     &:last-child {
       border-radius: var(--#{$prefix}card-inner-border-radius);
+    }
+  }
+
+  .btn {
+    --#{$prefix}btn-border-radius: 0.8rem;
+
+    opacity: 0;
+    padding-block: $spacer-12;
+    padding-inline: $spacer-12;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+    border: 0;
+
+    &:focus-visible {
+      opacity: 1;
     }
   }
 
@@ -99,6 +107,12 @@
       .btn {
         opacity: 1;
       }
+    }
+  }
+
+  @media (hover: none) {
+    .btn {
+      opacity: 1;
     }
   }
 }
