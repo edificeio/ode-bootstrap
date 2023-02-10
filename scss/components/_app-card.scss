@@ -26,27 +26,40 @@
       aspect-ratio: 1;
       border-radius: $border-radius;
       display: flex;
-      // height: 8rem;
       justify-content: center;
-      // width: 8rem;
-
-      /* > svg {
-        width: 5rem;
-        height: 5rem;
-      } */
     }
   }
-  /* &.application-lg {
-    width: 16rem;
+}
 
-    > div {
-      height: 16rem;
-      width: 16rem;
-
+.app-icon {
+  &.icon-ratio {
+    &.square,
+    &.rounded,
+    &.rounded-circle {
       > svg {
-        width: 10rem;
-        height: 10rem;
+        width: 100%;
+        height: 100%;
+      }
+
+      &.icon-xs {
+        padding: $spacer-4;
+      }
+
+      &.icon-sm {
+        padding: $spacer-8;
+      }
+
+      &.icon-md {
+        padding: $spacer-8;
+      }
+
+      &.icon-lg {
+        padding: $spacer-16;
+      }
+
+      &.icon-xl {
+        padding: 3.2rem;
       }
     }
-  } */
+  }
 }
