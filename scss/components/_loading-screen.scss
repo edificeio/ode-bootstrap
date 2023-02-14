@@ -1,0 +1,7 @@
+body:is(.app-react) {
+  .loading-screen {
+    > div {
+      max-width: 30%;
+    }
+  }
+}
