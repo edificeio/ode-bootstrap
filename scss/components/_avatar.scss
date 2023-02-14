@@ -4,7 +4,9 @@ body:is(.app-react) {
   .avatar {
     --#{$prefix}avatar-size: 8rem;
     --#{$prefix}avatar-svg-size: 5rem;
+    --#{$prefix}avatar-bg-color: #{$white};
 
+    background-color: var(--#{$prefix}avatar-bg-color);
     border-radius: 0.8rem;
     overflow: clip;
     min-width: var(--ode-avatar-size);
@@ -12,10 +14,7 @@ body:is(.app-react) {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    &:not(.avatar-title) {
-      aspect-ratio: 1 / 1;
-    }
+    aspect-ratio: 1 / 1;
 
     > img {
       object-fit: cover;
