@@ -141,6 +141,10 @@ $dropdown-link-color: $gray-700 !default;
 $dropdown-link-hover-color: darken($gray-900, 5%) !default;
 $dropdown-link-hover-bg: rgba($secondary, 0.1) !default;
 
+// Dropdowns custom
+$dropdowntrigger-selected-border-color: $blue-200 !default;
+$dropdowntrigger-selected-bg-color: $blue-100 !default;
+
 // Image thumbnails
 $thumbnail-bg: $white !default;
 
