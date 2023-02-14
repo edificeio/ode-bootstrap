@@ -32,6 +32,7 @@
 }
 
 .app-icon {
+  flex-shrink: 0;
   &.icon-ratio {
     &.square,
     &.rounded,
