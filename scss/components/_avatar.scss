@@ -1,76 +1,74 @@
 $avatar-size: 65px !default;
 
-body:is(.app-react) {
-  .avatar {
+.avatar {
+  --#{$prefix}avatar-size: 8rem;
+  --#{$prefix}avatar-svg-size: 5rem;
+  --#{$prefix}avatar-bg-color: #{$white};
+
+  background-color: var(--#{$prefix}avatar-bg-color);
+  border-radius: 0.8rem;
+  overflow: clip;
+  min-width: var(--ode-avatar-size);
+  height: var(--#{$prefix}avatar-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+
+  > img {
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  > svg {
+    width: var(--#{$prefix}avatar-svg-size);
+    height: var(--#{$prefix}avatar-svg-size);
+  }
+
+  &.avatar-square {
+    border-radius: $border-radius;
+  }
+
+  &.avatar-rounded {
+    border-radius: 50%;
+  }
+
+  &.avatar-title {
+    height: 100%;
+  }
+
+  &.avatar-xs {
+    --#{$prefix}avatar-size: 2.4rem;
+    --#{$prefix}avatar-svg-size: 1.25rem;
+  }
+
+  &.avatar-sm {
+    --#{$prefix}avatar-size: 3.2rem;
+    --#{$prefix}avatar-svg-size: 2.5rem;
+  }
+
+  &.avatar-md {
+    --#{$prefix}avatar-size: 4rem;
+    --#{$prefix}avatar-svg-size: 2.5rem;
+  }
+
+  &.avatar-lg {
     --#{$prefix}avatar-size: 8rem;
     --#{$prefix}avatar-svg-size: 5rem;
-    --#{$prefix}avatar-bg-color: #{$white};
+  }
 
-    background-color: var(--#{$prefix}avatar-bg-color);
-    border-radius: 0.8rem;
-    overflow: clip;
-    min-width: var(--ode-avatar-size);
-    height: var(--#{$prefix}avatar-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1 / 1;
+  &.avatar-xl {
+    --#{$prefix}avatar-size: 16rem;
+    --#{$prefix}avatar-svg-size: 10rem;
+  }
 
-    > img {
-      object-fit: cover;
-      margin: 0 auto;
-    }
-
-    > svg {
-      width: var(--#{$prefix}avatar-svg-size);
-      height: var(--#{$prefix}avatar-svg-size);
-    }
-
-    &.avatar-square {
-      border-radius: $border-radius;
-    }
-
-    &.avatar-rounded {
-      border-radius: 50%;
-    }
-
-    &.avatar-title {
-      height: 100%;
-    }
-
-    &.avatar-xs {
-      --#{$prefix}avatar-size: 2.4rem;
-      --#{$prefix}avatar-svg-size: 1.25rem;
-    }
-
-    &.avatar-sm {
-      --#{$prefix}avatar-size: 3.2rem;
-      --#{$prefix}avatar-svg-size: 2.5rem;
-    }
-
-    &.avatar-md {
-      --#{$prefix}avatar-size: 4rem;
-      --#{$prefix}avatar-svg-size: 2.5rem;
-    }
-
-    &.avatar-lg {
-      --#{$prefix}avatar-size: 8rem;
-      --#{$prefix}avatar-svg-size: 5rem;
-    }
-
-    &.avatar-xl {
-      --#{$prefix}avatar-size: 16rem;
-      --#{$prefix}avatar-svg-size: 10rem;
-    }
-
-    &.avatar-auto {
-      --#{$prefix}avatar-size: auto;
-      --#{$prefix}avatar-svg-size: 100%;
-    }
+  &.avatar-auto {
+    --#{$prefix}avatar-size: auto;
+    --#{$prefix}avatar-svg-size: 100%;
   }
 }
 
-body:not(.app-react) {
+/* body:not(.app-react) {
   .avatar {
     display: inline-block;
     vertical-align: middle;
@@ -145,4 +143,4 @@ body:not(.app-react) {
       }
     }
   }
-}
+} */
