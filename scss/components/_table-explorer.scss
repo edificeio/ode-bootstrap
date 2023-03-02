@@ -1,0 +1,22 @@
+.table-explorer {
+  width: 100%;
+  border-radius: 8px;
+  border-spacing: 0;
+  border-collapse: separate;
+  
+  overflow: hidden;
+  border: 1px solid $blue-100;
+
+  tr > * {
+    padding: 8px 12px;
+    font-size: $small-font-size;
+  }
+
+  thead {
+    background-color: $blue-100;
+  }
+
+  tbody > tr:nth-of-type(even) > * {
+    background-color: $gray-200;
+  }
+}
