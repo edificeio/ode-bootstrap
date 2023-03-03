@@ -3,9 +3,9 @@
   border-radius: 8px;
   border-spacing: 0;
   border-collapse: separate;
-  
+
   overflow: hidden;
-  border: 1px solid $blue-100;
+  border: 1px solid $table-explorer-main-color;
 
   tr > * {
     padding: 8px 12px;
@@ -13,7 +13,14 @@
   }
 
   thead {
-    background-color: $blue-100;
+    background-color: $table-explorer-main-color;
+    color: $gray-800;
+
+    .form-check-input {
+      width: 16px;
+      height: 16px;
+      transform: translateY(-1px) translateX(-1px);
+    }
   }
 
   tbody > tr:nth-of-type(even) > * {

@@ -10,6 +10,24 @@ $zindex-levels: (
 $utilities: map-merge(
   $utilities,
   (
+    "color": (
+      property: color,
+      class: text,
+      local-vars: (
+        "text-opacity": 1
+      ),
+      values: map-merge(
+        $utilities-text-colors,
+        (
+          "gray-700": $gray-700,
+          "blue": $blue,
+          "muted": $text-muted,
+          "black-50": rgba($black, .5), // deprecated
+          "white-50": rgba($white, .5), // deprecated
+          "reset": inherit,
+        )
+      )
+    ),
     "cursor": (
       property: cursor,
       class: c,

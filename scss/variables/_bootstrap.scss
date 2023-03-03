@@ -206,7 +206,6 @@ $nav-tabs-link-active-bg: $white !default;
 $nav-tabs-link-active-color: $gray-600 !default;
 
 // Tooltip
-
 $tooltip-padding-y: 1.2rem;
 $tooltip-padding-x: 1.2rem;
 $tooltip-arrow-width: 1.6rem;
@@ -215,11 +214,6 @@ $tooltip-opacity: 0.8;
 $tooltip-border-radius: 8px;
 $tooltip-max-width: 326px;
 
-// Action Bar
-$actionbar-background-color: $primary !default;
-$actionbar-font-size: $btn-font-size !default;
-$actionbar-font-size-mobile: $btn-font-size !default;
-
 // Z-index
 $zindex-offcanvas: 1050 !default;
 
@@ -227,3 +221,13 @@ $zindex-offcanvas: 1050 !default;
 $hr-color: $gray-400 !default;
 $hr-opacity: 1 !default;
 $hr-default-spacing: 2.4rem !default;
+
+/**== Custom components ==**/
+
+// Action Bar
+$actionbar-background-color: $primary !default;
+$actionbar-font-size: $btn-font-size !default;
+$actionbar-font-size-mobile: $btn-font-size !default;
+
+//Table Explorer
+$table-explorer-main-color: $blue-100 !default;
