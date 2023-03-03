@@ -68,13 +68,13 @@ $avatar-size: 65px !default;
   }
 }
 
-/* body:not(.app-react) {
+body:not(.app-react) {
   .avatar {
     display: inline-block;
     vertical-align: middle;
     border-radius: 50%;
 
-    &--20 {
+    /*&--20 {
       width: 20px;
       height: 20px;
     }
@@ -91,7 +91,7 @@ $avatar-size: 65px !default;
     &--100 {
       width: 100px;
       height: 100px;
-    }
+    }*/
 
     &-social {
       position: relative;
@@ -116,7 +116,7 @@ $avatar-size: 65px !default;
       }
     }
 
-    &-link {
+    /*&-link {
       cursor: pointer;
       overflow: hidden;
       @include avatar-image($avatar-size);
@@ -124,10 +124,10 @@ $avatar-size: 65px !default;
       img {
         background: $white;
       }
-    }
+    }*/
   }
 
-  .navbar.no-1d {
+  /*.navbar.no-1d {
     .avatar {
       margin-top: -0.3rem;
       width: 3rem;
@@ -142,5 +142,5 @@ $avatar-size: 65px !default;
         height: 2rem;
       }
     }
-  }
-} */
+  }*/
+}

@@ -10,6 +10,12 @@
     background-position: center;
     background-size: cover;
 
+    img {
+      @include avatar-image(65px);
+      background: $white;
+      max-width: initial;
+    }
+
     .name {
       font-weight: 600;
     }
