@@ -13,6 +13,7 @@
   --#{$prefix}input-disabled-border-color: #{$input-disabled-border-color};
   --#{$prefix}input-placeholder-color: #{$input-placeholder-color};
   --#{$prefix}input-focus-border-color: #{$input-focus-border-color};
+  --#{$prefix}input-invalid-border-color: #{$input-invalid-border-color};
   --#{$prefix}input-filled-border-color: #{$input-filled-border-color};
   --#{$prefix}input-border-radius: #{$input-border-radius};
   --#{$prefix}input-border-radius-sm: #{$input-border-radius-sm};
@@ -39,6 +40,10 @@
     color: var(--#{$prefix}input-disabled-color);
     border-color: var(--#{$prefix}input-disabled-border-color);
     background-color: var(--#{$prefix}input-disabled-bg);
+  }
+
+  &:not(:placeholder-shown):not(:focus):is(.is-invalid) {
+    border-color: var(--#{$prefix}input-invalid-border-color);
   }
 
   &:not(:placeholder-shown):not(:focus) {
