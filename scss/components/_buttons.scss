@@ -197,6 +197,11 @@
     }
   }
 
+  &.logout {
+    background-color: transparent;
+    border: 0;
+  }
+
   &.btn-naked {
     all: unset;
 
