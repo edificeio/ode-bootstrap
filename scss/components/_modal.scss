@@ -38,6 +38,19 @@ $modal-max-width-lg: 872px;
   // scss-docs-end modal-css-vars
 
   .modal-dialog {
+    margin-top: $spacer-32;
+    margin-bottom: $spacer-32;
+
+    @include media-breakpoint-up(md) {
+      margin-top: $spacer-48;
+      margin-bottom: $spacer-48;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: $spacer-64;
+      margin-bottom: $spacer-64;
+    }
+
     &.modal-md,
     &.modal-lg {
       @include media-breakpoint-up(xs) {
@@ -99,16 +112,6 @@ $modal-max-width-lg: 872px;
           margin: 0;
         }
       }
-    }
-
-    @include media-breakpoint-up(sm) {
-      margin-top: $spacer-32;
-      margin-bottom: $spacer-32;
-    }
-
-    @include media-breakpoint-up(md) {
-      margin-top: $spacer-48;
-      margin-bottom: $spacer-48;
     }
   }
 }
