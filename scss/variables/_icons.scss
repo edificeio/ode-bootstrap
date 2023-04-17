@@ -33,7 +33,7 @@ $icons-interface: (
     "users"         : ( "glyph": "\e822"),
     "share"         : ( "glyph": "\e815"),
     "view"          : ( "glyph": "\e873"),
-    "warning"       : ( "glyph": "\e903")      
+    "warning"       : ( "glyph": "\e903")
 ) !default;
 
 $icons-widgets: (
@@ -153,6 +153,10 @@ $icons-applications: (
     "color": $yellow,
     "glyph": "\e804",
   ),
+  "crre": (
+    "color": $red,
+    "glyph": "\e95f",
+  ),
   "directory": (
     "color": $teal,
     "glyph": "\e811",
@@ -184,6 +188,10 @@ $icons-applications: (
   "mindmap": (
     "color": $cyan,
     "glyph": "\e859",
+  ),
+  "minibadge": (
+    "color": $red,
+    "glyph": "\e960",
   ),
   "notebook": (
     "color": $teal,
