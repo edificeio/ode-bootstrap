@@ -7,6 +7,14 @@ $zindex-levels: (
   2000:2000
 );
 
+$width-sizing: (
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+);
+
 $utilities: map-merge(
   $utilities,
   (
@@ -38,8 +46,8 @@ $utilities: map-merge(
       class: w,
       values:
         map-merge(
+          $width-sizing,
           $spacers,
-          (1\/4: 25%, 1\/2: 50%, 3\/4: 75%, full: 100%, auto: auto)
         ),
     ),
     "max-width": (
