@@ -1,6 +1,8 @@
 .select-list {
   display: flex;
   flex-direction: column;
+  max-height: 316px;
+  overflow-y: scroll;
   //min-width: 250px;
 }
 
