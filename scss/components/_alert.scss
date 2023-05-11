@@ -47,11 +47,16 @@ $alert-border-width: $spacer-8 !default;
     }
   } */
 
-  /* &.is-toast {
+  &.is-toast {
     box-shadow: $box-shadow;
-    max-width: 450px;
+    max-width: 402px;
+    min-width: 352px;
     z-index: 20;
-  } */
+
+    @include media-breakpoint-up(xs) {
+      width: 100%;
+    }
+  }
 
   /* .stack & {
     margin-bottom: 0;
