@@ -5,3 +5,4 @@ package.json
 .gradle
 .DS_Store
 yarn-error.log
+*.lock
