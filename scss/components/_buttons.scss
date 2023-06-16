@@ -35,9 +35,9 @@
     width: $btn-svg-size;
     min-width: $btn-svg-size;
 
-    path {
+    /* path {
       fill: currentColor;
-    }
+    } */
   }
 
   &:first-child:active:focus-visible {
@@ -68,16 +68,18 @@
       }
     }
 
-    &:hover,
-    &.hover {
-      &:not(.btn-search) {
-        transform: translateY(-0.2rem);
-        box-shadow: 0 0.2rem 0 0 var(--#{$prefix}btn-hover-border-color);
-      }
-
-      &:is(.btn-search) {
-        span {
+    &:not(.disabled-hover) {
+      &:hover,
+      &.hover {
+        &:not(.btn-search) {
           transform: translateY(-0.2rem);
+          box-shadow: 0 0.2rem 0 0 var(--#{$prefix}btn-hover-border-color);
+        }
+
+        &:is(.btn-search) {
+          span {
+            transform: translateY(-0.2rem);
+          }
         }
       }
     }
@@ -95,11 +97,13 @@
       box-shadow: inset 0 0 0 0.1rem var(--#{$prefix}btn-focus-border-color);
     }
   } @else {
-    &:hover,
-    &.hover,
-    &:focus-visible {
-      > span {
-        transform: translateY(-0.2rem);
+    &:not(.disabled-hover) {
+      &:hover,
+      &.hover,
+      &:focus-visible {
+        > span {
+          transform: translateY(-0.2rem);
+        }
       }
     }
 

@@ -18,6 +18,8 @@ $avatar-size: 65px !default;
   > img {
     object-fit: cover;
     margin: 0 auto;
+    height: 100%;
+    width: 100%;
   }
 
   > svg {
@@ -74,25 +76,6 @@ body:not(.app-react) {
     vertical-align: middle;
     border-radius: 50%;
 
-    /*&--20 {
-      width: 20px;
-      height: 20px;
-    }
-
-    &--25 {
-      width: 25px;
-      height: 25px;
-    }
-    &--50 {
-      width: 50px;
-      height: 50px;
-    }
-
-    &--100 {
-      width: 100px;
-      height: 100px;
-    }*/
-
     &-social {
       position: relative;
 
@@ -115,32 +98,5 @@ body:not(.app-react) {
         transform: translate(20%, 20%);
       }
     }
-
-    /*&-link {
-      cursor: pointer;
-      overflow: hidden;
-      @include avatar-image($avatar-size);
-
-      img {
-        background: $white;
-      }
-    }*/
   }
-
-  /*.navbar.no-1d {
-    .avatar {
-      margin-top: -0.3rem;
-      width: 3rem;
-      max-width: 3rem;
-      height: 3rem;
-      background-color: $white;
-
-      @include media-breakpoint-down(md) {
-        display: inline-block;
-        width: 2rem;
-        max-width: 2rem;
-        height: 2rem;
-      }
-    }
-  }*/
 }
