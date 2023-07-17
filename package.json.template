@@ -1,6 +1,6 @@
 {
   "name": "ode-bootstrap",
-  "version": "1.2.0",
+  "version": "1.2.1-dev.%generateVersion%",
   "description": "Open Digital Education CSS framework based on bootstrap",
   "scripts": {
     "copy-fonts": "cpr node_modules/entcore-generic-icons/fonts/ assets/fonts/generic-icons/ -o",
