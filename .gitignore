@@ -6,3 +6,5 @@ package.json
 .DS_Store
 yarn-error.log
 *.lock
+pnpm-lock.yaml
+.pnpm-store
