@@ -19,6 +19,41 @@ $link-decoration: none !default;
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
 $min-contrast-ratio: 1.75 !default;
 
+// Radius
+$border-radius: 0.8rem !default;
+$border-radius-sm: 0.4rem !default;
+$border-radius-lg: 1.2rem !default;
+$border-radius-xl: 1.6rem !default;
+$border-radius-2xl: 2.4rem !default;
+$border-radius-pill: 50rem !default;
+
+// Spacers for margins, paddings and gaps
+$spacer-0: 0 !default;
+$spacer-2: 0.2rem !default;
+$spacer-4: 0.4rem !default;
+$spacer-8: 0.8rem !default;
+$spacer-12: 1.2rem !default;
+$spacer-16: 1.6rem !default;
+$spacer-24: 2.4rem !default;
+$spacer-32: 3.2rem !default;
+$spacer-48: 4.8rem !default;
+$spacer-64: 6.4rem !default;
+// $spacer-120: 12rem !default;
+
+$spacers: (
+  0: $spacer-0,
+  2: $spacer-2,
+  4: $spacer-4,
+  8: $spacer-8,
+  12: $spacer-12,
+  16: $spacer-16,
+  24: $spacer-24,
+  32: $spacer-32,
+  48: $spacer-48,
+  64: $spacer-64,
+  // 128: $spacer-128,
+) !default;
+
 // Grid breakpoints
 $grid-breakpoints: (
   xs: 0,
@@ -43,42 +78,7 @@ $container-padding-x: 3.2rem;
 // Gutter Grid CSS
 $grid-gutter-width: 2.4rem;
 
-// Spacers for margins, paddings and gaps
-$spacer-0: 0 !default;
-$spacer-2: 0.2rem !default;
-$spacer-4: 0.4rem !default;
-$spacer-8: 0.8rem !default;
-$spacer-12: 1.2rem !default;
-$spacer-16: 1.6rem !default;
-$spacer-24: 2.4rem !default;
-$spacer-32: 3.2rem !default;
-$spacer-48: 4.8rem !default;
-$spacer-64: 6.4rem !default;
-$spacer-120: 12rem !default;
-
-$spacers: (
-  0: $spacer-0,
-  2: $spacer-2,
-  4: $spacer-4,
-  8: $spacer-8,
-  12: $spacer-12,
-  16: $spacer-16,
-  24: $spacer-24,
-  32: $spacer-32,
-  48: $spacer-48,
-  64: $spacer-64,
-  120: $spacer-120,
-) !default;
-
 $enable-negative-margins: true;
-
-// Radius
-$border-radius: 0.8rem !default;
-$border-radius-sm: 0.4rem !default;
-$border-radius-lg: 1.2rem !default;
-$border-radius-xl: 1.6rem !default;
-$border-radius-2xl: 2.4rem !default;
-$border-radius-pill: 50rem !default;
 
 // Buttons
 $btn-align-items: center !default;
