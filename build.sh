@@ -33,8 +33,7 @@ init () {
 build () {
   local extras=$1
   docker-compose run --rm -u "$USER_UID:$GROUP_GID" node sh -c "pnpm run release:build"
-  VERSION=`grep "version="  gradle.properties| sed 's/version=//g'`
-  echo "ode-bootstrap=$VERSION `date +'%d/%m/%Y %H:%M:%S'`" >> dist/version.txt
+  echo "ode-bootstrap `date +'%d/%m/%Y %H:%M:%S'`" >> dist/version.txt
 }
 
 watch () {
