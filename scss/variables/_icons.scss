@@ -33,7 +33,8 @@ $icons-interface: (
     "users"         : ( "glyph": "\e822"),
     "share"         : ( "glyph": "\e815"),
     "view"          : ( "glyph": "\e873"),
-    "warning"       : ( "glyph": "\e903")
+    "warning"       : ( "glyph": "\e903"),
+    "edumalin"      : ( "glyph": "\e967")
 ) !default;
 
 $icons-widgets: (
@@ -81,6 +82,9 @@ $icons-widgets: (
   ),
   "signets": (
     "glyph": "\e80c",
+  ),
+  "edumalin": (
+    "glyph": "\e967",
   ),
 ) !default;
 
@@ -344,6 +348,10 @@ $icons-applications: (
   "placeholder": (
     "color": $secondary,
     "glyph": "",
+  ),
+  "edumalin": (
+    "color": $blue,
+    "glyph": "\e967",
   ),
 ) !default;
 
@@ -623,6 +631,10 @@ $icons-connectors: (
   "webclasseur": (
     "color": $blue,
     "glyph": "\e88c",
+  ),
+  "edumalin": (
+    "color": $blue,
+    "glyph": "\e967",
   ),
 ) !default;
 
