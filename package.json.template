@@ -1,6 +1,6 @@
 {
   "name": "ode-bootstrap",
-  "version": "1.3.1-dev.%generateVersion%",
+  "version": "1.3.1-develop.%generateVersion%",
   "description": "Edifice CSS framework based on bootstrap",
   "scripts": {
     "copy-fonts": "cpr node_modules/entcore-generic-icons/fonts/ assets/fonts/generic-icons/ -o",
