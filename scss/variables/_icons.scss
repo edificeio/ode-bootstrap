@@ -33,7 +33,9 @@ $icons-interface: (
     "users"         : ( "glyph": "\e822"),
     "share"         : ( "glyph": "\e815"),
     "view"          : ( "glyph": "\e873"),
-    "warning"       : ( "glyph": "\e903")
+    "warning"       : ( "glyph": "\e903"),
+    "edumalin"      : ( "glyph": "\e967")
+    "mediacentre"   : ( "glyph": "\e863")
 ) !default;
 
 $icons-widgets: (
@@ -82,6 +84,12 @@ $icons-widgets: (
   "signets": (
     "glyph": "\e80c",
   ),
+  "edumalin": (
+    "glyph": "\e967",
+  ),
+  "mediacentre": (
+    "glyph": "\e863",
+  )
 ) !default;
 
 $icons-applications: (
@@ -345,6 +353,14 @@ $icons-applications: (
     "color": $secondary,
     "glyph": "",
   ),
+  "edumalin": (
+    "color": $blue,
+    "glyph": "\e967",
+  ),
+  "mediacentre": (
+    "color": $red,
+    "glyph": "\e863",
+  )
 ) !default;
 
 $icons-connectors: (
