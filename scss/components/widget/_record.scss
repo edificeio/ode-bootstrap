@@ -29,9 +29,10 @@
 
   &-widget-player {
     margin: 1.6rem 2.4rem;
-    min-height: 150px;
     border-radius: 4px;
     background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
 
     > video {
       display: block;
