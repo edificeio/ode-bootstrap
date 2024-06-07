@@ -17,6 +17,7 @@ $icons-interface: (
     "home"          : ( "glyph": "\e82b"),
     "homeworks"     : ( "glyph": "\e86f"),
     "list"          : ( "glyph": "\e84f"),
+    "mediacentre"   : ( "glyph": "\e968"),
     "microphone"    : ( "glyph": "\e864"),
     "minus"         : ( "glyph": "\e95b"),
     "nobody"        : ( "glyph": "\e901"),
@@ -34,8 +35,7 @@ $icons-interface: (
     "share"         : ( "glyph": "\e815"),
     "view"          : ( "glyph": "\e873"),
     "warning"       : ( "glyph": "\e903"),
-    "edumalin"      : ( "glyph": "\e967"),
-    "mediacentre"   : ( "glyph": "\e863")
+    "edumalin"      : ( "glyph": "\e967")
 ) !default;
 
 $icons-widgets: (
@@ -66,6 +66,9 @@ $icons-widgets: (
   "maxicours": (
     "glyph": "\e825",
   ),
+  "mediacentre": (
+    "glyph": "\e968",
+  ),
   "mood": (
     "glyph": "\e811",
   ),
@@ -86,9 +89,6 @@ $icons-widgets: (
   ),
   "edumalin": (
     "glyph": "\e967",
-  ),
-  "mediacentre": (
-    "glyph": "\e863",
   )
 ) !default;
 
@@ -208,6 +208,10 @@ $icons-applications: (
   "magneto": (
     "color": $yellow,
     "glyph": "\e961",
+  ),
+  "mediacentre": (
+    "color": $indigo,
+    "glyph": "\e968",
   ),
   "mindmap": (
     "color": $blue,
@@ -356,10 +360,6 @@ $icons-applications: (
   "edumalin": (
     "color": $blue,
     "glyph": "\e967",
-  ),
-  "mediacentre": (
-    "color": $red,
-    "glyph": "\e863",
   )
 ) !default;
 
@@ -529,8 +529,8 @@ $icons-connectors: (
     "glyph": "\e825",
   ),
   "mediacentre": (
-    "color": $red,
-    "glyph": "\e863",
+    "color": $indigo,
+    "glyph": "\e968",
   ),
   "monorientationenligne": (
     "color": $yellow,
@@ -675,6 +675,10 @@ $icons-mood: (
     "color": #ff8500,
     "glyph": "\e84b",
   ),
+  "mediacentre": (
+    "color": $indigo,
+    "glyph": "\e968",
+  ),
   "proud": (
     "color": #46bfaf,
     "glyph": "\e87e",
@@ -694,5 +698,5 @@ $icons-mood: (
   "worried": (
     "color": #763294,
     "glyph": "\e87f",
-  ),
+  )
 ) !default;
