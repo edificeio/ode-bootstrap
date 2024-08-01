@@ -1,33 +1,133 @@
+@use "sass:map";
+
 // Array Widget Flash Colors
+// Global colors are wrong according to figma palette, so I redeclare them here....
 $widget-flash-colors: (
-  "red": $red,
-  "orange": $orange,
-  "green": $green,
-  "blue": $blue,
-  "grey-dark": $gray-700,
+  "red": (
+    "background": #FFECEE,
+    "shadow": #FFADB9,
+    "badge": #FF3A55
+  ),
+  "orange": (
+    "background": #FFEFE3,
+    "shadow": #FFCBA0,
+    "badge": #FF8D2E
+  ),
+  "green": (
+    "background": #E6F9F8,
+    "shadow": #B6EDE5,
+    "badge": #46BFAF
+  ),
+  "blue": (
+    "background": #E5F5FF,
+    "shadow": #B9E3F8,
+    "badge": #2A9CC8
+  ),
+  "grey-dark": (
+    "background": $gray-300,
+    "shadow": $gray-400,
+    "badge": $gray-600
+  ),
 );
 
 .widget-flash {
-  position: relative;
-  padding: $widget-padding-x;
-  overflow: hidden;
-  color: $white;
   background: $secondary;
-
+  
+  padding: 36px 24px 24px;
+  position: relative;
+  border-radius: 8px 8px 8px 6px;
+  margin: 32px 4px 36px 0;
+  left: 4px;
+  bottom: 4px;
+  &:last-child {
+    margin-bottom: 28px;
+  }
+  
   @each $key, $value in $widget-flash-colors {
     &.#{$key} {
-      --custom-message-color: #{$value};
-      background-color: $value;
+      --custom-message-color: #{map.get($value, "background")};
+      background-color: map.get($value, "background");
+      box-shadow: map.get($value, "shadow") -4px 0px,
+                  map.get($value, "shadow") 0px 4px,
+                  map.get($value, "shadow") -2px 2px 0 2px;
+
+      &::before {
+        background-color: map.get($value, "badge");
+        border-color: map.get($value, "shadow");
+        box-shadow: 0 0 0 4px map.get($value, "background");
+      }
+
+      .btn-expand-inner {
+        background-color: map.get($value, "background");
+      }
+
+      .flash-content:not(.flash-content-is-expandable) .btn-expand-inner::before {
+        background: linear-gradient(to right,
+              rgba(map.get($value, "background"), 0),
+              rgba(map.get($value, "background"), 0.5) 30%,
+              rgba(map.get($value, "background"), 0.8) 50%,
+              rgba(map.get($value, "background"), 0.95) 75%,
+              map.get($value, "background") 100%);
+      }
     }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 4px-52px+24px + 8px;
+    left: 4px+24px;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border-width: 4px;
+    border-style: solid;
+    box-sizing: content-box;
+  }
+
+  .flash-icon {
+    position: absolute;
+    display: block;
+    top: 4px-52px+24px + 8px + 10px;
+    left: 4px+24px + 10px;
+    width: 24px;
+    height: 24px;
+    color: $white;
+  }
+  &.red .flash-icon{
+    // 'alert-triangle' icon seems vertically misaligned.
+    transform: translateY(-1px);
   }
 
   .btn {
     &-close {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      color: var(--ode-dark);
-      text-shadow: none;
+      top: 0;
+      right: 0;
+      width: 20px + 16px;
+      height: 20px + 16px;
+      padding: 8px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      color: $text-color;
+      background-color: initial;
+      background-image: initial;
+      opacity: initial;
+    
+      &:hover {
+        background-color: $gray-300;
+      }
+    
+      &:active {
+        background-color: $gray-400;
+        color: $black;
+      }
+    
+      &:focus {
+        background-color: $gray-300;
+        border: solid 1px $gray-400;
+      }
     }
 
     &-expand {
@@ -36,17 +136,22 @@ $widget-flash-colors: (
       &-inner {
         position: absolute;
         z-index: 2;
-        bottom: 0;
-        left: 0;
+        bottom: 24px;
+        right: 18px;
         display: block;
-        width: 100%;
-        padding: 5px;
-        font-size: 0.8em;
-        color: $white;
+        padding-right: 16px;
         text-align: center;
-        background: rgba(#000, 0.1);
+        font-weight: bold;
 
-        @include background-color-to(rgba(#000, 0.2));
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 64px;
+          height: 100%;
+          // background: linear-gradient(to right, rgba($flash-red, 0), rgba($flash-red, 0.5) 30%, rgba($flash-red, 0.8) 50%, rgba($flash-red, 0.95) 75%, $flash-red 100%);
+          left: -64px;
+        }
       }
     }
   }
@@ -54,9 +159,24 @@ $widget-flash-colors: (
   .flash-content {
     padding-right: 1rem;
 
-    p {
-      > br:first-child {
+    // Merge multiple <br> into one and delete the first empty line if present
+    p, p>div {
+      & > br:first-child, & > br:not(:not(br)+br) {
         display: none;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+      font-weight: bold;
+
+      &:hover {
+        color: $black;
+      }
+
+      &:active {
+        color: #550070;
       }
     }
 
@@ -64,21 +184,7 @@ $widget-flash-colors: (
       &:not(.flash-content-is-expandable) {
         p {
           @include has-text-truncated(4);
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          z-index: 1;
-          bottom: 2em;
-          right: 0;
-          left: 0;
-          height: 4em;
-          background: linear-gradient(
-            to bottom,
-            rgba(255, 255, 255, 0),
-            var(--custom-message-color)
-          );
+          padding-bottom: 0;
         }
 
         @media not all and (min-resolution: 0.001dpcm) {
@@ -93,7 +199,9 @@ $widget-flash-colors: (
       }
 
       .flash-content-signature {
-        padding-bottom: 1rem;
+        font-style: italic;
+        margin-top: 22px !important;
+        margin-right: 12em;
       }
     }
 
