@@ -197,12 +197,12 @@ $widget-flash-colors: (
           display: none;
         }
       }
+    }
 
-      .flash-content-signature {
-        font-style: italic;
-        margin-top: 22px !important;
-        margin-right: 12em;
-      }
+    .flash-content-signature {
+      font-style: italic;
+      margin-top: 22px !important;
+      margin-right: 12em;
     }
 
     > *:last-child {
