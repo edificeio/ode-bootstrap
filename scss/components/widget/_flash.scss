@@ -56,19 +56,6 @@ $widget-flash-colors: (
         border-color: map.get($value, "shadow");
         box-shadow: 0 0 0 4px map.get($value, "background");
       }
-
-      .btn-expand-inner {
-        background-color: map.get($value, "background");
-      }
-
-      .flash-content:not(.flash-content-is-expandable) .btn-expand-inner::before {
-        background: linear-gradient(to right,
-              rgba(map.get($value, "background"), 0),
-              rgba(map.get($value, "background"), 0.5) 30%,
-              rgba(map.get($value, "background"), 0.8) 50%,
-              rgba(map.get($value, "background"), 0.95) 75%,
-              map.get($value, "background") 100%);
-      }
     }
   }
 
@@ -98,6 +85,18 @@ $widget-flash-colors: (
   &.red .flash-icon{
     // 'alert-triangle' icon seems vertically misaligned.
     transform: translateY(-1px);
+  }
+
+  .flash-content-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 12px;
+
+    &:not(:has(*)) {
+      display: none;
+    }
   }
 
   .btn {
@@ -132,26 +131,13 @@ $widget-flash-colors: (
 
     &-expand {
       cursor: pointer;
+      flex-shrink: 0;
+      margin-left: auto;
 
       &-inner {
-        position: absolute;
-        z-index: 2;
-        bottom: 24px;
-        right: 18px;
         display: block;
-        padding-right: 16px;
         text-align: center;
         font-weight: bold;
-
-        &::before {
-          content: '';
-          display: block;
-          position: absolute;
-          width: 64px;
-          height: 100%;
-          // background: linear-gradient(to right, rgba($flash-red, 0), rgba($flash-red, 0.5) 30%, rgba($flash-red, 0.8) 50%, rgba($flash-red, 0.95) 75%, $flash-red 100%);
-          left: -64px;
-        }
       }
     }
   }
@@ -183,7 +169,7 @@ $widget-flash-colors: (
     &.can-be-truncated {
       &:not(.flash-content-is-expandable) {
         p {
-          @include has-text-truncated(4);
+          @include has-text-truncated(2);
           padding-bottom: 0;
         }
 
@@ -192,17 +178,13 @@ $widget-flash-colors: (
             display: none;
           }
         }
-
-        .flash-content-signature {
-          display: none;
-        }
       }
     }
 
     .flash-content-signature {
-      font-style: italic;
-      margin-top: 22px !important;
-      margin-right: 12em;
+      font-weight: bold;
+      margin-right: 2em !important;
+      color: $gray-700;
     }
 
     > *:last-child {
