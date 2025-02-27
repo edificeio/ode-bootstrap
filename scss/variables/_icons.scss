@@ -1,5 +1,6 @@
 /* prettier-ignore */
 $icons-interface: (
+    "appointments"  : ( "glyph": "\e96a"),
     "apps"          : ( "glyph": "\e86c"),
     "burger"        : ( "glyph": "\e956"),
     "carnet-de-bord": ( "glyph": "\e902"),
@@ -112,6 +113,10 @@ $icons-applications: (
   "agenda": (
     "color": $yellow,
     "glyph": "\e966",
+  ),
+  "appointments": (
+    "color": $green,
+    "glyph": "\e96a",
   ),
   "archive": (
     "color": $yellow,
@@ -674,10 +679,6 @@ $icons-mood: (
   "love": (
     "color": #ff8500,
     "glyph": "\e84b",
-  ),
-  "mediacentre": (
-    "color": $indigo,
-    "glyph": "\e968",
   ),
   "proud": (
     "color": #46bfaf,
