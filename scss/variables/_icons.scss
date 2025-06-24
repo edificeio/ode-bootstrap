@@ -36,7 +36,9 @@ $icons-interface: (
     "share"         : ( "glyph": "\e815"),
     "view"          : ( "glyph": "\e873"),
     "warning"       : ( "glyph": "\e903"),
-    "edumalin"      : ( "glyph": "\e967")
+    "edumalin"      : ( "glyph": "\e967"),
+    "evaluation"    : ( "glyph": "\e970"),
+    "cantine"       : ( "glyph": "\e96c")
 ) !default;
 
 $icons-widgets: (
@@ -90,6 +92,12 @@ $icons-widgets: (
   ),
   "edumalin": (
     "glyph": "\e967",
+  ),
+  "evaluation": (
+    "glyph": "\e970",
+  ),
+  "cantine": (
+    "glyph": "\e96c",
   )
 ) !default;
 
@@ -652,6 +660,10 @@ $icons-connectors: (
   "edumalin": (
     "color": $blue,
     "glyph": "\e967",
+  ),
+  "evaluation": (
+    "color": $blue,
+    "glyph": "\e970",
   ),
 ) !default;
 
