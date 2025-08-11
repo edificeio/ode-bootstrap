@@ -1,3 +1,10 @@
+# À propos d'ode-bootstrap
+    
+* Licence : [AGPL v3](http://www.gnu.org/licenses/agpl.txt) - Copyright Edifice
+* Financeur(s) : Edifice
+* Développeur(s) : Edifice
+* Description : UI boostrap framework for entcore and Edifice Framework.
+
 # ODE Bootstrap Framework
 
 ODE Bootstrap is a CSS framework containing all the UI components used by our ENT.
