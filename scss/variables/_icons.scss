@@ -38,7 +38,8 @@ $icons-interface: (
     "warning"       : ( "glyph": "\e903"),
     "edumalin"      : ( "glyph": "\e967"),
     "evaluation"    : ( "glyph": "\e970"),
-    "cantine"       : ( "glyph": "\e96c")
+    "cantine"       : ( "glyph": "\e96c"),
+    "screen-time"    : ( "glyph": "\e96e")
 ) !default;
 
 $icons-widgets: (
@@ -98,7 +99,10 @@ $icons-widgets: (
   ),
   "cantine": (
     "glyph": "\e96c",
-  )
+  ),
+  "screen-time": (
+    "glyph": "\e96e",
+  ),
 ) !default;
 
 $icons-applications: (
@@ -381,7 +385,7 @@ $icons-applications: (
   "votil": (
     "color": #ecbe30,
     "glyph": "\e96d",
-  )
+  ),
 ) !default;
 
 $icons-connectors: (
@@ -723,5 +727,5 @@ $icons-mood: (
   "worried": (
     "color": #763294,
     "glyph": "\e87f",
-  )
+  ),
 ) !default;
