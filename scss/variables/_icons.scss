@@ -210,6 +210,10 @@ $icons-applications: (
     "color": $green,
     "glyph": "\e95c",
   ),
+  "formulaire-public": (
+    "color": $green,
+    "glyph": "\e95c",
+  ),
   "forum": (
     "color": $orange,
     "glyph": "\e81e",
@@ -351,7 +355,7 @@ $icons-applications: (
     "glyph": "\e872",
   ),
   "visioconf": (
-    "color": $pink,
+    "color": $orange,
     "glyph": "\e957",
   ),
   "web-conference": (
@@ -386,6 +390,18 @@ $icons-applications: (
     "color": #ecbe30,
     "glyph": "\e96d",
   ),
+  "communities": (
+    "color": $purple,
+    "glyph": "\e96f",
+  ),
+  "minetest": (
+    "color": $blue,
+    "glyph": "\e970",
+  ),
+  "geogebra": (
+    "color": $blue,
+    "glyph": "\e971",
+  )
 ) !default;
 
 $icons-connectors: (
@@ -554,7 +570,7 @@ $icons-connectors: (
     "glyph": "\e825",
   ),
   "mediacentre": (
-    "color": $indigo,
+    "color": $blue,
     "glyph": "\e968",
   ),
   "monorientationenligne": (
