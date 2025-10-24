@@ -1,747 +1,568 @@
 /* prettier-ignore */
 $icons-interface: (
-    "appointments"  : ( "glyph": "\e96a"),
-    "apps"          : ( "glyph": "\e86c"),
-    "burger"        : ( "glyph": "\e956"),
-    "carnet-de-bord": ( "glyph": "\e902"),
-    "chevron-right" : ( "glyph": "\e823"),
-    "close"         : ( "glyph": "\e866"),
-    "community"     : ( "glyph": "\e814"),
-    "comment"       : ( "glyph": "\e8d2"),
-    "conversation"  : ( "glyph": "\e804"),
-    "disconnect"    : ( "glyph": "\e842"),
-    "eye-slash"     : ( "glyph": "\e904"),
-    "folder"        : ( "glyph": "\e846"),
-    "grades"        : ( "glyph": "\e614"),
-    "grid"          : ( "glyph": "\e940"),
-    "help"          : ( "glyph": "\e835"),
-    "home"          : ( "glyph": "\e82b"),
-    "homeworks"     : ( "glyph": "\e86f"),
-    "list"          : ( "glyph": "\e84f"),
-    "mediacentre"   : ( "glyph": "\e968"),
-    "microphone"    : ( "glyph": "\e864"),
-    "minus"         : ( "glyph": "\e95b"),
-    "nobody"        : ( "glyph": "\e901"),
-    "plus"          : ( "glyph": "\e85e"),
-    "public"        : ( "glyph": "\e8d1"),
-    "rss"           : ( "glyph": "\e861"),
-    "search"        : ( "glyph": "\e8d0"),
-    "signets"       : ( "glyph": "\e80c"),
-    "star"          : ( "glyph": "\e9d9"),
-    "timer-off"     : ( "glyph": "\e426"),
-    "trending-up"   : ( "glyph": "\e8e5"),
-    "tools"         : ( "glyph": "\e855"),
-    "user"          : ( "glyph": "\e905"),
-    "users"         : ( "glyph": "\e822"),
-    "share"         : ( "glyph": "\e815"),
-    "view"          : ( "glyph": "\e873"),
-    "warning"       : ( "glyph": "\e903"),
-    "edumalin"      : ( "glyph": "\e967"),
-    "evaluation"    : ( "glyph": "\e970"),
-    "cantine"       : ( "glyph": "\e96c"),
-    "screen-time"    : ( "glyph": "\e96e")
-) !default;
+  "appointments" : ("glyph": "\e96a"),
+  "apps" : ("glyph": "\e86c"),
+  "burger" : ("glyph": "\e956"),
+  "carnet-de-bord": ("glyph": "\e902"),
+  "chevron-right" : ("glyph": "\e823"),
+  "close" : ("glyph": "\e866"),
+  "community" : ("glyph": "\e814"),
+  "comment" : ("glyph": "\e8d2"),
+  "conversation" : ("glyph": "\e804"),
+  "disconnect" : ("glyph": "\e842"),
+  "eye-slash" : ("glyph": "\e904"),
+  "folder" : ("glyph": "\e846"),
+  "grades" : ("glyph": "\e614"),
+  "grid" : ("glyph": "\e940"),
+  "help" : ("glyph": "\e835"),
+  "home" : ("glyph": "\e82b"),
+  "homeworks" : ("glyph": "\e86f"),
+  "list" : ("glyph": "\e84f"),
+  "mediacentre" : ("glyph": "\e968"),
+  "microphone" : ("glyph": "\e864"),
+  "minus" : ("glyph": "\e95b"),
+  "nobody" : ("glyph": "\e901"),
+  "plus" : ("glyph": "\e85e"),
+  "public" : ("glyph": "\e8d1"),
+  "rss" : ("glyph": "\e861"),
+  "search" : ("glyph": "\e8d0"),
+  "signets" : ("glyph": "\e80c"),
+  "star" : ("glyph": "\e9d9"),
+  "timer-off" : ("glyph": "\e426"),
+  "trending-up" : ("glyph": "\e8e5"),
+  "tools" : ("glyph": "\e855"),
+  "user" : ("glyph": "\e905"),
+  "users" : ("glyph": "\e822"),
+  "share" : ("glyph": "\e815"),
+  "view" : ("glyph": "\e873"),
+  "warning" : ("glyph": "\e903"),
+  "edumalin" : ("glyph": "\e967"),
+  "evaluation" : ("glyph": "\e970"),
+  "cantine" : ("glyph": "\e96c"),
+  "screen-time" : ("glyph": "\e972")) !default;
 
 $icons-widgets: (
-  "actualites": (
-    "glyph": "\e85b",
+  "actualites": ("glyph": "\e85b",
   ),
-  "aide-devoirs": (
-    "glyph": "\e818",
+  "aide-devoirs": ("glyph": "\e818",
   ),
-  "agenda": (
-    "glyph": "\e83c",
+  "agenda": ("glyph": "\e83c",
   ),
-  "apps": (
-    "glyph": "\e86c",
+  "apps": ("glyph": "\e86c",
   ),
-  "bookmark-empty": (
-    "glyph": "\e888",
+  "bookmark-empty": ("glyph": "\e888",
   ),
-  "calendar": (
-    "glyph": "\e834",
+  "calendar": ("glyph": "\e834",
   ),
-  "carnet-de-bord": (
-    "glyph": "\e902",
+  "carnet-de-bord": ("glyph": "\e902",
   ),
-  "microphone": (
-    "glyph": "\e864",
+  "microphone": ("glyph": "\e864",
   ),
-  "maxicours": (
-    "glyph": "\e825",
+  "maxicours": ("glyph": "\e825",
   ),
-  "mediacentre": (
-    "glyph": "\e968",
+  "mediacentre": ("glyph": "\e968",
   ),
-  "mood": (
-    "glyph": "\e811",
+  "mood": ("glyph": "\e811",
   ),
-  "notes": (
-    "glyph": "\e806",
+  "notes": ("glyph": "\e806",
   ),
-  "rss": (
-    "glyph": "\e861",
+  "rss": ("glyph": "\e861",
   ),
-  "qwant": (
-    "glyph": "\e93d",
+  "qwant": ("glyph": "\e93d",
   ),
-  "schoolbook": (
-    "glyph": "\e95a",
+  "schoolbook": ("glyph": "\e95a",
   ),
-  "signets": (
-    "glyph": "\e80c",
+  "signets": ("glyph": "\e80c",
   ),
-  "edumalin": (
-    "glyph": "\e967",
+  "edumalin": ("glyph": "\e967",
   ),
-  "evaluation": (
-    "glyph": "\e970",
+  "evaluation": ("glyph": "\e970",
   ),
-  "cantine": (
-    "glyph": "\e96c",
+  "cantine": ("glyph": "\e96c",
   ),
-  "screen-time": (
-    "glyph": "\e96e",
+  "screen-time": ("glyph": "\e972",
   ),
-) !default;
+  ) !default;
 
 $icons-applications: (
-  "account": (
-    "color": $orange,
+  "account": ("color": $orange,
     "glyph": "\e905",
   ),
-  "actualites": (
-    "color": $orange,
+  "actualites": ("color": $orange,
     "glyph": "\e85b",
   ),
-  "admin-portal": (
-    "color": $yellow,
+  "admin-portal": ("color": $yellow,
     "glyph": "\e908",
   ),
-  "admin": (
-    "color": $yellow,
+  "admin": ("color": $yellow,
     "glyph": "\e81a",
   ),
-  "agenda": (
-    "color": $green,
+  "agenda": ("color": $green,
     "glyph": "\e966",
   ),
-  "appointments": (
-    "color": $green,
+  "appointments": ("color": $green,
     "glyph": "\e96a",
   ),
-  "archive": (
-    "color": $yellow,
+  "archive": ("color": $yellow,
     "glyph": "\e81d",
   ),
-  "attendance": (
-    "color": $green,
+  "attendance": ("color": $green,
     "glyph": "\e80b",
   ),
-  "blog": (
-    "color": $orange,
+  "blog": ("color": $orange,
     "glyph": "\e809",
   ),
-  "cahier-de-texte": (
-    "color": $blue,
+  "cahier-de-texte": ("color": $blue,
     "glyph": "\e910",
   ),
-  "cahier-textes": (
-    "color": $blue,
+  "cahier-textes": ("color": $blue,
     "glyph": "\e965",
   ),
-  "calendar": (
-    "color": $green,
+  "calendar": ("color": $green,
     "glyph": "\e966",
   ),
-  "canal-numerique": (
-    "color": $pink,
+  "canal-numerique": ("color": $pink,
     "glyph": "\e80a",
   ),
-  "cns": (
-    "color": $pink,
+  "cns": ("color": $pink,
     "glyph": "\e88a",
   ),
-  "collaborative-wall": (
-    "color": $blue,
+  "collaborative-wall": ("color": $blue,
     "glyph": "\e800",
   ),
-  "collaborativeeditor": (
-    "color": $blue,
+  "collaborativeeditor": ("color": $blue,
     "glyph": "\e829",
   ),
   "community": (
     "color": $blue,
     "glyph": "\e814",
   ),
-  "competences": (
-    "color": $green,
+  "competences": ("color": $green,
     "glyph": "\e927",
   ),
-  "conversation": (
-    "color": $orange,
+  "conversation": ("color": $orange,
     "glyph": "\e804",
   ),
-  "crre": (
-    "color": $pink,
+  "crre": ("color": $pink,
     "glyph": "\e95f",
   ),
-  "directory": (
-    "color": $green,
+  "directory": ("color": $green,
     "glyph": "\e811",
   ),
-  "edt": (
-    "color": $green,
+  "edt": ("color": $green,
     "glyph": "\e964",
   ),
-  "exercizer": (
-    "color": $blue,
+  "exercizer": ("color": $blue,
     "glyph": "\e833",
   ),
-  "qwant": (
-    "color": $pink,
+  "qwant": ("color": $pink,
     "glyph": "\e93d",
   ),
-  "forms": (
-    "color": $green,
+  "forms": ("color": $green,
     "glyph": "\e95c",
   ),
-  "formulaire": (
-    "color": $green,
+  "formulaire": ("color": $green,
     "glyph": "\e95c",
   ),
-  "formulaire-public": (
-    "color": $green,
+  "formulaire-public": ("color": $green,
     "glyph": "\e95c",
   ),
-  "forum": (
-    "color": $orange,
+  "forum": ("color": $orange,
     "glyph": "\e81e",
   ),
-  "library": (
-    "color": $purple,
+  "library": ("color": $purple,
     "glyph": "\e94c",
   ),
-  "lool": (
-    "color": $blue,
+  "lool": ("color": $blue,
     "glyph": "\e962",
   ),
-  "magneto": (
-    "color": $blue,
+  "magneto": ("color": $blue,
     "glyph": "\e961",
   ),
-  "mediacentre": (
-    "color": $blue,
+  "mediacentre": ("color": $blue,
     "glyph": "\e968",
   ),
-  "mindmap": (
-    "color": $blue,
+  "mindmap": ("color": $blue,
     "glyph": "\e859",
   ),
-  "minibadge": (
-    "color": $green,
+  "minibadge": ("color": $green,
     "glyph": "\e960",
   ),
-  "notebook": (
-    "color": $pink,
+  "notebook": ("color": $pink,
     "glyph": "\e8d4",
   ),
-  "notes": (
-    "color": $pink,
+  "notes": ("color": $pink,
     "glyph": "\e806",
   ),
-  "pad": (
-    "color": $blue,
+  "pad": ("color": $blue,
     "glyph": "\e829",
   ),
-  "pages": (
-    "color": $orange,
+  "pages": ("color": $orange,
     "glyph": "\e876",
   ),
-  "parametrage": (
-    "color": $yellow,
+  "parametrage": ("color": $yellow,
     "glyph": "\e92f",
   ),
-  "parcours": (
-    "color": $pink,
+  "parcours": ("color": $pink,
     "glyph": "\e94d",
   ),
-  "paths": (
-    "color": $pink,
+  "paths": ("color": $pink,
     "glyph": "\e94d",
   ),
-  "poll": (
-    "color": $green,
+  "poll": ("color": $green,
     "glyph": "\e832",
   ),
-  "polls": (
-    "color": $green,
+  "polls": ("color": $green,
     "glyph": "\e832",
   ),
-  "presences": (
-    "color": $green,
+  "presences": ("color": $green,
     "glyph": "\e95d",
   ),
-  "absences": (
-    "color": $green,
+  "absences": ("color": $green,
     "glyph": "\e95d",
   ),
-  "rack": (
-    "color": $green,
+  "rack": ("color": $green,
     "glyph": "\e80d",
   ),
-  "rbs": (
-    "color": $green,
+  "rbs": ("color": $green,
     "glyph": "\e80e",
   ),
-  "schoolbook": (
-    "color": $orange,
+  "schoolbook": ("color": $orange,
     "glyph": "\e91e",
   ),
-  "scrap-book": (
-    "color": $blue,
+  "scrap-book": ("color": $blue,
     "glyph": "\e8d4",
   ),
-  "scrapbook": (
-    "color": $blue,
+  "scrapbook": ("color": $blue,
     "glyph": "\e8d4",
   ),
-  "searchengine": (
-    "color": $pink,
+  "searchengine": ("color": $pink,
     "glyph": "\e8d0",
   ),
-  "settings-class": (
-    "color": $yellow,
+  "settings-class": ("color": $yellow,
     "glyph": "\e942",
   ),
-  "sharebigfiles": (
-    "color": $green,
+  "sharebigfiles": ("color": $green,
     "glyph": "\e8cb",
   ),
-  "statistics": (
-    "color": $yellow,
+  "statistics": ("color": $yellow,
     "glyph": "\e810",
   ),
-  "stats": (
-    "color": $yellow,
+  "stats": ("color": $yellow,
     "glyph": "\e909",
   ),
-  "support": (
-    "color": $yellow,
+  "support": ("color": $yellow,
     "glyph": "\e835",
   ),
-  "timeline": (
-    "color": $yellow,
+  "timeline": ("color": $yellow,
     "glyph": "\e854",
   ),
-  "timelinegenerator": (
-    "color": $blue,
+  "timelinegenerator": ("color": $blue,
     "glyph": "\e819",
   ),
-  "userbook": (
-    "color": $green,
+  "userbook": ("color": $green,
     "glyph": "\e811",
   ),
-  "userbook-mood": (
-    "color": $green,
+  "userbook-mood": ("color": $green,
     "glyph": "\e811",
   ),
-  "userbook-moto": (
-    "color": $green,
+  "userbook-moto": ("color": $green,
     "glyph": "\e811",
   ),
-  "video": (
-    "color": $pink,
+  "video": ("color": $pink,
     "glyph": "\e872",
   ),
-  "visioconf": (
-    "color": $orange,
+  "visioconf": ("color": $orange,
     "glyph": "\e957",
   ),
-  "web-conference": (
-    "color": $orange,
+  "web-conference": ("color": $orange,
     "glyph": "\e957",
   ),
-  "website": (
-    "color": $orange,
+  "website": ("color": $orange,
     "glyph": "\e90a",
   ),
-  "wiki": (
-    "color": $blue,
+  "wiki": ("color": $blue,
     "glyph": "\e969",
   ),
-  "workspace": (
-    "color": $orange,
+  "workspace": ("color": $orange,
     "glyph": "\e81b",
   ),
-  "placeholder": (
-    "color": $secondary,
+  "placeholder": ("color": $secondary,
     "glyph": "",
   ),
-  "edumalin": (
-    "color": $blue,
+  "edumalin": ("color": $blue,
     "glyph": "\e967",
   ),
-  "nabook": (
-    "color": #120d37,
+  "nabook": ("color": #120d37,
     "glyph": "\e96b",
   ),
-  "votil": (
-    "color": #ecbe30,
+  "votil": ("color": #ecbe30,
     "glyph": "\e96d",
   ),
-  "communities": (
-    "color": $purple,
+  "communities": ("color": $purple,
     "glyph": "\e96f",
   ),
-  "minetest": (
-    "color": $blue,
+  "minetest": ("color": $blue,
     "glyph": "\e970",
   ),
-  "geogebra": (
-    "color": $blue,
+  "geogebra": ("color": $blue,
     "glyph": "\e971",
-  )
-) !default;
+  )) !default;
 
 $icons-connectors: (
-  "absences": (
-    "color": $red,
+  "absences": ("color": $red,
     "glyph": "\e80b",
   ),
-  "admission-post-bac": (
-    "color": $red,
+  "admission-post-bac": ("color": $red,
     "glyph": "\e816",
   ),
-  "aide-devoirs": (
-    "color": $green,
+  "aide-devoirs": ("color": $green,
     "glyph": "\e818",
   ),
-  "agenda": (
-    "color": $yellow,
+  "agenda": ("color": $yellow,
     "glyph": "\e83c",
   ),
-  "assistance": (
-    "color": $blue,
+  "assistance": ("color": $blue,
     "glyph": "\e93c",
   ),
-  "assr": (
-    "color": $red,
+  "assr": ("color": $red,
     "glyph": "\e891",
   ),
-  "award": (
-    "color": $green,
+  "award": ("color": $green,
     "glyph": "\e818",
   ),
-  "banquesavoir": (
-    "color": $blue,
+  "banquesavoir": ("color": $blue,
     "glyph": "\e88d",
   ),
-  "bcdi": (
-    "color": $purple,
+  "bcdi": ("color": $purple,
     "glyph": "\e88f",
   ),
-  "biblionisep": (
-    "color": $green,
+  "biblionisep": ("color": $green,
     "glyph": "\e8a4",
   ),
-  "bookmark-empty": (
-    "color": $green,
+  "bookmark-empty": ("color": $green,
     "glyph": "\e888",
   ),
-  "canal-numerique": (
-    "color": $red,
+  "canal-numerique": ("color": $red,
     "glyph": "\e80a",
   ),
-  "ccn": (
-    "color": $green,
+  "ccn": ("color": $green,
     "glyph": "\e90f",
   ),
-  "cerise": (
-    "color": $red,
+  "cerise": ("color": $red,
     "glyph": "\e81c",
   ),
-  "cervoprint": (
-    "color": $blue,
+  "cervoprint": ("color": $blue,
     "glyph": "\e896",
   ),
-  "charlemagne": (
-    "color": $red,
+  "charlemagne": ("color": $red,
     "glyph": "\e885",
   ),
-  "charte": (
-    "color": $yellow,
+  "charte": ("color": $yellow,
     "glyph": "\e93b",
   ),
-  "chat": (
-    "color": $red,
+  "chat": ("color": $red,
     "glyph": "\e817",
   ),
-  "cidj": (
-    "color": $green,
+  "cidj": ("color": $green,
     "glyph": "\e893",
   ),
-  "connecteur-generique1": (
-    "color": $red,
+  "connecteur-generique1": ("color": $red,
     "glyph": "\e8aa",
   ),
-  "connecteur-generique2": (
-    "color": $red,
+  "connecteur-generique2": ("color": $red,
     "glyph": "\e8ab",
   ),
-  "educagri": (
-    "color": $indigo,
+  "educagri": ("color": $indigo,
     "glyph": "\e89e",
   ),
-  "edumedia": (
-    "color": $blue,
+  "edumedia": ("color": $blue,
     "glyph": "\e887",
   ),
-  "edumoov": (
-    "color": $red,
+  "edumoov": ("color": $red,
     "glyph": "\e939",
   ),
-  "edutheque": (
-    "color": $yellow,
+  "edutheque": ("color": $yellow,
     "glyph": "\e8a6",
   ),
-  "electron": (
-    "color": $red,
+  "electron": ("color": $red,
     "glyph": "\e89b",
   ),
-  "elyceepicardie": (
-    "color": $indigo,
+  "elyceepicardie": ("color": $indigo,
     "glyph": "\e898",
   ),
-  "esidoc": (
-    "color": $pink,
+  "esidoc": ("color": $pink,
     "glyph": "\e826",
   ),
-  "europress": (
-    "color": $blue,
+  "europress": ("color": $blue,
     "glyph": "\e8a7",
   ),
-  "gepi": (
-    "color": $blue,
+  "gepi": ("color": $blue,
     "glyph": "\e89c",
   ),
-  "glpi": (
-    "color": $red,
+  "glpi": ("color": $red,
     "glyph": "\e897",
   ),
-  "hiboutheque": (
-    "color": $green,
+  "hiboutheque": ("color": $green,
     "glyph": "\e90e",
   ),
-  "itopstore": (
-    "color": $green,
+  "itopstore": ("color": $green,
     "glyph": "\e895",
   ),
-  "kne": (
-    "color": $purple,
+  "kne": ("color": $purple,
     "glyph": "\e81f",
   ),
-  "le-site-tv": (
-    "color": $yellow,
+  "le-site-tv": ("color": $yellow,
     "glyph": "\e87a",
   ),
-  "lemonde": (
-    "color": $indigo,
+  "lemonde": ("color": $indigo,
     "glyph": "\e8a9",
   ),
-  "lesechos": (
-    "color": $indigo,
+  "lesechos": ("color": $indigo,
     "glyph": "\e8a5",
   ),
-  "lsu": (
-    "color": $blue,
+  "lsu": ("color": $blue,
     "glyph": "\e93a",
   ),
-  "madmagz": (
-    "color": $pink,
+  "madmagz": ("color": $pink,
     "glyph": "\e89d",
   ),
-  "matholycee": (
-    "color": $red,
+  "matholycee": ("color": $red,
     "glyph": "\e8a3",
   ),
-  "maxicours": (
-    "color": $indigo,
+  "maxicours": ("color": $indigo,
     "glyph": "\e825",
   ),
-  "mediacentre": (
-    "color": $blue,
+  "mediacentre": ("color": $blue,
     "glyph": "\e968",
   ),
-  "monorientationenligne": (
-    "color": $yellow,
+  "monorientationenligne": ("color": $yellow,
     "glyph": "\e89f",
   ),
-  "monstageenligne": (
-    "color": $blue,
+  "monstageenligne": ("color": $blue,
     "glyph": "\e8a2",
   ),
-  "moodle": (
-    "color": $orange,
+  "moodle": ("color": $orange,
     "glyph": "\e948",
   ),
-  "museefrancaisphoto": (
-    "color": $indigo,
+  "museefrancaisphoto": ("color": $indigo,
     "glyph": "\e892",
   ),
-  "my-network": (
-    "color": $indigo,
+  "my-network": ("color": $indigo,
     "glyph": "\e82e",
   ),
-  "netvibes": (
-    "color": $green,
+  "netvibes": ("color": $green,
     "glyph": "\e8a1",
   ),
-  "note": (
-    "color": $yellow,
+  "note": ("color": $yellow,
     "glyph": "\e806",
   ),
-  "onisep": (
-    "color": $blue,
+  "onisep": ("color": $blue,
     "glyph": "\e88c",
   ),
-  "onisep2": (
-    "color": $blue,
+  "onisep2": ("color": $blue,
     "glyph": "\e894",
   ),
-  "parametrage": (
-    "color": $red,
+  "parametrage": ("color": $red,
     "glyph": "\e92f",
   ),
-  "paraschool": (
-    "color": $green,
+  "paraschool": ("color": $green,
     "glyph": "\e82d",
   ),
-  "pearltress": (
-    "color": $blue,
+  "pearltress": ("color": $blue,
     "glyph": "\e933",
   ),
-  "picardie-cursus": (
-    "color": $purple,
+  "picardie-cursus": ("color": $purple,
     "glyph": "\e921",
   ),
-  "pro-eps": (
-    "color": $blue,
+  "pro-eps": ("color": $blue,
     "glyph": "\e884",
   ),
-  "pronote": (
-    "color": $purple,
+  "pronote": ("color": $purple,
     "glyph": "\e82a",
   ),
-  "public": (
-    "color": $red,
+  "public": ("color": $red,
     "glyph": "\e863",
   ),
-  "qwant-junior": (
-    "color": $red,
+  "qwant-junior": ("color": $red,
     "glyph": "\e93d",
   ),
-  "residence-artiste": (
-    "color": $green,
+  "residence-artiste": ("color": $green,
     "glyph": "\e90f",
   ),
-  "ressourcesdepartementale91": (
-    "color": $indigo,
+  "ressourcesdepartementale91": ("color": $indigo,
     "glyph": "\e890",
   ),
-  "sacoche": (
-    "color": $indigo,
+  "sacoche": ("color": $indigo,
     "glyph": "\e899",
   ),
-  "scolinfo": (
-    "color": $red,
+  "scolinfo": ("color": $red,
     "glyph": "\e886",
   ),
-  "suitcase": (
-    "color": $red,
+  "suitcase": ("color": $red,
     "glyph": "\e88b",
   ),
-  "turboself": (
-    "color": $yellow,
+  "turboself": ("color": $yellow,
     "glyph": "\e8a0",
   ),
-  "universalis": (
-    "color": $red,
+  "universalis": ("color": $red,
     "glyph": "\e831",
   ),
-  "unstagepourtous": (
-    "color": $pink,
+  "unstagepourtous": ("color": $pink,
     "glyph": "\e88e",
   ),
-  "vie-scolaire": (
-    "color": $yellow,
+  "vie-scolaire": ("color": $yellow,
     "glyph": "\e879",
   ),
-  "viescolaire": (
-    "color": $yellow,
+  "viescolaire": ("color": $yellow,
     "glyph": "\e879",
   ),
-  "webclasseur": (
-    "color": $blue,
+  "webclasseur": ("color": $blue,
     "glyph": "\e88c",
   ),
-  "edumalin": (
-    "color": $blue,
+  "edumalin": ("color": $blue,
     "glyph": "\e967",
   ),
-  "evaluation": (
-    "color": $blue,
+  "evaluation": ("color": $blue,
     "glyph": "\e970",
   ),
-) !default;
+  ) !default;
 
 $icons-mood: (
-  "default": (
-    "color": #555,
+  "default": ("color": #555,
     "glyph": "\e870",
   ),
-  "none": (
-    "color": #aaa,
+  "none": ("color": #aaa,
     "glyph": "\e83a",
   ),
-  "angry": (
-    "color": #ff8500,
+  "angry": ("color": #ff8500,
     "glyph": "\e845",
   ),
-  "dreamy": (
-    "color": #b930a2,
+  "dreamy": ("color": #b930a2,
     "glyph": "\e862",
   ),
-  "happy": (
-    "color": #ecbe30,
+  "happy": ("color": #ecbe30,
     "glyph": "\e877",
   ),
-  "joker": (
-    "color": #4bafd5,
+  "joker": ("color": #4bafd5,
     "glyph": "\e849",
   ),
-  "love": (
-    "color": #ff8500,
+  "love": ("color": #ff8500,
     "glyph": "\e84b",
   ),
-  "proud": (
-    "color": #46bfaf,
+  "proud": ("color": #46bfaf,
     "glyph": "\e87e",
   ),
-  "sad": (
-    "color": #b930a2,
+  "sad": ("color": #b930a2,
     "glyph": "\e869",
   ),
-  "sick": (
-    "color": #e13a3a,
+  "sick": ("color": #e13a3a,
     "glyph": "\e87d",
   ),
-  "tired": (
-    "color": #e13a3a,
+  "tired": ("color": #e13a3a,
     "glyph": "\e87c",
   ),
-  "worried": (
-    "color": #763294,
+  "worried": ("color": #763294,
     "glyph": "\e87f",
   ),
-) !default;
+  ) !default;
