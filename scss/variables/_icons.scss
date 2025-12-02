@@ -39,7 +39,8 @@ $icons-interface: (
   "edumalin" : ("glyph": "\e967"),
   "evaluation" : ("glyph": "\e970"),
   "cantine" : ("glyph": "\e96c"),
-  "screen-time" : ("glyph": "\e972")) !default;
+  "screen-time" : ("glyph": "\e972"),
+  "elea": ("glyph": "\e973")) !default;
 
 $icons-widgets: (
   "actualites": ("glyph": "\e85b",
@@ -81,7 +82,7 @@ $icons-widgets: (
   "cantine": ("glyph": "\e96c",
   ),
   "screen-time": ("glyph": "\e972",
-  ),
+  )
   ) !default;
 
 $icons-applications: (
@@ -306,7 +307,10 @@ $icons-applications: (
   ),
   "geogebra": ("color": $blue,
     "glyph": "\e971",
-  )) !default;
+  ),
+  "elea": ("color": $indigo,
+    "glyph": "\e973",
+  ), ) !default;
 
 $icons-connectors: (
   "absences": ("color": $red,
@@ -524,6 +528,9 @@ $icons-connectors: (
   ),
   "evaluation": ("color": $blue,
     "glyph": "\e970",
+  ),
+  "elea": ("color": $indigo,
+    "glyph": "\e973",
   ),
   ) !default;
 
