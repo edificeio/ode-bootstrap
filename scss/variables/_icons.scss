@@ -40,7 +40,8 @@ $icons-interface: (
   "evaluation" : ("glyph": "\e970"),
   "cantine" : ("glyph": "\e96c"),
   "screen-time" : ("glyph": "\e972"),
-  "elea": ("glyph": "\e973")) !default;
+  "elea": ("glyph": "\e973"),
+  "assistancetic": ("glyph": "\e974")) !default;
 
 $icons-widgets: (
   "actualites": ("glyph": "\e85b",
@@ -310,6 +311,9 @@ $icons-applications: (
   ),
   "elea": ("color": $indigo,
     "glyph": "\e973",
+  ),
+  "assistancetic": ("color": $yellow,
+    "glyph": "\e974",
   ), ) !default;
 
 $icons-connectors: (
@@ -531,6 +535,9 @@ $icons-connectors: (
   ),
   "elea": ("color": $indigo,
     "glyph": "\e973",
+  ),
+  "assistancetic": ("color": $yellow,
+    "glyph": "\e974",
   ),
   ) !default;
 
