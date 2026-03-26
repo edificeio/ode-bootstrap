@@ -41,7 +41,8 @@ $icons-interface: (
   "cantine" : ("glyph": "\e96c"),
   "screen-time" : ("glyph": "\e972"),
   "elea": ("glyph": "\e973"),
-  "assistancetic": ("glyph": "\e974")) !default;
+  "assistancetic": ("glyph": "\e974"),
+  "livret-scolaire": ("glyph": "\e975")) !default;
 
 $icons-widgets: (
   "actualites": ("glyph": "\e85b",
@@ -83,6 +84,8 @@ $icons-widgets: (
   "cantine": ("glyph": "\e96c",
   ),
   "screen-time": ("glyph": "\e972",
+  ),
+  "livret-scolaire": ("glyph": "\e975",
   ),
   ) !default;
 
@@ -315,6 +318,9 @@ $icons-applications: (
   ),
   "assistancetic": ("color": $yellow,
     "glyph": "\e974",
+  ), 
+  "livret-scolaire": ("color": $green,
+    "glyph": "\e975",
   ), ) !default;
 
 $icons-connectors: (
@@ -539,6 +545,9 @@ $icons-connectors: (
   ),
   "assistancetic": ("color": $yellow,
     "glyph": "\e974",
+  ),
+  "livret-scolaire": ("color": $green,
+    "glyph": "\e975",
   ),
   ) !default;
 
